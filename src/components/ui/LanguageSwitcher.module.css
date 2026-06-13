@@ -1,0 +1,38 @@
+.switcher {
+  display: flex;
+  gap: 4px;
+
+  padding: 4px;
+
+  border-radius: 8px;
+
+  background: rgba(240, 160, 48, 0.06);
+
+  border: 1px solid var(--border);
+}
+
+.button {
+  padding: 6px 12px;
+
+  border: none;
+
+  background: transparent;
+
+  color: var(--text-dim);
+
+  cursor: pointer;
+}
+
+.active {
+  padding: 6px 12px;
+
+  border: none;
+
+  border-radius: 6px;
+
+  background: var(--orange);
+
+  color: black;
+
+  cursor: pointer;
+}

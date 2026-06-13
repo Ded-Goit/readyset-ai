@@ -1,0 +1,180 @@
+.hero {
+  min-height: 100vh;
+
+  padding:
+    120px
+    20px
+    80px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+}
+
+.badge {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 8px 16px;
+
+  margin-bottom: 32px;
+
+  border-radius: 999px;
+
+  background: rgba(240, 160, 48, 0.08);
+
+  border: 1px solid var(--border-hi);
+
+  color: var(--orange);
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+}
+
+.title {
+  max-width: 900px;
+
+  margin-bottom: 24px;
+
+  font-size: clamp(
+    2.5rem,
+    7vw,
+    5.2rem
+  );
+
+  line-height: 1.05;
+
+  font-weight: 800;
+
+  letter-spacing: -2px;
+}
+
+.title span {
+  color: var(--orange);
+}
+
+.subtitle {
+  max-width: 640px;
+
+  margin-bottom: 48px;
+
+  color: var(--text-muted);
+
+  font-size: 1rem;
+
+  line-height: 1.8;
+}
+
+.actions {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+
+  width: 100%;
+
+  max-width: 320px;
+
+  margin-bottom: 64px;
+}
+
+.primaryBtn {
+  padding: 16px 24px;
+
+  border-radius: 12px;
+
+  background: var(--orange);
+
+  color: #000;
+
+  font-weight: 700;
+
+  text-align: center;
+
+  transition: 0.3s;
+}
+
+.primaryBtn:hover {
+  background: var(--orange-lt);
+
+  transform: translateY(-2px);
+}
+
+.secondaryBtn {
+  padding: 16px 24px;
+
+  border-radius: 12px;
+
+  border: 1px solid var(--border-hi);
+
+  color: var(--text-muted);
+
+  text-align: center;
+
+  transition: 0.3s;
+}
+
+.secondaryBtn:hover {
+  border-color: var(--orange);
+
+  color: var(--orange);
+}
+
+.stats {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 24px;
+}
+
+.stat {
+  text-align: center;
+}
+
+.statValue {
+  display: block;
+
+  font-size: 2rem;
+
+  font-weight: 800;
+
+  color: var(--orange);
+}
+
+.statLabel {
+  font-size: 12px;
+
+  color: var(--text-dim);
+}
+
+@media (min-width: 768px) {
+  .actions {
+    flex-direction: row;
+
+    max-width: none;
+
+    width: auto;
+  }
+
+  .stats {
+    flex-direction: row;
+
+    gap: 48px;
+  }
+}
