@@ -1,26 +1,23 @@
 "use client";
 
-import { useContext } from "react";
-
-import { LanguageContext } from "@/context/LanguageContext";
-
+import { useLanguage } from "@/hooks/useLanguage";
 import styles from "./LanguageSwitcher.module.css";
 
+const languages = ["en", "ua", "fr"];
+
 export default function LanguageSwitcher() {
-  const { lang, setLang } =
-    useContext(LanguageContext);
+  const { lang, setLang } = useLanguage();
 
   return (
     <div className={styles.switcher}>
-      {["en", "ua", "fr"].map(item => (
+      {languages.map((item) => (
         <button
           key={item}
+          type="button"
           onClick={() => setLang(item)}
-          className={
-            lang === item
-              ? styles.active
-              : styles.button
-          }
+          className={`${styles.button} ${
+            lang === item ? styles.active : ""
+          }`}
         >
           {item.toUpperCase()}
         </button>

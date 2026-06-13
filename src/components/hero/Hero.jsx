@@ -2,68 +2,54 @@
 
 import styles from "./Hero.module.css";
 
+import { useLanguage } from "@/hooks/useLanguage";
+import { translations } from "@/data/translations";
+
 export default function Hero() {
+  const { lang } = useLanguage();
+
+  const t = translations[lang];
+
   return (
     <section className={styles.hero}>
       <div className={styles.badge}>
-        🏆 GoIT AI Hackathon 2026 — 1st place
+        {t.heroBadge}
       </div>
 
       <h1 className={styles.title}>
-        Your new sales rep
+        {t.heroTitle1}
         <br />
-        shouldn&apos;t need
-        <span> 6 weeks </span>
+
+        {t.heroTitle2}
+
+        <span>
+          {" "}
+          {t.heroTitleHighlight}{" "}
+        </span>
+
         <br />
-         to become productive.
+
+        {t.heroTitle3}
       </h1>
 
       <p className={styles.subtitle}>
-        ReadySet.AI is an AI onboarding system for sales teams —
-        from chaotic first weeks to measurable readiness.
-        Faster ramp-up. Less mentor load. No surprises.
+        {t.heroDescription}
       </p>
 
       <div className={styles.actions}>
-        <a href="#pilot" className={styles.primaryBtn}>
-          Request free pilot →
+        <a
+          href="#pilot"
+          className={styles.primaryBtn}
+        >
+          {t.pilotButton}
         </a>
 
-        <a href="#how" className={styles.secondaryBtn}>
-          See how it works
+        <a
+          href="#how"
+          className={styles.secondaryBtn}
+        >
+          {t.howButton}
         </a>
-      </div>
-
-      <div className={styles.stats}>
-        <div className={styles.stat}>
-          <span className={styles.statValue}>
-            ↓50%
-          </span>
-
-          <span className={styles.statLabel}>
-            time-to-productivity
-          </span>
-        </div>
-
-        <div className={styles.stat}>
-          <span className={styles.statValue}>
-            ↓70%
-          </span>
-
-          <span className={styles.statLabel}>
-            mentor load
-          </span>
-        </div>
-
-        <div className={styles.stat}>
-          <span className={styles.statValue}>
-            $8.4K
-          </span>
-
-          <span className={styles.statLabel}>
-            saved per team / year
-          </span>
-        </div>
       </div>
     </section>
   );
