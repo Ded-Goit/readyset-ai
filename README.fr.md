@@ -1,5 +1,3 @@
----
-
 # README.fr.md (Français)
 
 ```md
