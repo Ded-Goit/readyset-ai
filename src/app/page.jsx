@@ -5,6 +5,7 @@ import Hero from "@/components/hero/Hero";
 import ProblemSection from "@/components/problem/ProblemSection";
 import HowItWorks from "@/components/how/HowItWorks";
 import ImpactSection from "@/components/impact/ImpactSection";
+import PilotSection from "@/components/pilot/PilotSection";
 
 export default function HomePage() {
   return (
@@ -18,7 +19,7 @@ export default function HomePage() {
          <ProblemSection />
          <HowItWorks />
          <ImpactSection />
-        {/* Pilot */}
+         <PilotSection />
       </main>
 
       <Footer />

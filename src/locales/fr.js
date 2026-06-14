@@ -148,4 +148,31 @@ impact: {
     "— GoIT AI Solutions Hackathon 2026 · Retour du jury · 1re place",
 },
 
+pilot: {
+  tag: "Programme pilote gratuit",
+
+  titleStart: "Nous recherchons notre",
+
+  titleHighlight:
+    "première entreprise pilote.",
+
+  description:
+    "Si vous dirigez une équipe commerciale de 5 à 50 personnes et que l'onboarding est défaillant - corrigeons-le ensemble. 30 jours. Sans frais. De vrais métriques pour votre direction.",
+
+  perks: [
+    "Configuration complète pour vos rôles et documents",
+    "Pilote de 30 jours sans frais",
+    "Vrai rapport ROI à la fin",
+  ],
+
+  placeholder: "your@email.com",
+
+  button: "Commencer →",
+
+  success: "✓ Nous vous contacterons !",
+
+  note:
+    "Pas de présentation. Juste un appel de 20 minutes pour voir si ça convient.",
+},
+
 };

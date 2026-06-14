@@ -148,4 +148,31 @@ impact: {
     "— GoIT AI Solutions Hackathon 2026 · Jury feedback · 1st place",
 },
 
+pilot: {
+  tag: "Free pilot program",
+
+  titleStart: "We're looking for our",
+
+  titleHighlight:
+    "first pilot company.",
+
+  description:
+    "If you lead a sales team of 5–50 people and onboarding feels broken - let's fix it together. 30 days. No cost. Real metrics you can take to your leadership.",
+
+  perks: [
+    "Full setup for your roles & documents",
+    "30-day pilot at no cost",
+    "Real ROI report at the end",
+  ],
+
+  placeholder: "your@email.com",
+
+  button: "Get started →",
+
+  success: "✓ We will be in touch!",
+
+  note:
+    "No pitch deck. Just a 20-minute call to see if it fits.",
+},
+
 };
