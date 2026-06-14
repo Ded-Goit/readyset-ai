@@ -17,6 +17,10 @@ export const metadata = {
     "sales AI",
   ],
 
+  icons: {
+    icon: "/favicon.svg",
+  },
+
   openGraph: {
     title:
       "ReadySet.AI",

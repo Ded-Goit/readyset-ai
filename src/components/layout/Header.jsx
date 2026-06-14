@@ -7,13 +7,14 @@ import styles from "./Header.module.css";
 import Logo from "../ui/Logo";
 import LanguageSwitcher from "../ui/LanguageSwitcher";
 
-import { useLanguage } from "@/hooks/useLanguage";
-import { translations } from "@/data/translations";
+import { useTranslation } from "@/hooks/useTranslation";
 
 export default function Header() {
-  const { lang } = useLanguage();
+  const t = useTranslation();
 
-  const t = translations[lang];
+  if (!t) {
+    return null;
+  }
 
   return (
     <motion.header
@@ -34,19 +35,19 @@ export default function Header() {
 
       <nav className={styles.nav}>
         <a href="#problem">
-          {t.problem}
+          {t.nav.problem}
         </a>
 
         <a href="#how">
-          {t.how}
+          {t.nav.how}
         </a>
 
         <a href="#impact">
-          {t.impact}
+          {t.nav.impact}
         </a>
 
         <a href="#pilot">
-          {t.pilot}
+          {t.nav.pilot}
         </a>
       </nav>
 

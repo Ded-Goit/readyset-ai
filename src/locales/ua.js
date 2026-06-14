@@ -8,6 +8,13 @@ export const ua = {
     pilotButton: "Безкоштовний пілот →",
     howButton: "Як це працює",
 
+    nav: {
+  problem: "Проблема",
+  how: "Як це працює",
+  impact: "Результат",
+  pilot: "Пілот",
+},
+
   problem: {
     label: "Проблема",
 

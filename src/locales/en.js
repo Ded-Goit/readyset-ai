@@ -8,6 +8,13 @@ export const en = {
       pilotButton: "Request free pilot →",
       howButton: "See how it works",
 
+      nav: {
+  problem: "Problem",
+  how: "How it works",
+  impact: "Impact",
+  pilot: "Pilot",
+},
+
   problem: {
     label: "The problem",
 

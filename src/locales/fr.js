@@ -7,6 +7,13 @@ export const fr = {
     heroDescription: "ReadySet.AI est un système d'onboarding IA pour les équipes commerciales - des premières semaines chaotiques à une préparation mesurable. Montée en puissance plus rapide. Moins de charge pour le mentor.",
     pilotButton: "Essai gratuit →",
     howButton: "Voir comment ça marche",
+    
+    nav: {
+  problem: "Problème",
+  how: "Fonctionnement",
+  impact: "Impact",
+  pilot: "Pilote",
+},
 
   problem: {
     label: "Le problème",
