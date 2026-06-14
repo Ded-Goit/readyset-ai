@@ -1,36 +1,113 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ReadySet.
 
-## Getting Started
+```md
+🇬🇧 English | [🇺🇦 Українська](README.ua.md) | [🇫🇷 Français](README.fr.md)
 
-First, run the development server:
+AI-powered onboarding platform for B2B sales teams.
 
-```bash
+ReadySet.AI helps companies reduce onboarding time, improve training quality, and provide instant access to internal knowledge through AI-driven learning paths and role-play simulations.
+
+---
+
+## 🚀 Features
+
+- 🌍 Multi-language support (English / Ukrainian / French)
+- 🤖 AI onboarding roadmap (30 / 60 / 90 days)
+- 🎯 Training Arena role-play simulations
+- 📚 Internal knowledge assistant
+- 📊 Mentor risk signals dashboard
+- ✨ Scroll animations with Framer Motion
+- 📱 Fully responsive design
+- ⚡ Built with Next.js App Router
+
+---
+
+## 🛠 Tech Stack
+
+- Next.js 16
+- React 19
+- Framer Motion
+- Context API
+- CSS Modules
+- JavaScript (ES6+)
+
+---
+
+## 📂 Project Structure
+
+```text
+src/
+│
+├── app/
+│   └── page.jsx
+│
+├── components/
+│   ├── layout/
+│   │   ├── Header
+│   │   └── Footer
+│   │
+│   ├── sections/
+│   │   ├── Hero
+│   │   ├── Problem
+│   │   ├── HowItWorks
+│   │   ├── Impact
+│   │   └── Pilot
+│   │
+│   ├── shared/
+│   │   └── FadeIn
+│   │
+│   └── ui/
+│       ├── Logo
+│       └── LanguageSwitcher
+│
+├── context/
+│   └── LanguageContext.jsx
+│
+├── hooks/
+│   ├── useLanguage.js
+│   └── useTranslation.js
+│
+├── locales/
+│   ├── en.js
+│   ├── ua.js
+│   ├── fr.js
+│   └── index.js
+│
+└── styles/
+🌍 Language Switching
+
+The application supports:
+
+English (EN)
+Ukrainian (UA)
+French (FR)
+
+Language preference is stored in LocalStorage and restored automatically.
+
+📦 Installation
+git clone https://github.com/yourusername/readyset-ai.git
+
+cd readyset-ai
+
+npm install
+💻 Development
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+http://localhost:3000
+🏗 Production Build
+npm run build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+npm run start
+🏆 Project Background
 
-## Learn More
+Created during:
 
-To learn more about Next.js, take a look at the following resources:
+GoIT AI Solutions Hackathon 2026
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+🥇 1st Place Winner
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+📄 License
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT
