@@ -1,10 +1,9 @@
 "use client";
 
 import { useTranslation } from "@/hooks/useTranslation";
-
 import StepCard from "./StepCard";
-
 import styles from "./HowItWorks.module.css";
+import FadeIn from "@/components/shared/FadeIn";
 
 export default function HowItWorks() {
   const t = useTranslation();
@@ -31,13 +30,15 @@ export default function HowItWorks() {
         </p>
 
         <div className={styles.steps}>
-          {t.how.steps.map(step => (
-            <StepCard
-              key={step.id}
-              {...step}
-            />
-          ))}
-        </div>
+         {t.how.steps.map((step, index) => (
+           <FadeIn
+         key={step.id}
+             delay={index * 0.1}
+         >
+             <StepCard {...step} />
+         </FadeIn>
+         ))}        
+         </div>
       </div>
     </section>
   );

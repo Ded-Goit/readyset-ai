@@ -1,29 +1,31 @@
 "use client";
 
-import Link from "next/link";
 import { motion } from "framer-motion";
 
-export default function Logo() {
+export default function FadeIn({
+  children,
+  delay = 0,
+}) {
   return (
     <motion.div
       initial={{
         opacity: 0,
-        x: -20,
+        y: 30,
       }}
-      animate={{
+      whileInView={{
         opacity: 1,
-        x: 0,
+        y: 0,
+      }}
+      viewport={{
+        once: true,
+        amount: 0.15,
       }}
       transition={{
         duration: 0.5,
+        delay,
       }}
     >
-      <Link href="/">
-        <strong>
-          ReadySet
-          <span>.AI</span>
-        </strong>
-      </Link>
+      {children}
     </motion.div>
   );
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { motion } from "framer-motion";
 
 import styles from "./Header.module.css";
 
@@ -15,17 +15,23 @@ export default function Header() {
 
   const t = translations[lang];
 
-  const [isOpen, setIsOpen] =
-    useState(false);
-
-  const closeMenu = () =>
-    setIsOpen(false);
-
   return (
-    <header className={styles.header}>
+    <motion.header
+      className={styles.header}
+      initial={{
+        y: -80,
+        opacity: 0,
+      }}
+      animate={{
+        y: 0,
+        opacity: 1,
+      }}
+      transition={{
+        duration: 0.6,
+      }}
+    >
       <Logo />
 
-      {/* Desktop */}
       <nav className={styles.nav}>
         <a href="#problem">
           {t.problem}
@@ -38,58 +44,9 @@ export default function Header() {
         <a href="#impact">
           {t.impact}
         </a>
-
-        <a href="#pilot">
-          {t.pilot}
-        </a>
       </nav>
 
-      <div className={styles.actions}>
-        <LanguageSwitcher />
-
-        <button
-          className={styles.burger}
-          onClick={() =>
-            setIsOpen(!isOpen)
-          }
-          aria-label="Menu"
-        >
-          ☰
-        </button>
-      </div>
-
-      {/* Mobile menu */}
-      {isOpen && (
-        <div className={styles.mobileMenu}>
-          <a
-            href="#problem"
-            onClick={closeMenu}
-          >
-            {t.problem}
-          </a>
-
-          <a
-            href="#how"
-            onClick={closeMenu}
-          >
-            {t.how}
-          </a>
-
-          <a
-            href="#impact"
-            onClick={closeMenu}
-          >
-            {t.impact}
-          </a>
-
-          <a
-            href="#pilot"
-            onClick={closeMenu}
-          >
-            {t.pilot}
-          </a>
-        </div>
-      )}
-    </header>
+      <LanguageSwitcher />
+    </motion.header>
   );
 }

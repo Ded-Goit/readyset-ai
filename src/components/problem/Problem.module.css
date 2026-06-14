@@ -9,31 +9,22 @@
 
 .label {
   display: inline-block;
-
   margin-bottom: 20px;
-
   color: var(--orange);
-
   font-size: 12px;
-
   text-transform: uppercase;
-
   letter-spacing: 2px;
-
   font-weight: 600;
 }
 
 .title {
   margin-bottom: 24px;
-
   font-size: clamp(
     2rem,
     5vw,
     3rem
   );
-
   line-height: 1.15;
-
   font-weight: 700;
 }
 
@@ -43,65 +34,51 @@
 
 .subtitle {
   max-width: 650px;
-
   margin-bottom: 48px;
-
   color: var(--text-muted);
-
   line-height: 1.8;
 }
 
 .grid {
   display: grid;
-
   grid-template-columns: 1fr;
-
   gap: 1px;
-
   border-radius: 16px;
-
   overflow: hidden;
-
   background: var(--border);
 }
 
 .card {
   background: var(--bg2);
-
   padding: 32px;
-
-  transition: 0.3s;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    background 0.3s ease;
 }
 
 .card:hover {
   background: var(--bg3);
+  transform: translateY(-6px);
 }
 
 .number {
   margin-bottom: 16px;
-
   color: var(--orange);
-
   opacity: 0.5;
-
   font-size: 12px;
-
   font-weight: 600;
 }
 
 .cardTitle {
   margin-bottom: 12px;
-
   font-size: 18px;
-
   line-height: 1.4;
 }
 
 .cardDescription {
   color: var(--text-muted);
-
   line-height: 1.8;
-
   font-size: 15px;
 }
 

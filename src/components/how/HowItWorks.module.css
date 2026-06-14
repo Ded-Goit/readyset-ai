@@ -41,18 +41,17 @@
   display: flex;
   gap: 24px;
   padding: 32px;
-
   background: var(--bg2);
-
   border: 1px solid var(--border);
-
   border-radius: 16px;
-
-  transition: 0.3s;
+ transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
 }
 
 .step:hover {
   background: var(--bg3);
+  transform: translateY(-6px);
 }
 
 .featured {
@@ -62,19 +61,13 @@
 .number {
   width: 48px;
   height: 48px;
-
   flex-shrink: 0;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   border-radius: 12px;
-
   background: rgba(240, 160, 48, 0.1);
-
   color: var(--orange);
-
   font-weight: 700;
 }
 
