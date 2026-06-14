@@ -1,13 +1,13 @@
-# ReadySet.
+# ReadySet.AI
 
-```md
-🇬🇧 English | [🇺🇦 Українська](./README.ua.md) | [🇫🇷 Français](./README.fr.md)
+[🇬🇧 English](./README.md) | [🇺🇦 Українська](./README.ua.md) | [🇫🇷 Français](./README.fr.md)
 
 AI-powered onboarding platform for B2B sales teams.
 
 ReadySet.AI helps companies reduce onboarding time, improve training quality, and provide instant access to internal knowledge through AI-driven learning paths and role-play simulations.
 
 ---
+
 
 ## 🚀 Features
 
