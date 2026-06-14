@@ -44,6 +44,10 @@ export default function Header() {
         <a href="#impact">
           {t.impact}
         </a>
+
+        <a href="#pilot">
+          {t.pilot}
+        </a>
       </nav>
 
       <LanguageSwitcher />

@@ -1,18 +1,29 @@
+.switcher {
+  display: flex;
+  gap: 4px;
+  padding: 4px;
+  border-radius: 8px;
+  background: rgba(240, 160, 48, 0.08);
+}
+
 .button {
   padding: 6px 12px;
   border: none;
-  background: transparent;
-  color: var(--text-dim);
-  cursor: pointer;
   border-radius: 6px;
-  transition: all 0.2s ease;
+  background: transparent;
+  color: var(--text-muted);  
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
 }
 
 .button:hover {
   color: var(--orange);
 }
 
-.active {
+.button.active {
   background: var(--orange);
-  color: #0f0a04;
+  color: var(--bg);
+  
 }

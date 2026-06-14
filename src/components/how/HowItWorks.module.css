@@ -51,11 +51,8 @@
 
 .step:hover {
   background: var(--bg3);
-  transform: translateY(-6px);
-}
-
-.featured {
   border-color: var(--orange);
+  transform: translateY(-6px);
 }
 
 .number {
