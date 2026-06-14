@@ -97,4 +97,55 @@ export const en = {
     },
   ],
 },
+
+impact: {
+  label: "Impact",
+
+  titleStart: "What actually",
+  highlight: "changes",
+
+  subtitle: "Measured. Not promised.",
+
+  metrics: [
+    {
+      value: "↓50%",
+      title: "Time-to-productivity",
+      description:
+        "From 6 weeks to 3. The rep closes their first qualified deal faster.",
+    },
+
+    {
+      value: "↓70%",
+      title: "Mentor load",
+      description:
+        "Senior team hours freed from repetitive questions and manual checks.",
+    },
+
+    {
+      value: "↓Risk",
+      title: "Client-facing errors",
+      description:
+        "Training Arena handles practice before the first real client.",
+    },
+  ],
+
+  roiText:
+    "Team of 10 reps · 40 mentor hours per new hire · $30/hr =",
+
+  roiValue:
+    "$12,000 in hidden onboarding costs per year.",
+
+  roiResult:
+    "ReadySet.AI reduces that by 70% →",
+
+  roiSaved:
+    "$8,400 saved. Per team. Per year.",
+
+  quote:
+    "Strong B2B onboarding AI with good SaaS realism. Looks like a ready MVP that could go to production.",
+
+  source:
+    "— GoIT AI Solutions Hackathon 2026 · Jury feedback · 1st place",
+},
+
 };

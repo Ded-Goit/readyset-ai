@@ -4,6 +4,7 @@ import BackgroundEffects from "@/components/layout/BackgroundEffects";
 import Hero from "@/components/hero/Hero";
 import ProblemSection from "@/components/problem/ProblemSection";
 import HowItWorks from "@/components/how/HowItWorks";
+import ImpactSection from "@/components/impact/ImpactSection";
 
 export default function HomePage() {
   return (
@@ -16,7 +17,7 @@ export default function HomePage() {
          <Hero />
          <ProblemSection />
          <HowItWorks />
-        {/* Impact */}
+         <ImpactSection />
         {/* Pilot */}
       </main>
 

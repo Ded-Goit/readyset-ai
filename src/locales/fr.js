@@ -98,4 +98,54 @@ export const fr = {
     },
   ],
 },
+impact: {
+  label: "Résultats",
+
+  titleStart: "Ce qui",
+  highlight: "change vraiment",
+
+  subtitle: "Mesuré. Pas promis.",
+
+  metrics: [
+    {
+      value: "↓50%",
+      title: "Temps avant productivité",
+      description:
+        "De 6 à 3 semaines. Le commercial conclut sa première affaire qualifiée plus vite - avec moins d'erreurs coûteuses.",
+    },
+
+    {
+      value: "↓70%",
+      title: "Charge du mentor",
+      description:
+        "Les heures de l'équipe senior libérées des questions répétitives - de retour à ce pour quoi ils sont payés.",
+    },
+
+    {
+      value: "↓Risk",
+      title: "Erreurs face aux clients",
+      description:
+        "Le premier appel client n'est plus une session de formation. Training Arena gère la pratique. Vous gérez l'affaire.",
+    },
+  ],
+
+  roiText:
+    "Équipe de 10 commerciaux · 40h mentor par nouvel arrivant · 30$/h =",
+
+  roiValue:
+    "$12,000 in hidden onboarding costs per year.",
+
+  roiResult:
+    "ReadySet.AI réduit cela de 70% →",
+
+  roiSaved:
+    "$8,400 saved. Per team. Per year.",
+
+  quote:
+    "Un puissant AI d'onboarding B2B avec un réalisme SaaS remarquable.",
+
+  source:
+    "— GoIT AI Solutions Hackathon 2026 · Retour du jury · 1re place",
+},
+
 };
