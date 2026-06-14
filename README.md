@@ -1,7 +1,7 @@
 # ReadySet.
 
 ```md
-🇬🇧 English | [🇺🇦 Українська](README.ua.md) | [🇫🇷 Français](README.fr.md)
+🇬🇧 English | [🇺🇦 Українська](./README.ua.md) | [🇫🇷 Français](./README.fr.md)
 
 AI-powered onboarding platform for B2B sales teams.
 
