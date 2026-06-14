@@ -52,4 +52,50 @@ export const fr = {
       },
     ],
   },
+    
+  how: {
+  label: "Comment ça marche",
+
+  titleStart: "Du premier jour à la",
+  highlight: "préparation",
+
+  subtitle:
+    "Quatre niveaux qui fonctionnent ensemble - pas quatre outils séparés.",
+
+  steps: [
+    {
+      id: "01",
+      title:
+        "Plan d'onboarding AI personnalisé",
+      description:
+        "Le commercial passe une courte évaluation le premier jour. L'IA construit un parcours 30/60/90 jours adapté à son rôle - généré à partir des documents de votre entreprise.",
+    },
+
+    {
+      id: "02",
+      featured: true,
+      title:
+        "Training Arena - pratiquer avant le vrai client",
+      description:
+        "L'IA simule des scénarios réels : objections difficiles, cold calls, négociations tarifaires. Le commercial s'entraîne jusqu'à être vraiment prêt - pas juste jusqu'à avoir coché une case.",
+    },
+
+    {
+      id: "03",
+      title:
+        "Assistant IA qui connaît votre entreprise",
+      description:
+        `Posez la question "Comment gérons-nous les achats d'entreprise?" et obtenez une réponse tirée de vos documents internes réels, avec un lien vers la source exacte. Pas d'IA générique. Le savoir-faire de votre entreprise, instantanément accessible.`,
+
+    },
+
+    {
+      id: "04",
+      title:
+        "Signaux de risque pour les mentors - preuves, pas suppositions",
+      description:
+        "Chaque semaine, le mentor reçoit un résumé : où le commercial est bloqué, quels documents il a ouverts cinq fois, quels scénarios il a échoués. Actions en un clic - appel, Slack, ignorer.",
+    },
+  ],
+},
 };

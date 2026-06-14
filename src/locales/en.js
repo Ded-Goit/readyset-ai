@@ -51,6 +51,50 @@ export const en = {
         description:
           "By the time you realize someone is struggling, it's week 6. Pipeline is damaged. The rep might already be mentally out the door.",
       },
-    ],
+    ],    
   },
+
+  how: {
+  label: "How it works",
+
+  titleStart: "From day one to",
+  highlight: "ready",
+
+  subtitle:
+    "Four layers that work together - not four separate tools.",
+
+  steps: [
+    {
+      id: "01",
+      title: "Personalized AI onboarding plan",
+      description:
+        "The rep takes a short assessment on day one. AI builds a 30/60/90-day path tailored to their role and skill gaps — generated from your company's own documents, not generic templates.",
+    },
+
+    {
+      id: "02",
+      featured: true,
+      title:
+        "Training Arena - practice before the real thing",
+      description:
+        "AI simulates real sales scenarios: tough objections, cold call openers, pricing conversations, competitive questions. The rep practices until they're genuinely ready - not until they've read the playbook and checked a box.",
+    },
+
+    {
+      id: "03",
+      title:
+        "AI assistant that knows your company",
+      description:
+        'Ask "How do we handle enterprise procurement?" and get an answer sourced from your actual internal documents — with a link to the exact source. Not generic AI. Your company knowledge, made instantly findable.',
+    },
+
+    {
+      id: "04",
+      title:
+        "Risk signals for mentors - with evidence, not guesses",
+      description:
+        "Every week, the mentor gets a digest: where the rep is stuck, which documents they've opened five times, which Training Arena scenarios they failed. One-click actions — schedule a call, send a Slack, mark as not relevant.",
+    },
+  ],
+},
 };

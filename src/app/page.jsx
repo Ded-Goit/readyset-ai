@@ -3,6 +3,7 @@ import Footer from "@/components/layout/Footer";
 import BackgroundEffects from "@/components/layout/BackgroundEffects";
 import Hero from "@/components/hero/Hero";
 import ProblemSection from "@/components/problem/ProblemSection";
+import HowItWorks from "@/components/how/HowItWorks";
 
 export default function HomePage() {
   return (
@@ -12,9 +13,9 @@ export default function HomePage() {
       <Header />
 
       <main>
-          <Hero />
+         <Hero />
          <ProblemSection />
-        {/* HowItWorks */}
+         <HowItWorks />
         {/* Impact */}
         {/* Pilot */}
       </main>
