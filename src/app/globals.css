@@ -16,8 +16,8 @@ body {
   background: var(--bg);
   color: var(--text);
   overflow-x: hidden;
-
-  font-family: sans-serif;
+ 
+  font-family: var(--font-sora);
 }
 
 a {

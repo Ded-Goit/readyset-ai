@@ -3,8 +3,8 @@ export const en = {
       heroTitle1: "Your new sales rep",
       heroTitle2: "shouldn't need",
       heroTitleHighlight: "6 weeks",
-      heroTitle3: "to become productive.",
-      heroDescription: "ReadySet.AI is an AI onboarding system for sales teams — from chaotic first weeks to measurable readiness. Faster ramp-up. Less mentor load. No surprises.",
+      heroTitle3: "to become productive",
+      heroDescription: "ReadySet.AI is an AI onboarding system for sales teams - from chaotic first weeks to measurable readiness. Faster ramp-up. Less mentor load. No surprises.",
       pilotButton: "Request free pilot →",
       howButton: "See how it works",
 

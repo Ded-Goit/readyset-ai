@@ -1,34 +1,92 @@
 .header {
   position: fixed;
-
   top: 0;
-
+  left: 0;
   width: 100%;
-
-  z-index: 100;
-
-  padding: 16px;
-
+  z-index: 1000;
   display: flex;
-
-  justify-content: space-between;
-
   align-items: center;
-
+  justify-content: space-between;
+  padding: 16px 20px;
   backdrop-filter: blur(16px);
-
   background: rgba(15, 10, 4, 0.9);
-
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid
+    var(--border);
 }
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Desktop nav */
 
 .nav {
   display: none;
 }
 
+.nav a {
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.nav a:hover {
+  color: var(--orange);
+}
+
+/* Burger */
+
+.burger {
+  background: transparent;
+  border: none;
+  color: var(--text);
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Mobile menu */
+
+.mobileMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 24px;
+  background: var(--bg);
+  border-bottom: 1px solid
+    var(--border);
+}
+
+.mobileMenu a {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.mobileMenu a:hover {
+  color: var(--orange);
+}
+
+/* Desktop */
+
 @media (min-width: 768px) {
+  .burger {
+    display: none;
+  }
+
+  .mobileMenu {
+    display: none;
+  }
+
   .nav {
     display: flex;
+
     gap: 32px;
   }
 }

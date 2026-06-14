@@ -3,8 +3,8 @@ export const fr = {
     heroTitle1: "Votre nouveau commercial",
     heroTitle2: "ne devrait pas avoir besoin de",
     heroTitleHighlight: "6 semaines",
-    heroTitle3: "pour devenir productif.",
-    heroDescription: "ReadySet.AI est un système d'onboarding IA.",
+    heroTitle3: "pour devenir productif",
+    heroDescription: "ReadySet.AI est un système d'onboarding IA pour les équipes commerciales - des premières semaines chaotiques à une préparation mesurable. Montée en puissance plus rapide. Moins de charge pour le mentor.",
     pilotButton: "Essai gratuit →",
     howButton: "Voir comment ça marche",
 
