@@ -2,6 +2,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import BackgroundEffects from "@/components/layout/BackgroundEffects";
 import Hero from "@/components/hero/Hero";
+import ProblemSection from "@/components/problem/ProblemSection";
 
 export default function HomePage() {
   return (
@@ -12,8 +13,7 @@ export default function HomePage() {
 
       <main>
           <Hero />
-
-        {/* Problem */}
+         <ProblemSection />
         {/* HowItWorks */}
         {/* Impact */}
         {/* Pilot */}

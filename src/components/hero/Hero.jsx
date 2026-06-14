@@ -1,14 +1,17 @@
 "use client";
 
 import styles from "./Hero.module.css";
-
-import { useLanguage } from "@/hooks/useLanguage";
-import { translations } from "@/data/translations";
+// Імпортуємо наш кастомний безпечний хук замість прямого файлу перекладів
+import { useTranslation } from "@/hooks/useTranslation";
 
 export default function Hero() {
-  const { lang } = useLanguage();
+  // Використовуємо хук, який захищає від помилок гідратації
+  const t = useTranslation();
 
-  const t = translations[lang];
+  // Захист на випадок, якщо об'єкт перекладів ще не готовий
+  if (!t) {
+    return null;
+  }
 
   return (
     <section className={styles.hero}>
@@ -19,16 +22,9 @@ export default function Hero() {
       <h1 className={styles.title}>
         {t.heroTitle1}
         <br />
-
         {t.heroTitle2}
-
-        <span>
-          {" "}
-          {t.heroTitleHighlight}{" "}
-        </span>
-
+        <span> {" "} {t.heroTitleHighlight} {" "} </span>
         <br />
-
         {t.heroTitle3}
       </h1>
 
@@ -37,17 +33,11 @@ export default function Hero() {
       </p>
 
       <div className={styles.actions}>
-        <a
-          href="#pilot"
-          className={styles.primaryBtn}
-        >
+        <a href="#pilot" className={styles.primaryBtn}>
           {t.pilotButton}
         </a>
 
-        <a
-          href="#how"
-          className={styles.secondaryBtn}
-        >
+        <a href="#how" className={styles.secondaryBtn}>
           {t.howButton}
         </a>
       </div>
