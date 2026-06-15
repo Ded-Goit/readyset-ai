@@ -1,6 +1,7 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 import styles from "./Header.module.css";
 
@@ -12,9 +13,16 @@ import { useTranslation } from "@/hooks/useTranslation";
 export default function Header() {
   const t = useTranslation();
 
+  const [isOpen, setIsOpen] =
+    useState(false);
+
   if (!t) {
     return null;
   }
+
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
 
   return (
     <motion.header
@@ -33,6 +41,7 @@ export default function Header() {
     >
       <Logo />
 
+      {/* Desktop Navigation */}
       <nav className={styles.nav}>
         <a href="#problem">
           {t.nav.problem}
@@ -51,7 +60,74 @@ export default function Header() {
         </a>
       </nav>
 
-      <LanguageSwitcher />
+      {/* Right side */}
+      <div className={styles.actions}>
+        <LanguageSwitcher />
+
+        <button
+          type="button"
+          className={styles.burger}
+          onClick={() =>
+            setIsOpen(prev => !prev)
+          }
+          aria-label="Open menu"
+          aria-expanded={isOpen}
+        >
+          {isOpen ? "✕" : "☰"}
+        </button>
+      </div>
+
+      {/* Mobile Menu */}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            className={styles.mobileMenu}
+            initial={{
+              opacity: 0,
+              y: -10,
+            }}
+            animate={{
+              opacity: 1,
+              y: 0,
+            }}
+            exit={{
+              opacity: 0,
+              y: -10,
+            }}
+            transition={{
+              duration: 0.25,
+            }}
+          >
+            <a
+              href="#problem"
+              onClick={closeMenu}
+            >
+              {t.nav.problem}
+            </a>
+
+            <a
+              href="#how"
+              onClick={closeMenu}
+            >
+              {t.nav.how}
+            </a>
+
+            <a
+              href="#impact"
+              onClick={closeMenu}
+            >
+              {t.nav.impact}
+            </a>
+
+            <a
+              href="#pilot"
+              onClick={closeMenu}
+            >
+              {t.nav.pilot}
+            </a>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </motion.header>
   );
 }

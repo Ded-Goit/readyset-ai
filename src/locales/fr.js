@@ -182,4 +182,8 @@ pilot: {
     "Pas de présentation. Juste un appel de 20 minutes pour voir si ça convient.",
 },
 
+socials: {
+  title: "Suivez notre aventure",
+},
+
 };

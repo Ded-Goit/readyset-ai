@@ -41,8 +41,8 @@ export default function Logo() {
       <Image
         src="/logo.svg"
         alt="ReadySet AI"
-        width={40}
-        height={40}
+        width={32}
+        height={32}
         priority
       />
 

@@ -182,4 +182,8 @@ pilot: {
     "No pitch deck. Just a 20-minute call to see if it fits.",
 },
 
+socials: {
+  title: "Follow Our Journey",
+},
+
 };
