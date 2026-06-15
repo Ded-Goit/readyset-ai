@@ -2,17 +2,25 @@
   position: fixed;
   top: 0;
   left: 0;
+
   width: 100%;
+
   z-index: 1000;
+
   backdrop-filter: blur(18px);
+
   background: rgba(15, 10, 4, 0.75);
+
   border-bottom: 1px solid var(--border);
 }
 
 .inner {
   max-width: var(--container);
+
   margin: 0 auto;
+
   padding: 16px 20px;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -24,7 +32,7 @@
   gap: 12px;
 }
 
-/* Desktop nav */
+/* Navigation */
 
 .nav {
   display: none;
@@ -32,9 +40,12 @@
 
 .nav a {
   position: relative;
+
   text-decoration: none;
+
   color: var(--text-muted);
-  transition: color 0.2s;
+
+  transition: color 0.2s ease;
 }
 
 .nav a:hover {
@@ -43,12 +54,17 @@
 
 .nav a::after {
   content: "";
+
   position: absolute;
+
   left: 0;
   bottom: -8px;
+
   width: 0;
   height: 2px;
+
   background: var(--orange);
+
   transition: width 0.25s ease;
 }
 
@@ -60,17 +76,27 @@
 
 .cta {
   display: none;
+
   padding: 10px 18px;
+
   border-radius: 10px;
+
   background: var(--orange);
+
   color: var(--bg-primary);
+
   font-weight: 700;
+
   text-decoration: none;
-  transition: 0.25s;
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
 }
 
 .cta:hover {
   background: var(--orange-lt);
+
   transform: translateY(-1px);
 }
 
@@ -78,42 +104,60 @@
 
 .burger {
   display: flex;
+
   align-items: center;
   justify-content: center;
+
   background: transparent;
+
   border: none;
+
   color: var(--text);
+
   cursor: pointer;
 }
 
-/* Mobile menu */
+/* Mobile Menu */
 
 .mobileMenu {
   position: fixed;
+
   top: 72px;
   left: 0;
   right: 0;
+
   padding: 32px 24px;
+
   display: flex;
   flex-direction: column;
+
   gap: 24px;
+
   background: var(--bg-primary);
+
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
+
+  backdrop-filter: blur(20px);
 }
 
 .mobileMenu a {
   text-decoration: none;
+
   color: var(--text);
+
   font-size: 18px;
+
   font-weight: 600;
+
+  transition: color 0.2s ease;
 }
 
 .mobileMenu a:hover {
   color: var(--orange);
 }
 
-/* Desktop */
+/* Tablet */
 
 @media (min-width: 768px) {
   .burger {
@@ -126,12 +170,26 @@
 
   .nav {
     display: flex;
+    gap: 20px;
+  }
+}
+
+/* Desktop */
+
+@media (min-width: 1024px) {
+  .nav {
     gap: 32px;
   }
 
   .cta {
     display: inline-flex;
+
     align-items: center;
     justify-content: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .nav a {
+    font-size: 14px;
   }
 }
