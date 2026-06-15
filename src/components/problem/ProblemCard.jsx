@@ -8,7 +8,7 @@ export default function ProblemCard({
   return (
     <article className={styles.card}>
       <div className={styles.number}>
-        {id} ——
+        {id} 
       </div>
 
       <h3 className={styles.cardTitle}>
