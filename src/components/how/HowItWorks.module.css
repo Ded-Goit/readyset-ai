@@ -41,7 +41,7 @@
   display: flex;
   gap: 24px;
   padding: 32px;
-  background: var(--bg2);
+  background: var(--bg-secondary);
   border: 1px solid var(--border);
   border-radius: 16px;
  transition:
@@ -50,7 +50,7 @@
 }
 
 .step:hover {
-  background: var(--bg3);
+  background: var(--bg-elevated);
   border-color: var(--orange);
   transform: translateY(-6px);
 }

@@ -24,6 +24,6 @@
 
 .button.active {
   background: var(--orange);
-  color: var(--bg);
+  color: var(--bg-primary);
   
 }

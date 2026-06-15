@@ -10,9 +10,7 @@
 .label {
   display: inline-block;
   margin-bottom: 20px;
-
   color: var(--orange);
-
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -20,7 +18,6 @@
 
 .title {
   margin-bottom: 20px;
-
   font-size: clamp(2rem, 5vw, 3rem);
 }
 
@@ -30,103 +27,74 @@
 
 .subtitle {
   max-width: 600px;
-
   margin-bottom: 48px;
-
   color: var(--text-muted);
 }
 
 .metrics {
   display: grid;
-
   gap: 24px;
-
   grid-template-columns: 1fr;
 }
 
 .metric {
   padding: 32px;
-
   border-radius: 16px;
-
-  background: var(--bg2);
-
+  background: var(--bg-secondary);
   border: 1px solid var(--border);
 }
 
 .metricValue {
   display: block;
-
   margin-bottom: 16px;
-
   color: var(--orange);
-
   font-size: 48px;
-
   font-weight: 800;
 }
 
 .metricTitle {
   margin-bottom: 12px;
-
   font-size: 20px;
 }
 
 .metricDescription {
   color: var(--text-muted);
-
   line-height: 1.8;
 }
 
 .roi {
   margin-top: 48px;
-
   padding: 32px;
-
   text-align: center;
-
   border-radius: 16px;
-
-  background: var(--bg2);
-
+  background: var(--bg-secondary);
   border: 1px solid var(--border);
 }
 
 .roi strong {
   display: block;
-
   margin: 12px 0;
-
   font-size: 20px;
 }
 
 .roi span {
   display: block;
-
   margin-top: 12px;
-
   color: var(--orange);
-
   font-weight: 700;
 }
 
 .quote {
   margin-top: 48px;
-
   padding: 32px;
-
   border-left: 4px solid var(--orange);
-
-  background: var(--bg2);
-
+  background: var(--bg-secondary);
   border-radius: 0 16px 16px 0;
 }
 
 .quote p {
   margin-bottom: 12px;
-
   font-style: italic;
-
   line-height: 1.8;
 }
 

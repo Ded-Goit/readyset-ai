@@ -57,7 +57,7 @@
   flex-direction: column;
   gap: 20px;
   padding: 24px;
-  background: var(--bg);
+  background: var(--bg-primary);
   border-bottom: 1px solid
     var(--border);
 }
