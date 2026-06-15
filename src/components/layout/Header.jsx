@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Menu, X } from "lucide-react";
 
 import styles from "./Header.module.css";
 
@@ -12,72 +13,59 @@ import { useTranslation } from "@/hooks/useTranslation";
 
 export default function Header() {
   const t = useTranslation();
+  const [isOpen, setIsOpen] = useState(false);
 
-  const [isOpen, setIsOpen] =
-    useState(false);
+  if (!t) return null;
 
-  if (!t) {
-    return null;
-  }
-
-  const closeMenu = () => {
-    setIsOpen(false);
-  };
+  const closeMenu = () => setIsOpen(false);
 
   return (
     <motion.header
       className={styles.header}
-      initial={{
-        y: -80,
-        opacity: 0,
-      }}
-      animate={{
-        y: 0,
-        opacity: 1,
-      }}
-      transition={{
-        duration: 0.6,
-      }}
+      initial={{ y: -80, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.6 }}
     >
-      <Logo />
+      <div className={styles.inner}>
+        <Logo />
 
-      {/* Desktop Navigation */}
-      <nav className={styles.nav}>
-        <a href="#problem">
-          {t.nav.problem}
-        </a>
+        <nav className={styles.nav}>
+          <a href="#problem">{t.nav.problem}</a>
+          <a href="#how">{t.nav.how}</a>
+          <a href="#impact">{t.nav.impact}</a>
+          <a href="#pilot">{t.nav.pilot}</a>
+        </nav>
 
-        <a href="#how">
-          {t.nav.how}
-        </a>
+        <div className={styles.actions}>
+          <LanguageSwitcher />
 
-        <a href="#impact">
-          {t.nav.impact}
-        </a>
+          <a
+            href="#pilot"
+            className={styles.cta}
+          >
+            {t.pilotButton}
+          </a>
 
-        <a href="#pilot">
-          {t.nav.pilot}
-        </a>
-      </nav>
-
-      {/* Right side */}
-      <div className={styles.actions}>
-        <LanguageSwitcher />
-
-        <button
-          type="button"
-          className={styles.burger}
-          onClick={() =>
-            setIsOpen(prev => !prev)
-          }
-          aria-label="Open menu"
-          aria-expanded={isOpen}
-        >
-          {isOpen ? "✕" : "☰"}
-        </button>
+          <button
+            type="button"
+            className={styles.burger}
+            onClick={() => setIsOpen(prev => !prev)}
+            aria-label={
+              isOpen
+                ? "Close menu"
+                : "Open menu"
+            }
+            aria-expanded={isOpen}
+          >
+            {isOpen ? (
+              <X size={20} />
+            ) : (
+              <Menu size={20} />
+            )}
+          </button>
+        </div>
       </div>
 
-      {/* Mobile Menu */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
