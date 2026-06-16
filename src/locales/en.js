@@ -158,28 +158,29 @@ impact: {
 pilot: {
   tag: "Free pilot program",
 
-  titleStart: "We're looking for our",
+  titleStart: "Become our",
 
   titleHighlight:
     "first pilot company.",
 
   description:
-    "If you lead a sales team of 5–50 people and onboarding feels broken - let's fix it together. 30 days. No cost. Real metrics you can take to your leadership.",
+    "If you lead a sales team of 5–50 people and onboarding feels broken, let's fix it together. 30 days. No cost. Real metrics you can show to leadership.",
 
   perks: [
-    "Full setup for your roles & documents",
+    "Full setup using your documents & sales process",
     "30-day pilot at no cost",
-    "Real ROI report at the end",
+    "ROI and onboarding insights report",
   ],
 
   placeholder: "your@email.com",
 
-  button: "Get started →",
+  button: "Apply for pilot →",
 
-  success: "✓ We will be in touch!",
+  success:
+    "✓ Thanks! We'll be in touch soon.",
 
   note:
-    "No pitch deck. Just a 20-minute call to see if it fits.",
+    "No sales pitch. Just a 20-minute conversation to see if it's a fit.",
 },
 
 socials: {

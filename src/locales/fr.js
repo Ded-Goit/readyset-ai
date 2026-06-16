@@ -158,28 +158,29 @@ impact: {
 pilot: {
   tag: "Programme pilote gratuit",
 
-  titleStart: "Nous recherchons notre",
+  titleStart: "Devenez notre",
 
   titleHighlight:
     "première entreprise pilote.",
 
   description:
-    "Si vous dirigez une équipe commerciale de 5 à 50 personnes et que l'onboarding est défaillant - corrigeons-le ensemble. 30 jours. Sans frais. De vrais métriques pour votre direction.",
+    "Si vous dirigez une équipe commerciale de 5 à 50 personnes et que l'intégration de nouveaux collaborateurs vous semble inefficace, construisons une meilleure approche ensemble. 30 jours. Sans frais. Des résultats concrets à présenter à votre direction.",
 
   perks: [
-    "Configuration complète pour vos rôles et documents",
-    "Pilote de 30 jours sans frais",
-    "Vrai rapport ROI à la fin",
+    "Configuration complète basée sur vos documents et processus",
+    "Programme pilote gratuit pendant 30 jours",
+    "Rapport ROI et recommandations à la fin du pilote",
   ],
 
-  placeholder: "your@email.com",
+  placeholder: "votre@email.com",
 
-  button: "Commencer →",
+  button: "Postuler au pilote →",
 
-  success: "✓ Nous vous contacterons !",
+  success:
+    "✓ Merci ! Nous vous contacterons très bientôt.",
 
   note:
-    "Pas de présentation. Juste un appel de 20 minutes pour voir si ça convient.",
+    "Aucun discours commercial. Juste un échange de 20 minutes pour vérifier si la solution correspond à vos besoins.",
 },
 
 socials: {
