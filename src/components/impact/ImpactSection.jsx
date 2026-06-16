@@ -34,47 +34,47 @@ export default function ImpactSection() {
         </FadeIn>
 
         <div className={styles.metrics}>
-          {t.impact.metrics.map(
-            (metric, index) => (
-              <FadeIn
-                key={metric.title}
-                delay={index * 0.15}
-              >
-                <MetricCard {...metric} />
-              </FadeIn>
-            )
-          )}
-        </div>
+  {t.impact.metrics.map(
+    (metric, index) => (
+      <FadeIn
+        key={metric.title}
+        delay={index * 0.15}
+      >
+        <MetricCard {...metric} />
+      </FadeIn>
+    )
+  )}
+</div>
 
-        <FadeIn delay={0.3}>
-          <div className={styles.roi}>
-            <p>
-              {t.impact.roiText}
-            </p>
+<FadeIn delay={0.3}>
+  <div className={styles.quote}>
+    <p>{t.impact.quote}</p>
 
-            <strong>
-              {t.impact.roiValue}
-            </strong>
+    <small>
+      {t.impact.source}
+    </small>
+  </div>
+</FadeIn>
 
-            <p>
-              {t.impact.roiResult}
-            </p>
+<FadeIn delay={0.4}>
+  <div className={styles.roi}>
+    <p>
+      {t.impact.roiText}
+    </p>
 
-            <span>
-              {t.impact.roiSaved}
-            </span>
-          </div>
-        </FadeIn>
+    <strong>
+      {t.impact.roiValue}
+    </strong>
 
-        <FadeIn delay={0.4}>
-          <div className={styles.quote}>
-            <p>{t.impact.quote}</p>
+    <p>
+      {t.impact.roiResult}
+    </p>
 
-            <small>
-              {t.impact.source}
-            </small>
-          </div>
-        </FadeIn>
+    <span>
+      {t.impact.roiSaved}
+    </span>
+  </div>
+</FadeIn>
       </div>
     </section>
   );
