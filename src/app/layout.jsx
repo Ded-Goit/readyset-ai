@@ -1,18 +1,14 @@
 import "./globals.css";
 
+import Script from "next/script";
 import { LanguageProvider } from "@/context/LanguageContext";
 
 export const metadata = {
-  metadataBase: new URL(
-    "https://readyset-ai.vercel.app"
-  ),
+  metadataBase: new URL("https://readyset-ai.vercel.app"),
 
   title: {
-    default:
-      "ReadySet.AI — AI Sales Onboarding Platform",
-
-    template:
-      "%s | ReadySet.AI",
+    default: "ReadySet.AI — AI Sales Onboarding Platform",
+    template: "%s | ReadySet.AI",
   },
 
   description:
@@ -57,8 +53,7 @@ export const metadata = {
     googleBot: {
       index: true,
       follow: true,
-      "max-image-preview":
-        "large",
+      "max-image-preview": "large",
       "max-snippet": -1,
       "max-video-preview": -1,
     },
@@ -79,14 +74,11 @@ export const metadata = {
 
     locale: "en_US",
 
-    url:
-      "https://readyset-ai.vercel.app",
+    url: "https://readyset-ai.vercel.app",
 
-    siteName:
-      "ReadySet.AI",
+    siteName: "ReadySet.AI",
 
-    title:
-      "ReadySet.AI — AI Sales Onboarding Platform",
+    title: "ReadySet.AI — AI Sales Onboarding Platform",
 
     description:
       "Reduce onboarding time by 50%, mentor workload by 70%, and help new sales reps become productive faster with AI.",
@@ -107,22 +99,15 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
 
-    title:
-      "ReadySet.AI — AI Sales Onboarding Platform",
+    title: "ReadySet.AI — AI Sales Onboarding Platform",
 
-    description:
-      "AI-powered onboarding for modern sales teams.",
+    description: "AI-powered onboarding for modern sales teams.",
 
-    images: [
-      "/og-image.png",
-    ],
+    images: ["/og-image.png"],
   },
 };
 
-import {
-  Sora,
-  JetBrains_Mono,
-} from "next/font/google";
+import { Sora, JetBrains_Mono } from "next/font/google";
 
 const sora = Sora({
   subsets: ["latin"],
@@ -135,35 +120,27 @@ const mono = JetBrains_Mono({
 });
 
 const structuredData = {
-  "@context":
-    "https://schema.org",
+  "@context": "https://schema.org",
 
-  "@type":
-    "SoftwareApplication",
+  "@type": "SoftwareApplication",
 
-  name:
-    "ReadySet.AI",
+  name: "ReadySet.AI",
 
-  applicationCategory:
-    "BusinessApplication",
+  applicationCategory: "BusinessApplication",
 
-  operatingSystem:
-    "Web",
+  operatingSystem: "Web",
 
-  url:
-    "https://readyset-ai.vercel.app",
+  url: "https://readyset-ai.vercel.app",
 
   description:
     "AI-powered onboarding platform for sales teams with personalized onboarding plans, sales simulations, company knowledge search, and mentor insights.",
 
   offers: {
-    "@type":
-      "Offer",
+    "@type": "Offer",
 
     price: "0",
 
-    priceCurrency:
-      "USD",
+    priceCurrency: "USD",
   },
 
   featureList: [
@@ -178,15 +155,39 @@ const structuredData = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <Script id="google-tag-manager" strategy="beforeInteractive">
+          {`
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;
+            f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-5R2DW5DM');
+          `}
+        </Script>
+      </head>
+
       <body className={`${sora.variable} ${mono.variable}`}>
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-5R2DW5DM"
+            height="0"
+            width="0"
+            style={{
+              display: "none",
+              visibility: "hidden",
+            }}
+          />
+        </noscript>
+
         <script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify(
-      structuredData
-    ),
-  }}
-/>
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(structuredData),
+          }}
+        />
+
         <LanguageProvider>{children}</LanguageProvider>
       </body>
     </html>
