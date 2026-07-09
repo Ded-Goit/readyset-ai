@@ -1,19 +1,20 @@
 export const en = {
-      heroBadge: "🏆 GoIT AI Hackathon 2026 — 1st place",
-      heroTitle1: "Your new sales rep",
-      heroTitle2: "shouldn't need",
-      heroTitleHighlight: "6 weeks",
-      heroTitle3: "to become productive",
-      heroDescription: "ReadySet.AI is an AI onboarding system for sales teams - from chaotic first weeks to measurable readiness. Faster ramp-up. Less mentor load. No surprises.",
-      pilotButton: "Request free pilot →",
-      howButton: "See how it works",
+  heroBadge: "🏆 GoIT AI Hackathon 2026 — 1st place",
+  heroTitle1: "Your new sales rep",
+  heroTitle2: "shouldn't need",
+  heroTitleHighlight: "6 weeks",
+  heroTitle3: "to become productive",
+  heroDescription:
+    "ReadySet.AI is an AI onboarding system for sales teams - from chaotic first weeks to measurable readiness. Faster ramp-up. Less mentor load. No surprises.",
+  pilotButton: "Request free pilot →",
+  howButton: "See how it works",
 
-      nav: {
-  problem: "Problem",
-  how: "How it works",
-  impact: "Impact",
-  pilot: "Pilot",
-},
+  nav: {
+    problem: "Problem",
+    how: "How it works",
+    impact: "Impact",
+    pilot: "Pilot",
+  },
 
   problem: {
     label: "The problem",
@@ -30,8 +31,7 @@ export const en = {
     cards: [
       {
         id: "01",
-        title:
-          "The rep doesn't know what they don't know",
+        title: "The rep doesn't know what they don't know",
         description:
           "They're not just missing answers. They often don't even know which questions to ask — or are afraid to look incompetent.",
       },
@@ -45,146 +45,147 @@ export const en = {
 
       {
         id: "03",
-        title:
-          "The mentor becomes a bottleneck",
+        title: "The mentor becomes a bottleneck",
         description:
           "Every new rep costs 2–3 hours of senior team time per day. That's 40+ hours per month pulled away from real deals and real revenue.",
       },
 
       {
         id: "04",
-        title:
-          "The company finds out too late",
+        title: "The company finds out too late",
         description:
           "By the time you realize someone is struggling, it's week 6. Pipeline is damaged. The rep might already be mentally out the door.",
       },
-    ],    
+    ],
   },
 
   how: {
-  label: "How it works",
+    label: "How it works",
 
-  titleStart: "From day one to",
-  highlight: "ready",
+    titleStart: "From day one to",
+    highlight: "ready",
 
-  subtitle:
-    "Four layers that work together - not four separate tools.",
+    subtitle: "Four layers that work together - not four separate tools.",
 
-  steps: [
-    {
-      id: "01",
-      title: "Personalized AI onboarding plan",
-      description:
-        "The rep takes a short assessment on day one. AI builds a 30/60/90-day path tailored to their role and skill gaps — generated from your company's own documents, not generic templates.",
+    steps: [
+      {
+        id: "01",
+        title: "Personalized AI onboarding plan",
+        description:
+          "The rep takes a short assessment on day one. AI builds a 30/60/90-day path tailored to their role and skill gaps — generated from your company's own documents, not generic templates.",
+      },
+
+      {
+        id: "02",
+        featured: true,
+        title: "Training Arena - practice before the real thing",
+        description:
+          "AI simulates real sales scenarios: tough objections, cold call openers, pricing conversations, competitive questions. The rep practices until they're genuinely ready - not until they've read the playbook and checked a box.",
+      },
+
+      {
+        id: "03",
+        title: "AI assistant that knows your company",
+        description:
+          'Ask "How do we handle enterprise procurement?" and get an answer sourced from your actual internal documents — with a link to the exact source. Not generic AI. Your company knowledge, made instantly findable.',
+      },
+
+      {
+        id: "04",
+        title: "Risk signals for mentors - with evidence, not guesses",
+        description:
+          "Every week, the mentor gets a digest: where the rep is stuck, which documents they've opened five times, which Training Arena scenarios they failed. One-click actions — schedule a call, send a Slack, mark as not relevant.",
+      },
+    ],
+  },
+
+  impact: {
+    label: "Impact",
+
+    titleStart: "What actually",
+    highlight: "changes",
+
+    subtitle: "Measured. Not promised.",
+
+    metrics: [
+      {
+        value: "↓50%",
+        title: "Time-to-productivity",
+        description:
+          "From 6 weeks to 3. The rep closes their first qualified deal faster.",
+      },
+
+      {
+        value: "↓70%",
+        title: "Mentor load",
+        description:
+          "Senior team hours freed from repetitive questions and manual checks.",
+      },
+
+      {
+        value: "↓Risk",
+        title: "Client-facing errors",
+        description:
+          "Training Arena handles practice before the first real client.",
+      },
+    ],
+
+    roiText: "Team of 10 reps · 40 mentor hours per new hire · $30/hr =",
+
+    roiValue: "$12,000 in hidden onboarding costs per year.",
+
+    roiResult: "ReadySet.AI reduces that by 70% →",
+
+    roiSaved: "$8,400 saved. Per team. Per year.",
+
+    quote:
+      "Strong B2B onboarding AI with good SaaS realism. Looks like a ready MVP that could go to production.",
+
+    source: "— GoIT AI Solutions Hackathon 2026 · Jury feedback · 1st place",
+  },
+
+  pilot: {
+    tag: "Free pilot program",
+
+    titleStart: "Become our",
+
+    titleHighlight: "first pilot company.",
+
+    description:
+      "If you lead a sales team of 5–50 people and onboarding feels broken, let's fix it together. 30 days. No cost. Real metrics you can show to leadership.",
+
+    perks: [
+      "Full setup using your documents & sales process",
+      "30-day pilot at no cost",
+      "ROI and onboarding insights report",
+    ],
+
+    namePlaceholder: "Your name",
+    emailPlaceholder: "Your email",
+    phonePlaceholder: "Contact phone number (optional)",
+    rolePlaceholder: "Your role",
+    messagePlaceholder: "Tell us about your request",
+
+    errors: {
+      nameRequired: "Please enter your name",
+      emailRequired: "Please enter your email",
+      emailInvalid: "Please enter a valid email address",
+      phoneInvalid: "Please enter a valid phone number",
+      roleRequired: "Please specify your role",
+      roleTooLong: "Role cannot exceed 25 characters",
+      messageRequired: "Please describe your request",
+      messageShort: "Message must contain at least 10 characters",
+      messageTooLong: "Message cannot exceed 250 characters",
     },
 
-    {
-      id: "02",
-      featured: true,
-      title:
-        "Training Arena - practice before the real thing",
-      description:
-        "AI simulates real sales scenarios: tough objections, cold call openers, pricing conversations, competitive questions. The rep practices until they're genuinely ready - not until they've read the playbook and checked a box.",
-    },
+    button: "Apply for pilot →",
 
-    {
-      id: "03",
-      title:
-        "AI assistant that knows your company",
-      description:
-        'Ask "How do we handle enterprise procurement?" and get an answer sourced from your actual internal documents — with a link to the exact source. Not generic AI. Your company knowledge, made instantly findable.',
-    },
+    success: "✓ Thanks! We'll be in touch soon.",
 
-    {
-      id: "04",
-      title:
-        "Risk signals for mentors - with evidence, not guesses",
-      description:
-        "Every week, the mentor gets a digest: where the rep is stuck, which documents they've opened five times, which Training Arena scenarios they failed. One-click actions — schedule a call, send a Slack, mark as not relevant.",
-    },
-  ],
-},
+    note: "No sales pitch. Just a 20-minute conversation to see if it's a fit.",
+  },
 
-impact: {
-  label: "Impact",
-
-  titleStart: "What actually",
-  highlight: "changes",
-
-  subtitle: "Measured. Not promised.",
-
-  metrics: [
-    {
-      value: "↓50%",
-      title: "Time-to-productivity",
-      description:
-        "From 6 weeks to 3. The rep closes their first qualified deal faster.",
-    },
-
-    {
-      value: "↓70%",
-      title: "Mentor load",
-      description:
-        "Senior team hours freed from repetitive questions and manual checks.",
-    },
-
-    {
-      value: "↓Risk",
-      title: "Client-facing errors",
-      description:
-        "Training Arena handles practice before the first real client.",
-    },
-  ],
-
-  roiText:
-    "Team of 10 reps · 40 mentor hours per new hire · $30/hr =",
-
-  roiValue:
-    "$12,000 in hidden onboarding costs per year.",
-
-  roiResult:
-    "ReadySet.AI reduces that by 70% →",
-
-  roiSaved:
-    "$8,400 saved. Per team. Per year.",
-
-  quote:
-    "Strong B2B onboarding AI with good SaaS realism. Looks like a ready MVP that could go to production.",
-
-  source:
-    "— GoIT AI Solutions Hackathon 2026 · Jury feedback · 1st place",
-},
-
-pilot: {
-  tag: "Free pilot program",
-
-  titleStart: "Become our",
-
-  titleHighlight:
-    "first pilot company.",
-
-  description:
-    "If you lead a sales team of 5–50 people and onboarding feels broken, let's fix it together. 30 days. No cost. Real metrics you can show to leadership.",
-
-  perks: [
-    "Full setup using your documents & sales process",
-    "30-day pilot at no cost",
-    "ROI and onboarding insights report",
-  ],
-
-  placeholder: "your@email.com",
-
-  button: "Apply for pilot →",
-
-  success:
-    "✓ Thanks! We'll be in touch soon.",
-
-  note:
-    "No sales pitch. Just a 20-minute conversation to see if it's a fit.",
-},
-
-socials: {
-  title: "Follow Our Journey",
-},
-
+  socials: {
+    title: "Follow Our Journey",
+  },
 };
