@@ -6,7 +6,9 @@ export async function POST(request) {
   try {
     const { email } = await request.json();
 
-    await resend.emails.send({
+    console.log("Received email:", email);
+
+    const result = await resend.emails.send({
       from: "onboarding@resend.dev",
       to: "mgm.agro04@gmail.com",
       subject: "New ReadySet AI Pilot Request",
@@ -16,13 +18,19 @@ export async function POST(request) {
       `,
     });
 
+    console.log("Resend result:", result);
+
     return Response.json({
       success: true,
+      result,
     });
-  } catch {
+  } catch (error) {
+    console.error("API ERROR:", error);
+
     return Response.json(
       {
         success: false,
+        error: error.message,
       },
       {
         status: 500,
