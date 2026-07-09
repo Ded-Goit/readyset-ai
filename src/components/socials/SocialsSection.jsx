@@ -4,6 +4,7 @@ import {
   FaLinkedinIn,
   FaInstagram,
   FaFacebookF,
+  FaEnvelope,
 } from "react-icons/fa";
 
 import { useTranslation } from "@/hooks/useTranslation";
@@ -18,9 +19,7 @@ export default function SocialsSection() {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
-        <p className={styles.text}>
-          {t.socials.title}
-        </p>
+        <p className={styles.text}>{t.socials.title}</p>
 
         <div className={styles.links}>
           <a
@@ -49,8 +48,15 @@ export default function SocialsSection() {
           >
             <FaFacebookF />
           </a>
+          <a
+            href="mailto:readysetai.4.0@gmail.com"
+            aria-label="Email"
+            title="readysetai.4.0@gmail.com"
+          >
+            <FaEnvelope />
+          </a>
         </div>
       </div>
     </section>
   );
-} 
+}
