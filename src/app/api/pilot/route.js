@@ -10,7 +10,7 @@ export async function POST(request) {
 
     const result = await resend.emails.send({
       from: "onboarding@resend.dev",
-      to: "mgm.agro04@gmail.com",
+      to: "readysetai.4.0@gmail.com",
       subject: "New ReadySet AI Pilot Request",
       html: `
         <h2>New pilot request</h2>
