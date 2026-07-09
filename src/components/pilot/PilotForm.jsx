@@ -11,45 +11,48 @@ export default function PilotForm() {
 
   const [email, setEmail] = useState("");
 
-  const [success, setSuccess] =
-    useState(false);
+  const [success, setSuccess] = useState(false);
 
-  const handleSubmit = e => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (!email.includes("@")) {
       return;
     }
 
-    setSuccess(true);
+    const response = await fetch("/api/pilot", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        email,
+      }),
+    });
 
-    setEmail("");
+    const data = await response.json();
 
-    setTimeout(() => {
-      setSuccess(false);
-    }, 4000);
+    if (data.success) {
+      setSuccess(true);
+      setEmail("");
+
+      setTimeout(() => {
+        setSuccess(false);
+      }, 4000);
+    }
   };
 
   return (
-    <form
-      onSubmit={handleSubmit}
-      className={styles.form}
-    >
+    <form onSubmit={handleSubmit} className={styles.form}>
       <input
         type="email"
         value={email}
-        placeholder={
-          t.pilot.placeholder
-        }
-        onChange={e =>
-          setEmail(e.target.value)
-        }
+        placeholder={t.pilot.placeholder}
+        onChange={(e) => setEmail(e.target.value)}
       />
 
       <button type="submit">
-        {success
-          ? t.pilot.success
-          : t.pilot.button}
+        {success ? t.pilot.success : t.pilot.button}
       </button>
     </form>
   );
