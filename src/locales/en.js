@@ -142,6 +142,10 @@ export const en = {
       "Strong B2B onboarding AI with good SaaS realism. Looks like a ready MVP that could go to production.",
 
     source: "— GoIT AI Solutions Hackathon 2026 · Jury feedback · 1st place",
+    
+    "cta": "Get Started",
+
+    "ctaLink": "https://ai-onboarding-service-frontend.vercel.app/"
   },
 
   pilot: {

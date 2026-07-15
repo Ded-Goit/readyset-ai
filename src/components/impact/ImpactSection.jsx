@@ -75,6 +75,18 @@ export default function ImpactSection() {
     </span>
   </div>
 </FadeIn>
+<FadeIn delay={0.5}>
+  <div className={styles.actions}>
+    <a
+      href={t.impact.ctaLink}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={styles.button}
+    >
+      {t.impact.cta}
+    </a>
+  </div>
+</FadeIn>
       </div>
     </section>
   );

@@ -22,7 +22,7 @@ export default function HowItWorks() {
 
         <h2 className={styles.title}>
           {t.how.titleStart}{" "}
-          <span>{t.how.highlight}</span>.
+          <span>{t.how.highlight}</span>
         </h2>
 
         <p className={styles.subtitle}>

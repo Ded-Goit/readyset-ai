@@ -140,6 +140,10 @@ export const fr = {
     quote: "Un puissant AI d'onboarding B2B avec un réalisme SaaS remarquable.",
 
     source: "— GoIT AI Solutions Hackathon 2026 · Retour du jury · 1re place",
+  
+    "cta": "Commencer",
+
+    "ctaLink": "https://ai-onboarding-service-frontend.vercel.app/"
   },
 
   pilot: {
