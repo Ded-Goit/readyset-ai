@@ -19,11 +19,9 @@ export const en = {
   problem: {
     label: "The problem",
 
-    title1: "Documents exist.",
-    title2: "A mentor exists.",
-    title3: "But the",
-    highlight: "blind spot",
-    title4: "remains.",
+    "titleStart": "The documentation is there, the mentor is there, but the",
+    "highlight": "blind spot",
+    "titleEnd": "remains",
 
     subtitle:
       "Every sales team faces this. A new rep joins with all the right resources — and still takes months to perform. The gap isn't content. It's the system.",

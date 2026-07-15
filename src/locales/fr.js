@@ -18,11 +18,9 @@ export const fr = {
 
   problem: {
     label: "Le problème",
-    title1: "Les documents existent.",
-    title2: "Le mentor existe.",
-    title3: "Mais la",
-    highlight: "zone aveugle",
-    title4: "persiste.",
+    "titleStart": "La documentation est là, le mentor est là, mais",
+    "highlight": "la zone d’ombre",
+    "titleEnd": "demeure",
 
     subtitle:
       "Toutes les équipes commerciales font face à cela. Un nouveau venu arrive avec toutes les ressources — et met quand même des mois à performer. Le problème n'est pas le contenu. C'est le système.",

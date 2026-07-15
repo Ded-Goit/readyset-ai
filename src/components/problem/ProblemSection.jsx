@@ -22,14 +22,10 @@ export default function ProblemSection() {
         </span>
 
         <h2 className={styles.title}>
-          {t.problem.title1}
-          <br />
-          {t.problem.title2}
-          <br />
-          {t.problem.title3}
-          <span> {" "} {t.problem.highlight} {" "} </span>
-          {t.problem.title4}
-        </h2>
+  {t.problem.titleStart}{" "}
+  <span>{t.problem.highlight}</span>{" "}
+  {t.problem.titleEnd}
+</h2>
 
         <p className={styles.subtitle}>
           {t.problem.subtitle}
