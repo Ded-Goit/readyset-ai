@@ -23,7 +23,7 @@ export default function ImpactSection() {
         <FadeIn delay={0.1}>
           <h2 className={styles.title}>
             {t.impact.titleStart}{" "}
-            <span>{t.impact.highlight}</span>.
+            <span>{t.impact.highlight}</span>
           </h2>
         </FadeIn>
 
