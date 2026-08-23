@@ -75,10 +75,11 @@ export default function Hero() {
               <Image
                 src="/hero-team.png"
                 alt="Hero illustration"
-                fill
+                width={620}
+                height={620}
                 priority
                 className={styles.image}
-                sizes="(max-width: 767px) 100vw, 50vw"
+                sizes="(max-width: 767px) 90vw, (max-width: 1099px) 45vw, 620px"
               />
             </div>
           </div>

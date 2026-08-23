@@ -95,20 +95,18 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  order: -1;
+  align-items: center;
 }
 
 .imageWrapper {
   position: relative;
-
   width: 100%;
-  max-width: 520px;
-  height: 90vw;
-  max-height: 520px;
-
+  max-width: 620px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 24px;
   overflow: hidden;
-
   background: radial-gradient(
     circle at center,
     rgba(240, 160, 48, 0.14),
@@ -119,8 +117,10 @@
 }
 
 .image {
+  width: 100%;
+  height: auto;
+  display: block;
   object-fit: contain;
-  padding: 8px;
 }
 
 /* FEATURES */
@@ -128,9 +128,7 @@
 .features {
   width: 100%;
   max-width: 1400px;
-
   margin: 56px auto 0;
-
   display: grid;
   grid-template-columns: 1fr;
   gap: 12px;
@@ -138,13 +136,10 @@
 
 .featureCard {
   min-height: 110px;
-
   display: flex;
   align-items: center;
-
   gap: 16px;
   padding: 20px;
-
   border: 1px solid var(--border-hi);
   border-radius: 18px;
 
@@ -166,16 +161,12 @@
 
 .featureIcon {
   flex: 0 0 52px;
-
   width: 52px;
   height: 52px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   border-radius: 15px;
-
   background: rgba(240, 160, 48, 0.1);
   color: var(--orange);
 }
@@ -187,18 +178,14 @@
 
 .featureContent h3 {
   margin: 0 0 6px;
-
   font-size: 15px;
   font-weight: 700;
-
   color: var(--text);
 }
 
 .featureContent p {
   margin: 0;
-
   color: var(--text-muted);
-
   font-size: 12px;
   line-height: 1.5;
 }
@@ -220,20 +207,23 @@
   .content {
     align-items: flex-start;
     flex: 1.05;
+    min-width: 0;
   }
 
   .visual {
     flex: 0.95;
+    min-width: 0;
     order: initial;
   }
 
   .imageWrapper {
-    width: min(100%, 560px);
-    height: min(560px, 45vw);
+    width: 100%;
+    max-width: 560px;
   }
 
   .image {
-    padding: 16px;
+    width: 100%;
+    height: auto;
   }
 
   .title {
@@ -264,13 +254,8 @@
   }
 
   .imageWrapper {
-    width: 620px;
-    height: 620px;
-    max-width: 100%;
-  }
-
-  .image {
-    padding: 20px;
+    width: 100%;
+    max-width: 620px;
   }
 
   .features {
