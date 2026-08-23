@@ -4,24 +4,19 @@
   left: 0;
   width: 100%;
   z-index: 1000;
-
   backdrop-filter: blur(18px);
   background: rgba(15, 10, 4, 0.75);
-
   border-bottom: 1px solid var(--border);
 }
 
 .inner {
   width: 100%;
   max-width: var(--container);
-
   margin: 0 auto;
   padding: 16px 20px;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   gap: 16px;
 }
 
@@ -39,12 +34,9 @@
 
 .nav a {
   position: relative;
-
   white-space: nowrap;
-
   text-decoration: none;
   color: var(--text-muted);
-
   transition: color 0.2s ease;
 }
 

@@ -1,5 +1,9 @@
 @import "../styles/variables.css";
 
+:root {
+  --container: 1400px;
+}
+
 *,
 *::before,
 *::after {
@@ -16,7 +20,7 @@ body {
   background: var(--bg-primary);
   color: var(--text);
   overflow-x: hidden;
- 
+
   font-family: var(--font-sora);
 }
 
