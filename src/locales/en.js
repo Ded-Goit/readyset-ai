@@ -1,104 +1,117 @@
 export const en = {
-  heroBadge: "🏆 GoIT AI Hackathon 2026 — 1st place",
-  heroTitle1: "Your new sales rep",
-  heroTitle2: "shouldn't need",
-  heroTitleHighlight: "6 weeks",
-  heroTitle3: "to become productive",
+  heroBadge: "AI ONBOARDING FOR ANY TEAM",
+  heroTitle1: "Accelerate",
+  heroTitle2: "new employee onboarding",
+  heroTitleHighlight: "without pulling mentors away",
+  heroTitle3: "from their core work",
   heroDescription:
-    "ReadySet.AI is an AI onboarding system for sales teams - from chaotic first weeks to measurable readiness. Faster ramp-up. Less mentor load. No surprises.",
-  pilotButton: "Request free pilot →",
-  howButton: "See how it works",
+    "Our AI assistant makes onboarding easier for both businesses and newcomers — and brings",
+  heroDescription2: "joy from day one.",
+  pilotButton: "Free Pilot →",
+  howButton: "How It Works",
+
+  heroFeature1Title: "Faster Start",
+  heroFeature1Description: "New employees become productive faster",
+
+  heroFeature2Title: "Mentors Stay Focused",
+  heroFeature2Description: "Less routine — more valuable work",
+
+  heroFeature3Title: "Better Results",
+  heroFeature3Description: "Confident employees — better business results",
+
+  heroFeature4Title: "An Inspiring Experience",
+  heroFeature4Description: "Support, feedback, and motivation 24/7",
 
   nav: {
-    problem: "Problem",
-    how: "How it works",
-    impact: "Impact",
+    problem: "The Problem",
+    how: "How It Works",
+    impact: "Results",
     pilot: "Pilot",
   },
 
   problem: {
-    label: "The problem",
+    label: "The Problem",
 
-    "titleStart": "The documentation is there, the mentor is there, but the",
-    "highlight": "blind spot",
-    "titleEnd": "remains",
+    titleStart: "The documents are there, the mentor is there, but the",
+    highlight: "blind spot",
+    titleEnd: "remains",
 
     subtitle:
-      "Every sales team faces this. A new rep joins with all the right resources — and still takes months to perform. The gap isn't content. It's the system.",
+      "Every team faces this. A new hire arrives with all the resources they need — and still takes months to become productive. The problem isn't the content. It's the system.",
 
     cards: [
       {
         id: "01",
-        title: "The rep doesn't know what they don't know",
+        title: "New hires don't know what they don't know",
         description:
-          "They're not just missing answers. They often don't even know which questions to ask — or are afraid to look incompetent.",
+          "The problem isn't just finding answers. Often, they don't even know what question to ask — or they're afraid of looking incompetent.",
       },
 
       {
         id: "02",
-        title: "Asking feels dangerous",
+        title: "Asking feels scary",
         description:
-          "Fear of appearing weak keeps new reps silent. They figure it out slowly — or make expensive mistakes in front of real clients.",
+          "The fear of looking unprofessional makes new hires stay silent. They figure things out slowly or make mistakes that can be costly for the business.",
       },
 
       {
         id: "03",
-        title: "The mentor becomes a bottleneck",
+        title: "Mentor productivity drops",
         description:
-          "Every new rep costs 2–3 hours of senior team time per day. That's 40+ hours per month pulled away from real deals and real revenue.",
+          "Each new hire can cost senior team members 2–3 hours every day. That's 40+ hours a month pulled away from the business.",
       },
 
       {
         id: "04",
         title: "The company finds out too late",
         description:
-          "By the time you realize someone is struggling, it's week 6. Pipeline is damaged. The rep might already be mentally out the door.",
+          "By the time you realize something went wrong, it's already week six. The team isn't progressing, and the employee may already be thinking about leaving.",
       },
     ],
   },
 
   how: {
-    label: "How it works",
+    label: "How It Works",
 
     titleStart: "From day one to",
-    highlight: "ready",
+    highlight: "readiness",
 
-    subtitle: "Four layers that work together - not four separate tools.",
+    subtitle: "Four levels that work together — not four separate tools.",
 
     steps: [
       {
         id: "01",
-        title: "Personalized AI onboarding plan",
+        title: "Personal AI Onboarding Plan",
         description:
-          "The rep takes a short assessment on day one. AI builds a 30/60/90-day path tailored to their role and skill gaps — generated from your company's own documents, not generic templates.",
+          "On day one, the new employee completes a short assessment. AI builds a personalized 30/60/90-day plan based on their role and identified knowledge gaps.",
       },
 
       {
         id: "02",
         featured: true,
-        title: "Training Arena - practice before the real thing",
+        title: "Training Arena — Practice Before the First Task",
         description:
-          "AI simulates real sales scenarios: tough objections, cold call openers, pricing conversations, competitive questions. The rep practices until they're genuinely ready - not until they've read the playbook and checked a box.",
+          "AI simulates real business scenarios. The new hire practices completing tasks while AI checks, guides, and corrects their work.",
       },
 
       {
         id: "03",
-        title: "AI assistant that knows your company",
+        title: "An AI Assistant That Knows Your Company",
         description:
-          'Ask "How do we handle enterprise procurement?" and get an answer sourced from your actual internal documents — with a link to the exact source. Not generic AI. Your company knowledge, made instantly findable.',
+          'Ask "How do we work?" and get an answer based on your internal documents, with links to the sources. Not generic AI — your company knowledge, available instantly.',
       },
 
       {
         id: "04",
-        title: "Risk signals for mentors - with evidence, not guesses",
+        title: "Risk Signals for Mentors — Evidence, Not Guesswork",
         description:
-          "Every week, the mentor gets a digest: where the rep is stuck, which documents they've opened five times, which Training Arena scenarios they failed. One-click actions — schedule a call, send a Slack, mark as not relevant.",
+          "Every week, mentors receive a digest showing where the new hire is stuck, which documents they opened repeatedly, and which scenarios they failed. Take action in a moment — call, Slack, or ignore.",
       },
     ],
   },
 
   impact: {
-    label: "Impact",
+    label: "Results",
 
     titleStart: "What actually",
     highlight: "changes",
@@ -108,83 +121,82 @@ export const en = {
     metrics: [
       {
         value: "↓50%",
-        title: "Time-to-productivity",
+        title: "Time to Productivity",
         description:
-          "From 6 weeks to 3. The rep closes their first qualified deal faster.",
+          "From six weeks to three. New hires complete their first task faster and with fewer mistakes.",
       },
 
       {
         value: "↓70%",
-        title: "Mentor load",
+        title: "Mentor Workload",
         description:
-          "Senior team hours freed from repetitive questions and manual checks.",
+          "Senior team members no longer spend hours answering repetitive questions.",
       },
 
       {
         value: "↓Risk",
-        title: "Client-facing errors",
+        title: "Work Errors",
         description:
-          "Training Arena handles practice before the first real client.",
+          "The first task is no longer a trial by fire. The Training Arena has already done the work. You simply watch the new hire succeed.",
       },
     ],
 
-    roiText: "Team of 10 reps · 40 mentor hours per new hire · $30/hr =",
+    roiText: "Team of 10 managers · 40 mentor hours per new hire · $30/hour =",
 
     roiValue: "$12,000 in hidden onboarding costs per year.",
 
-    roiResult: "ReadySet.AI reduces that by 70% →",
+    roiResult: "ReadySet.AI reduces this by 70% →",
 
     roiSaved: "$8,400 saved. Per team. Per year.",
 
-    quote:
-      "Strong B2B onboarding AI with good SaaS realism. Looks like a ready MVP that could go to production.",
+    quote: "A strong B2B onboarding AI with great SaaS realism.",
 
-    source: "— GoIT AI Solutions Hackathon 2026 · Jury feedback · 1st place",
-    
-    "cta": "Get Started",
+    source: "— GoIT AI Solutions Hackathon 2026 · Jury Feedback · 1st Place",
 
-    "ctaLink": "https://ai-onboarding-service-frontend.vercel.app/"
+    cta: "Get Started",
+
+    ctaLink: "https://ai-onboarding-service-frontend.vercel.app/",
   },
 
   pilot: {
-    tag: "Free pilot program",
+    tag: "Free Pilot Program",
 
     titleStart: "Become our",
 
-    titleHighlight: "first pilot company.",
+    titleHighlight: "first pilot company",
 
     description:
-      "If you lead a sales team of 5–50 people and onboarding feels broken, let's fix it together. 30 days. No cost. Real metrics you can show to leadership.",
+      "If you manage a sales team of 5–50 people and feel that onboarding isn't working as effectively as it should — let's fix it together. 30 days. Free of charge. Real metrics you can present to management.",
 
     perks: [
-      "Full setup using your documents & sales process",
+      "Full setup tailored to your roles and processes",
       "30-day pilot at no cost",
-      "ROI and onboarding insights report",
+      "ROI report and insights after completion",
     ],
 
     namePlaceholder: "Your name",
     emailPlaceholder: "Your email",
-    phonePlaceholder: "Contact phone number (optional)",
+    phonePlaceholder: "Phone number (optional)",
     rolePlaceholder: "Your role",
-    messagePlaceholder: "Tell us about your request",
+    messagePlaceholder: "Describe your request or challenge",
 
     errors: {
       nameRequired: "Please enter your name",
       emailRequired: "Please enter your email",
-      emailInvalid: "Please enter a valid email address",
+      emailInvalid: "Please enter a valid email",
       phoneInvalid: "Please enter a valid phone number",
       roleRequired: "Please specify your role",
-      roleTooLong: "Role cannot exceed 25 characters",
+      roleTooLong: "Role cannot contain more than 25 characters",
       messageRequired: "Please describe your request",
       messageShort: "Message must contain at least 10 characters",
-      messageTooLong: "Message cannot exceed 250 characters",
+      messageTooLong: "Message cannot contain more than 250 characters",
     },
 
-    button: "Apply for pilot →",
+    button: "Submit Application →",
 
-    success: "✓ Thanks! We'll be in touch soon.",
+    success: "✓ Thank you! We'll get in touch with you shortly.",
 
-    note: "No sales pitch. Just a 20-minute conversation to see if it's a fit.",
+    note: "No pushy sales. Just a 20-minute conversation to understand whether our solution is right for you.",
   },
 
   socials: {

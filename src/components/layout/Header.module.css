@@ -2,37 +2,36 @@
   position: fixed;
   top: 0;
   left: 0;
-
   width: 100%;
-
   z-index: 1000;
 
   backdrop-filter: blur(18px);
-
   background: rgba(15, 10, 4, 0.75);
 
   border-bottom: 1px solid var(--border);
 }
 
 .inner {
+  width: 100%;
   max-width: var(--container);
 
   margin: 0 auto;
-
   padding: 16px 20px;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  gap: 16px;
 }
 
-.actions {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+/* LOGO */
+
+.inner > :first-child {
+  flex-shrink: 0;
 }
 
-/* Navigation */
+/* NAVIGATION */
 
 .nav {
   display: none;
@@ -41,8 +40,9 @@
 .nav a {
   position: relative;
 
-  text-decoration: none;
+  white-space: nowrap;
 
+  text-decoration: none;
   color: var(--text-muted);
 
   transition: color 0.2s ease;
@@ -56,7 +56,6 @@
   content: "";
 
   position: absolute;
-
   left: 0;
   bottom: -8px;
 
@@ -72,6 +71,16 @@
   width: 100%;
 }
 
+/* ACTIONS */
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  flex-shrink: 0;
+}
+
 /* CTA */
 
 .cta {
@@ -82,12 +91,12 @@
   border-radius: 10px;
 
   background: var(--orange);
-
   color: var(--bg-primary);
 
   font-weight: 700;
-
   text-decoration: none;
+
+  white-space: nowrap;
 
   transition:
     background 0.25s ease,
@@ -96,20 +105,22 @@
 
 .cta:hover {
   background: var(--orange-lt);
-
   transform: translateY(-1px);
 }
 
-/* Burger */
+/* BURGER */
 
 .burger {
   display: flex;
-
   align-items: center;
   justify-content: center;
 
-  background: transparent;
+  width: 40px;
+  height: 40px;
 
+  padding: 0;
+
+  background: transparent;
   border: none;
 
   color: var(--text);
@@ -117,7 +128,7 @@
   cursor: pointer;
 }
 
-/* Mobile Menu */
+/* MOBILE MENU */
 
 .mobileMenu {
   position: fixed;
@@ -130,7 +141,6 @@
 
   display: flex;
   flex-direction: column;
-
   gap: 24px;
 
   background: var(--bg-primary);
@@ -143,12 +153,12 @@
 
 .mobileMenu a {
   text-decoration: none;
-
   color: var(--text);
 
   font-size: 18px;
-
   font-weight: 600;
+
+  white-space: nowrap;
 
   transition: color 0.2s ease;
 }
@@ -157,9 +167,9 @@
   color: var(--orange);
 }
 
-/* Tablet */
+/* DESKTOP NAVIGATION */
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .burger {
     display: none;
   }
@@ -169,27 +179,47 @@
   }
 
   .nav {
+    flex: 1;
+    min-width: 0;
+
     display: flex;
-    gap: 20px;
+    align-items: center;
+    justify-content: center;
+
+    gap: 18px;
+  }
+
+  .nav a {
+    font-size: 13px;
   }
 }
 
-/* Desktop */
+/* DESKTOP */
 
 @media (min-width: 1024px) {
+  .inner {
+    gap: 24px;
+  }
+
   .nav {
-    gap: 32px;
+    gap: 24px;
+  }
+
+  .nav a {
+    font-size: 14px;
   }
 
   .cta {
     display: inline-flex;
-
     align-items: center;
     justify-content: center;
   }
 }
-@media (min-width: 768px) and (max-width: 1023px) {
-  .nav a {
-    font-size: 14px;
+
+/* LARGE DESKTOP */
+
+@media (min-width: 1200px) {
+  .nav {
+    gap: 32px;
   }
 }

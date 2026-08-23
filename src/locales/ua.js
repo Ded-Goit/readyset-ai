@@ -1,13 +1,25 @@
 export const ua = {
-  heroBadge: "🏆 GoIT AI Хакатон 2026 — 1 місце",
-  heroTitle1: "Ваш новий менеджер",
-  heroTitle2: "не повинен чекати",
-  heroTitleHighlight: "6 тижнів",
-  heroTitle3: "щоб стати продуктивним",
+  heroBadge: "AI ОНБОРДИНГ ДЛЯ БУДЬ-ЯКОЇ КОМАНДИ",
+  heroTitle1: "Прискорюємо",
+  heroTitle2: "підготовку нових співробітників",
+  heroTitleHighlight: "без відриву менторів",
+  heroTitle3: "від основної роботи",
   heroDescription:
-    "ReadySet.AI - ШІ-система онбордингу для відділів. Від хаосу першого тижня до вимірюваної готовності. Швидке входження. Менше навантаження на ментора.",
+    "Наш AI-асистент робить онбордінг простішим для бізнесу та новачка - і приносить",
+  heroDescription2: "радість з першого дня.",
   pilotButton: "Безкоштовний пілот →",
   howButton: "Як це працює",
+  heroFeature1Title: "Швидший старт",
+  heroFeature1Description: "Нова людина готова до роботи швидше",
+
+  heroFeature2Title: "Ментори в фокусі",
+  heroFeature2Description: "Менше рутини - більше цінних задач",
+
+  heroFeature3Title: "Кращі результати",
+  heroFeature3Description: "Впевнені співробітники - кращі результати бізнесу",
+
+  heroFeature4Title: "Досвід що надихає",
+  heroFeature4Description: "Підтримка, зворотний зв'язок і мотивація 24/7",
 
   nav: {
     problem: "Проблема",
@@ -139,10 +151,10 @@ export const ua = {
     quote: "Сильний B2B onboarding AI з хорошим SaaS реалізмом.",
 
     source: "— GoIT AI Solutions Hackathon 2026 · Фідбек журі · 1 місце",
-    
-    "cta": "Розпочати",
 
-    "ctaLink": "https://ai-onboarding-service-frontend.vercel.app/"
+    cta: "Розпочати",
+
+    ctaLink: "https://ai-onboarding-service-frontend.vercel.app/",
   },
 
   pilot: {

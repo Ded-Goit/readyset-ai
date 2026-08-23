@@ -1,57 +1,75 @@
 export const fr = {
-  heroBadge: "🏆 GoIT AI Hackathon 2026 — 1re place",
-  heroTitle1: "Votre nouveau commercial",
-  heroTitle2: "ne devrait pas avoir besoin de",
-  heroTitleHighlight: "6 semaines",
-  heroTitle3: "pour devenir productif",
+  heroBadge: "ONBOARDING IA POUR TOUTE ÉQUIPE",
+  heroTitle1: "Accélérez",
+  heroTitle2: "l'intégration des nouveaux collaborateurs",
+  heroTitleHighlight: "sans détourner les mentors",
+  heroTitle3: "de leur travail principal",
   heroDescription:
-    "ReadySet.AI est un système d'onboarding IA pour les équipes commerciales - des premières semaines chaotiques à une préparation mesurable. Montée en puissance plus rapide. Moins de charge pour le mentor.",
-  pilotButton: "Essai gratuit →",
-  howButton: "Voir comment ça marche",
+    "Notre assistant IA simplifie l'intégration pour l'entreprise comme pour le nouvel arrivant — et apporte",
+  heroDescription2: "de la satisfaction dès le premier jour.",
+  pilotButton: "Pilote gratuit →",
+  howButton: "Comment ça marche",
+
+  heroFeature1Title: "Un démarrage plus rapide",
+  heroFeature1Description:
+    "Les nouveaux collaborateurs deviennent opérationnels plus rapidement",
+
+  heroFeature2Title: "Des mentors concentrés",
+  heroFeature2Description:
+    "Moins de tâches répétitives — plus de travail à forte valeur",
+
+  heroFeature3Title: "De meilleurs résultats",
+  heroFeature3Description:
+    "Des collaborateurs confiants — de meilleurs résultats pour l'entreprise",
+
+  heroFeature4Title: "Une expérience inspirante",
+  heroFeature4Description:
+    "Accompagnement, feedback et motivation 24h/24 et 7j/7",
 
   nav: {
-    problem: "Problème",
-    how: "Fonctionnement",
-    impact: "Impact",
+    problem: "Le problème",
+    how: "Comment ça marche",
+    impact: "Résultats",
     pilot: "Pilote",
   },
 
   problem: {
     label: "Le problème",
-    "titleStart": "La documentation est là, le mentor est là, mais",
-    "highlight": "la zone d’ombre",
-    "titleEnd": "demeure",
+
+    titleStart: "Les documents sont là, le mentor est là, mais",
+    highlight: "l'angle mort",
+    titleEnd: "demeure",
 
     subtitle:
-      "Toutes les équipes commerciales font face à cela. Un nouveau venu arrive avec toutes les ressources — et met quand même des mois à performer. Le problème n'est pas le contenu. C'est le système.",
+      "Chaque équipe y est confrontée. Un nouveau collaborateur arrive avec toutes les ressources nécessaires — et met malgré tout des mois à devenir opérationnel. Le problème n'est pas le contenu. C'est le système.",
 
     cards: [
       {
         id: "01",
-        title: "Le commercial ne sait pas ce qu'il ne sait pas",
+        title: "Le nouvel arrivant ne sait pas ce qu'il ne sait pas",
         description:
-          "Il ne manque pas seulement de réponses. Souvent, il ne sait même pas quelles questions poser — ou a peur de paraître incompétent.",
+          "Le problème ne réside pas seulement dans les réponses. Souvent, il ne sait même pas quelle question poser — ou a peur de paraître incompétent.",
       },
 
       {
         id: "02",
-        title: "Poser des questions fait peur",
+        title: "Poser une question fait peur",
         description:
-          "La peur de paraître faible garde les nouveaux silencieux. Ils apprennent lentement - ou font des erreurs coûteuses face aux vrais clients.",
+          "La peur de paraître non professionnel pousse le nouvel arrivant à garder le silence. Il avance lentement ou commet des erreurs qui peuvent coûter cher à l'entreprise.",
       },
 
       {
         id: "03",
-        title: "Le mentor devient un goulot d'étranglement",
+        title: "La productivité du mentor baisse",
         description:
-          "Chaque nouveau coûte 2 à 3 heures de temps senior par jour. Soit 40+ heures par mois détournées des vraies affaires.",
+          "Chaque nouvel arrivant peut mobiliser 2 à 3 heures par jour d'un membre senior de l'équipe. Soit plus de 40 heures par mois détournées de l'activité principale.",
       },
 
       {
         id: "04",
-        title: "L'entreprise l'apprend trop tard",
+        title: "L'entreprise le découvre trop tard",
         description:
-          "Quand vous réalisez que quelqu'un est en difficulté, c'est la semaine 6. Le pipeline est endommagé. Le commercial est peut-être déjà parti mentalement.",
+          "Lorsque vous comprenez que quelque chose ne va pas, la sixième semaine est déjà passée. L'équipe ne progresse plus et le collaborateur peut déjà envisager de partir.",
       },
     ],
   },
@@ -59,89 +77,92 @@ export const fr = {
   how: {
     label: "Comment ça marche",
 
-    titleStart: "Du premier jour à la",
-    highlight: "préparation",
+    titleStart: "Du premier jour à",
+    highlight: "l'autonomie",
 
     subtitle:
-      "Quatre niveaux qui fonctionnent ensemble - pas quatre outils séparés.",
+      "Quatre niveaux qui fonctionnent ensemble, et non quatre outils distincts.",
 
     steps: [
       {
         id: "01",
-        title: "Plan d'onboarding AI personnalisé",
+        title: "Plan d'intégration personnalisé par l'IA",
         description:
-          "Le commercial passe une courte évaluation le premier jour. L'IA construit un parcours 30/60/90 jours adapté à son rôle - généré à partir des documents de votre entreprise.",
+          "Le nouvel arrivant passe un court test dès son premier jour. L'IA construit un plan personnalisé à 30/60/90 jours selon son rôle et les lacunes identifiées.",
       },
 
       {
         id: "02",
         featured: true,
-        title: "Training Arena - pratiquer avant le vrai client",
+        title: "Arène d'entraînement — pratiquer avant la première tâche",
         description:
-          "L'IA simule des scénarios réels : objections difficiles, cold calls, négociations tarifaires. Le commercial s'entraîne jusqu'à être vraiment prêt - pas juste jusqu'à avoir coché une case.",
+          "L'IA simule des situations réelles de votre entreprise. Le nouvel arrivant s'entraîne à les résoudre. L'IA vérifie, corrige et guide.",
       },
 
       {
         id: "03",
-        title: "Assistant IA qui connaît votre entreprise",
-        description: `Posez la question "Comment gérons-nous les achats d'entreprise?" et obtenez une réponse tirée de vos documents internes réels, avec un lien vers la source exacte. Pas d'IA générique. Le savoir-faire de votre entreprise, instantanément accessible.`,
+        title: "Un assistant IA qui connaît votre entreprise",
+        description:
+          "Demandez « Comment travaillons-nous ? » et obtenez une réponse basée sur vos documents internes, avec un lien vers la source. Pas une IA générique — les connaissances de votre entreprise, accessibles instantanément.",
       },
 
       {
         id: "04",
-        title: "Signaux de risque pour les mentors - preuves, pas suppositions",
+        title:
+          "Signaux de risque pour les mentors — des preuves, pas des suppositions",
         description:
-          "Chaque semaine, le mentor reçoit un résumé : où le commercial est bloqué, quels documents il a ouverts cinq fois, quels scénarios il a échoués. Actions en un clic - appel, Slack, ignorer.",
+          "Chaque semaine, le mentor reçoit un résumé indiquant où le nouvel arrivant est bloqué, quels documents il a consultés plusieurs fois et quels scénarios il a échoués. Agissez en un instant — appel, Slack ou ignorer.",
       },
     ],
   },
+
   impact: {
     label: "Résultats",
 
     titleStart: "Ce qui",
-    highlight: "change vraiment",
+    highlight: "change réellement",
 
     subtitle: "Mesuré. Pas promis.",
 
     metrics: [
       {
         value: "↓50%",
-        title: "Temps avant productivité",
+        title: "Temps jusqu'à la productivité",
         description:
-          "De 6 à 3 semaines. Le commercial conclut sa première affaire qualifiée plus vite - avec moins d'erreurs coûteuses.",
+          "De six semaines à trois. Le nouvel arrivant réalise sa première tâche plus rapidement et avec moins d'erreurs.",
       },
 
       {
         value: "↓70%",
-        title: "Charge du mentor",
+        title: "Charge des mentors",
         description:
-          "Les heures de l'équipe senior libérées des questions répétitives - de retour à ce pour quoi ils sont payés.",
+          "Les membres seniors ne passent plus des heures à répondre aux mêmes questions répétitives.",
       },
 
       {
-        value: "↓Risk",
-        title: "Erreurs face aux clients",
+        value: "↓Risque",
+        title: "Erreurs dans le travail",
         description:
-          "Le premier appel client n'est plus une session de formation. Training Arena gère la pratique. Vous gérez l'affaire.",
+          "La première tâche n'est plus une épreuve. L'arène d'entraînement a déjà fait son travail. Vous n'avez plus qu'à observer la réussite.",
       },
     ],
 
     roiText:
-      "Équipe de 10 commerciaux · 40h mentor par nouvel arrivant · 30$/h =",
+      "Équipe de 10 managers · 40 h de mentorat par nouvel arrivant · 30 $/h =",
 
-    roiValue: "$12,000 in hidden onboarding costs per year.",
+    roiValue: "12 000 $ de coûts cachés d'intégration par an.",
 
-    roiResult: "ReadySet.AI réduit cela de 70% →",
+    roiResult: "ReadySet.AI réduit ces coûts de 70 % →",
 
-    roiSaved: "$8,400 saved. Per team. Per year.",
+    roiSaved: "8 400 $ économisés. Par équipe. Par an.",
 
-    quote: "Un puissant AI d'onboarding B2B avec un réalisme SaaS remarquable.",
+    quote: "Une IA d'onboarding B2B solide avec un excellent réalisme SaaS.",
 
     source: "— GoIT AI Solutions Hackathon 2026 · Retour du jury · 1re place",
-  
-    "cta": "Commencer",
 
-    "ctaLink": "https://ai-onboarding-service-frontend.vercel.app/"
+    cta: "Commencer",
+
+    ctaLink: "https://ai-onboarding-service-frontend.vercel.app/",
   },
 
   pilot: {
@@ -149,43 +170,43 @@ export const fr = {
 
     titleStart: "Devenez notre",
 
-    titleHighlight: "première entreprise pilote.",
+    titleHighlight: "première entreprise pilote",
 
     description:
-      "Si vous dirigez une équipe commerciale de 5 à 50 personnes et que l'intégration de nouveaux collaborateurs vous semble inefficace, construisons une meilleure approche ensemble. 30 jours. Sans frais. Des résultats concrets à présenter à votre direction.",
+      "Si vous dirigez une équipe commerciale de 5 à 50 personnes et avez le sentiment que l'intégration n'est pas aussi efficace qu'elle devrait l'être — améliorons-la ensemble. 30 jours. Gratuitement. Des indicateurs réels à présenter à votre direction.",
 
     perks: [
-      "Configuration complète basée sur vos documents et processus",
-      "Programme pilote gratuit pendant 30 jours",
+      "Configuration complète adaptée à vos rôles et processus",
+      "Pilote de 30 jours entièrement gratuit",
       "Rapport ROI et recommandations à la fin du pilote",
     ],
 
     namePlaceholder: "Votre nom",
-    emailPlaceholder: "Votre email",
-    phonePlaceholder: "Numéro de téléphone de contact (facultatif)",
+    emailPlaceholder: "Votre e-mail",
+    phonePlaceholder: "Téléphone (facultatif)",
     rolePlaceholder: "Votre rôle",
-    messagePlaceholder: "Décrivez votre demande",
+    messagePlaceholder: "Décrivez votre demande ou votre problème",
 
     errors: {
       nameRequired: "Veuillez saisir votre nom",
-      emailRequired: "Veuillez saisir votre adresse e-mail",
-      emailInvalid: "Veuillez saisir une adresse e-mail valide",
+      emailRequired: "Veuillez saisir votre e-mail",
+      emailInvalid: "Veuillez saisir un e-mail valide",
       phoneInvalid: "Veuillez saisir un numéro de téléphone valide",
       roleRequired: "Veuillez indiquer votre rôle",
-      roleTooLong: "Le rôle ne peut pas dépasser 25 caractères",
+      roleTooLong: "Le rôle ne peut pas contenir plus de 25 caractères",
       messageRequired: "Veuillez décrire votre demande",
       messageShort: "Le message doit contenir au moins 10 caractères",
-      messageTooLong: "Le message ne peut pas dépasser 250 caractères",
+      messageTooLong: "Le message ne peut pas contenir plus de 250 caractères",
     },
 
-    button: "Postuler au pilote →",
+    button: "Envoyer la demande →",
 
-    success: "✓ Merci ! Nous vous contacterons très bientôt.",
+    success: "✓ Merci ! Nous vous contacterons dans les plus brefs délais.",
 
-    note: "Aucun discours commercial. Juste un échange de 20 minutes pour vérifier si la solution correspond à vos besoins.",
+    note: "Aucune vente forcée. Seulement une conversation de 20 minutes pour comprendre si notre solution vous convient.",
   },
 
   socials: {
-    title: "Suivez notre aventure",
+    title: "Suivez notre parcours",
   },
 };
