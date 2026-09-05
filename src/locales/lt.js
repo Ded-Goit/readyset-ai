@@ -1,20 +1,38 @@
 export const lt = {
-  heroBadge: "DI ĮVEDIMAS Į DARBĄ KIEKVIENAI KOMANDAI",
-  heroTitle1: "Paspartinkite",
-  heroTitle2: "naujų darbuotojų įvedimą į darbą",
-  heroTitleHighlight: "neatitraukdami mentorių",
-  heroTitle3: "nuo pagrindinio darbo",
+  heroBadge: "DI ĮVEDIMAS Į DARBĄ BET KOKIAI KOMANDAI",
+
+  heroTitle1: "Paspartiname",
+  heroTitle2: "naujų darbuotojų",
+  heroTitleHighlight: "paruošimą",
+  heroTitle3: "neatitraukiant mentorių nuo pagrindinio darbo.",
+
   heroDescription:
-    "Mūsų DI asistentas palengvina įvedimą į darbą tiek verslui, tiek naujam darbuotojui — ir suteikia",
+    "Mūsų DI asistentas supaprastina įvedimą į darbą tiek verslui, tiek naujokui — ir suteikia",
   heroDescription2: "džiaugsmo nuo pirmos dienos.",
-  pilotButton: "Nemokamas bandomasis projektas →",
-  howButton: "Kaip tai veikia",
 
+  // Floating cards
+  heroProgressTitle: "Naujoko pažanga",
+  heroProgressValue: "82%",
+  heroProgressChange: "+32% per savaitę",
+
+  heroPlanTitle: "Asmeninis planas",
+  heroPlanItem1: "Individuali programa",
+  heroPlanItem2: "Mokymai ir medžiaga",
+  heroPlanItem3: "Praktika",
+  heroPlanItem4: "Grįžtamasis ryšys",
+
+  heroNextStepTitle: "Kitas žingsnis",
+  heroNextStepItem1: "Praktinė užduotis",
+  heroNextStepItem2: "Kliento atvejis",
+
+  heroGrowthTitle: "Pasitikėjimas ir augimas",
+  heroGrowthDescription: "nuo pirmos dienos",
+
+  // Bottom features
   heroFeature1Title: "Greitesnė pradžia",
-  heroFeature1Description:
-    "Nauji darbuotojai greičiau pasirengia savarankiškam darbui",
+  heroFeature1Description: "Naujas darbuotojas greičiau pasiruošia darbui",
 
-  heroFeature2Title: "Mentoriai išlieka susitelkę",
+  heroFeature2Title: "Mentoriai išlaiko dėmesį",
   heroFeature2Description: "Mažiau rutinos — daugiau vertingų užduočių",
 
   heroFeature3Title: "Geresni rezultatai",
@@ -30,6 +48,57 @@ export const lt = {
     impact: "Rezultatai",
     pilot: "Bandomasis projektas",
   },
+
+  capabilitiesBadge: "Galimybės",
+
+  capabilitiesTitle1: "Nuo chaoso prie struktūros.",
+  capabilitiesTitle2: "Įvedimas į darbą, kuris duoda rezultatų.",
+
+  capabilitiesDescription1:
+    "Užuot priklausę nuo vieno vadovo, gaunate aiškią ir lengvai pritaikomą sistemą. Užuot ieškoję informacijos skirtingose vietose, gaunate vieningą aplinką, skirtą",
+
+  capabilitiesHighlight1: "greitesniam įsitraukimui į darbą",
+
+  capabilitiesDescription2: "ir",
+
+  capabilitiesHighlight2: "nuolatiniam tobulėjimui.",
+
+  capability1Title: "Vieninga sistema vietoje priklausomybės nuo vadovo",
+
+  capability1Description:
+    "Įvedimas į darbą nebepriklauso nuo konkretaus vadovo stiliaus. Kiekvienas naujas darbuotojas nuo pirmos dienos gauna aiškų kelią, patikrintą medžiagą ir suprantamus veiksmus.",
+
+  capability2Title: "Visa informacija vienoje vietoje",
+
+  capability2Description:
+    "Nereikia ieškoti informacijos pokalbiuose, kartoti tų pačių klausimų ar spėlioti. Viskas struktūruota, atnaujinta ir pasiekiama 24/7.",
+
+  capability3Title: "Training Arena — praktika be rizikos",
+
+  capability3Description:
+    "DI imituoja realius scenarijus ir verslo situacijas. Darbuotojas praktikuoja užduočių atlikimą, o DI vertina, taiso ir padeda gerinti rezultatą.",
+
+  capability4Title:
+    "Mentoriai sutelkia dėmesį į tobulėjimą, o ne į pasikartojančias užduotis",
+
+  capability4Description:
+    "Sistema pasirūpina įvedimo į darbą rutina, todėl mentoriai gali sutelkti dėmesį į augimą, grįžtamąjį ryšį ir sudėtingas užduotis.",
+
+  capabilitiesResultTitle: "Testas baigtas",
+
+  capabilitiesResult1: "Įmonės žinios",
+  capabilitiesResult2: "Produkto apžvalga",
+  capabilitiesResult3: "Pagrindiniai procesai",
+  capabilitiesResult4: "Įrankiai ir sistemos",
+  capabilitiesResult5: "Sauga ir atitiktis",
+
+  capabilitiesResultValue: "Rezultatas: 100 %",
+
+  capabilitiesBottomTitle: "Stiprus įvedimas į darbą —",
+  capabilitiesBottomHighlight: "stiprios komandos.",
+
+  capabilitiesBottomDescription:
+    "Sistemingas įvedimo į darbą procesas taupo laiką, mažina išlaidas ir padeda kurti komandą, kuri auga kartu su verslu.",
 
   problem: {
     label: "Problema",

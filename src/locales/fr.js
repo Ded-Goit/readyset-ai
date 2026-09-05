@@ -1,30 +1,47 @@
 export const fr = {
   heroBadge: "ONBOARDING IA POUR TOUTE ÉQUIPE",
+
   heroTitle1: "Accélérez",
-  heroTitle2: "l'intégration des nouveaux collaborateurs",
-  heroTitleHighlight: "sans détourner les mentors",
-  heroTitle3: "de leur travail principal",
+  heroTitle2: "la préparation des",
+  heroTitleHighlight: "nouveaux collaborateurs",
+  heroTitle3: "sans détourner les mentors de leur travail principal.",
+
   heroDescription:
-    "Notre assistant IA simplifie l'intégration pour l'entreprise comme pour le nouvel arrivant — et apporte",
+    "Notre assistant IA simplifie l’intégration pour l’entreprise comme pour le nouvel arrivant — et apporte",
   heroDescription2: "de la satisfaction dès le premier jour.",
-  pilotButton: "Pilote gratuit →",
-  howButton: "Comment ça marche",
 
-  heroFeature1Title: "Un démarrage plus rapide",
+  // Floating cards
+  heroProgressTitle: "Progression du nouvel arrivant",
+  heroProgressValue: "82%",
+  heroProgressChange: "+32% cette semaine",
+
+  heroPlanTitle: "Plan personnalisé",
+  heroPlanItem1: "Programme individuel",
+  heroPlanItem2: "Formation et supports",
+  heroPlanItem3: "Pratique",
+  heroPlanItem4: "Retour d’information",
+
+  heroNextStepTitle: "Prochaine étape",
+  heroNextStepItem1: "Exercice pratique",
+  heroNextStepItem2: "Cas client",
+
+  heroGrowthTitle: "Confiance et développement",
+  heroGrowthDescription: "dès le premier jour",
+
+  // Bottom features
+  heroFeature1Title: "Démarrage plus rapide",
   heroFeature1Description:
-    "Les nouveaux collaborateurs deviennent opérationnels plus rapidement",
+    "Les nouveaux collaborateurs sont opérationnels plus rapidement",
 
-  heroFeature2Title: "Des mentors concentrés",
-  heroFeature2Description:
-    "Moins de tâches répétitives — plus de travail à forte valeur",
+  heroFeature2Title: "Les mentors restent concentrés",
+  heroFeature2Description: "Moins de routine — plus de tâches à forte valeur",
 
   heroFeature3Title: "De meilleurs résultats",
   heroFeature3Description:
-    "Des collaborateurs confiants — de meilleurs résultats pour l'entreprise",
+    "Des collaborateurs confiants — de meilleurs résultats pour l’entreprise",
 
   heroFeature4Title: "Une expérience inspirante",
-  heroFeature4Description:
-    "Accompagnement, feedback et motivation 24h/24 et 7j/7",
+  heroFeature4Description: "Accompagnement, feedback et motivation 24/7",
 
   nav: {
     problem: "Le problème",
@@ -32,6 +49,57 @@ export const fr = {
     impact: "Résultats",
     pilot: "Pilote",
   },
+
+  capabilitiesBadge: "Fonctionnalités",
+
+  capabilitiesTitle1: "Du chaos à la structure.",
+  capabilitiesTitle2: "Un onboarding qui génère des résultats.",
+
+  capabilitiesDescription1:
+    "Au lieu de dépendre d’un seul manager, vous disposez d’un système clair et évolutif. Au lieu d’informations fragmentées, vous bénéficiez d’un environnement unifié pour",
+
+  capabilitiesHighlight1: "une montée en compétences plus rapide",
+
+  capabilitiesDescription2: "et",
+
+  capabilitiesHighlight2: "un développement continu.",
+
+  capability1Title: "Un système unifié au lieu d’une dépendance au manager",
+
+  capability1Description:
+    "L’onboarding ne dépend plus du style de chaque manager. Chaque nouvelle recrue bénéficie dès le premier jour d’un parcours clair, de contenus validés et d’étapes faciles à comprendre.",
+
+  capability2Title: "Toutes les informations au même endroit",
+
+  capability2Description:
+    "Plus besoin de chercher dans les conversations, de poser les mêmes questions encore et encore ou de deviner. Tout est structuré, à jour et disponible 24h/24 et 7j/7.",
+
+  capability3Title: "Training Arena — une pratique sans risque",
+
+  capability3Description:
+    "L’IA simule des scénarios réels et des situations professionnelles. Le collaborateur s’entraîne à réaliser les tâches tandis que l’IA analyse, corrige et améliore son travail.",
+
+  capability4Title:
+    "Les mentors se concentrent sur le développement, pas sur les répétitions",
+
+  capability4Description:
+    "Le système prend en charge les tâches répétitives de l’onboarding, afin que les mentors puissent se concentrer sur la progression, le feedback et les tâches complexes.",
+
+  capabilitiesResultTitle: "Test terminé",
+
+  capabilitiesResult1: "Connaissance de l’entreprise",
+  capabilitiesResult2: "Présentation du produit",
+  capabilitiesResult3: "Processus clés",
+  capabilitiesResult4: "Outils et systèmes",
+  capabilitiesResult5: "Sécurité et conformité",
+
+  capabilitiesResultValue: "Résultat : 100 %",
+
+  capabilitiesBottomTitle: "Un onboarding solide —",
+  capabilitiesBottomHighlight: "des équipes solides.",
+
+  capabilitiesBottomDescription:
+    "Une approche systématique de l’onboarding permet de gagner du temps, de réduire les coûts et de construire une équipe qui évolue avec l’entreprise.",
 
   problem: {
     label: "Le problème",

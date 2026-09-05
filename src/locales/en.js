@@ -1,26 +1,45 @@
 export const en = {
   heroBadge: "AI ONBOARDING FOR ANY TEAM",
+
   heroTitle1: "Accelerate",
-  heroTitle2: "new employee onboarding",
-  heroTitleHighlight: "without pulling mentors away",
-  heroTitle3: "from their core work",
+  heroTitle2: "the preparation of",
+  heroTitleHighlight: "new employees",
+  heroTitle3: "without taking mentors away from their core work.",
+
   heroDescription:
-    "Our AI assistant makes onboarding easier for both businesses and newcomers — and brings",
+    "Our AI assistant makes onboarding simple for both the business and the newcomer — bringing",
   heroDescription2: "joy from day one.",
-  pilotButton: "Free Pilot →",
-  howButton: "How It Works",
 
-  heroFeature1Title: "Faster Start",
-  heroFeature1Description: "New employees become productive faster",
+  // Floating cards
+  heroProgressTitle: "Newcomer progress",
+  heroProgressValue: "82%",
+  heroProgressChange: "+32% this week",
 
-  heroFeature2Title: "Mentors Stay Focused",
+  heroPlanTitle: "Personal plan",
+  heroPlanItem1: "Individual program",
+  heroPlanItem2: "Training & materials",
+  heroPlanItem3: "Practice",
+  heroPlanItem4: "Feedback",
+
+  heroNextStepTitle: "Next step",
+  heroNextStepItem1: "Practical task",
+  heroNextStepItem2: "Client case",
+
+  heroGrowthTitle: "Confidence & growth",
+  heroGrowthDescription: "from day one",
+
+  // Bottom features
+  heroFeature1Title: "Faster start",
+  heroFeature1Description: "New employees become ready to work faster",
+
+  heroFeature2Title: "Mentors stay focused",
   heroFeature2Description: "Less routine — more valuable work",
 
-  heroFeature3Title: "Better Results",
+  heroFeature3Title: "Better results",
   heroFeature3Description: "Confident employees — better business results",
 
-  heroFeature4Title: "An Inspiring Experience",
-  heroFeature4Description: "Support, feedback, and motivation 24/7",
+  heroFeature4Title: "An experience that inspires",
+  heroFeature4Description: "Support, feedback and motivation 24/7",
 
   nav: {
     problem: "The Problem",
@@ -28,6 +47,56 @@ export const en = {
     impact: "Results",
     pilot: "Pilot",
   },
+
+  capabilitiesBadge: "Capabilities",
+
+  capabilitiesTitle1: "From chaos to structure.",
+  capabilitiesTitle2: "Onboarding that drives results.",
+
+  capabilitiesDescription1:
+    "Instead of relying on a single manager, you get a clear, scalable system. Instead of fragmented information, you get one unified environment for",
+
+  capabilitiesHighlight1: "faster ramp-up",
+
+  capabilitiesDescription2: "and",
+
+  capabilitiesHighlight2: "continuous development.",
+
+  capability1Title: "A unified system instead of manager dependency",
+
+  capability1Description:
+    "Onboarding no longer depends on a manager’s style. Every new hire gets a clear path, validated materials, and understandable steps from day one.",
+
+  capability2Title: "All information in one place",
+
+  capability2Description:
+    "No need to search through chats, ask the same questions repeatedly, or guess. Everything is structured, up to date, and available 24/7.",
+
+  capability3Title: "Training Arena — risk-free practice",
+
+  capability3Description:
+    "AI simulates real scenarios and business situations. The trainee practices completing tasks, while AI reviews, corrects, and improves the work.",
+
+  capability4Title: "Mentors focus on development, not repetition",
+
+  capability4Description:
+    "The system takes care of onboarding routine, so mentors can focus on growth, feedback, and complex tasks.",
+
+  capabilitiesResultTitle: "Test completed",
+
+  capabilitiesResult1: "Company knowledge",
+  capabilitiesResult2: "Product overview",
+  capabilitiesResult3: "Key processes",
+  capabilitiesResult4: "Tools and systems",
+  capabilitiesResult5: "Safety and compliance",
+
+  capabilitiesResultValue: "Result: 100%",
+
+  capabilitiesBottomTitle: "Strong onboarding —",
+  capabilitiesBottomHighlight: "strong teams.",
+
+  capabilitiesBottomDescription:
+    "A systematic onboarding approach saves time, reduces costs, and builds a team that grows with the business.",
 
   problem: {
     label: "The Problem",

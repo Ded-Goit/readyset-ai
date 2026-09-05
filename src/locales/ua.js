@@ -1,32 +1,101 @@
 export const ua = {
-  heroBadge: "AI ОНБОРДИНГ ДЛЯ БУДЬ-ЯКОЇ КОМАНДИ",
+  heroBadge: "AI-ОНБОРДИНГ ДЛЯ БУДЬ-ЯКОЇ КОМАНДИ",
+
   heroTitle1: "Прискорюємо",
-  heroTitle2: "підготовку нових співробітників",
-  heroTitleHighlight: "без відриву менторів",
-  heroTitle3: "від основної роботи",
+  heroTitle2: "підготовку",
+  heroTitleHighlight: "нових співробітників",
+  heroTitle3: "без відриву менторів від основної роботи.",
+
   heroDescription:
-    "Наш AI-асистент робить онбордінг простішим для бізнесу та новачка - і приносить",
+    "Наш AI-асистент робить онбординг простим для бізнесу та новачка — і приносить",
   heroDescription2: "радість з першого дня.",
-  pilotButton: "Безкоштовний пілот →",
-  howButton: "Як це працює",
+
+  // Floating cards
+  heroProgressTitle: "Прогрес новачка",
+  heroProgressValue: "82%",
+  heroProgressChange: "+32% за тиждень",
+
+  heroPlanTitle: "Персональний план",
+  heroPlanItem1: "Індивідуальна програма",
+  heroPlanItem2: "Навчання та матеріали",
+  heroPlanItem3: "Практика",
+  heroPlanItem4: "Зворотний зв’язок",
+
+  heroNextStepTitle: "Наступний крок",
+  heroNextStepItem1: "Практичне завдання",
+  heroNextStepItem2: "Клієнтський кейс",
+
+  heroGrowthTitle: "Впевненість та розвиток",
+  heroGrowthDescription: "з першого дня",
+
+  // Bottom features
   heroFeature1Title: "Швидший старт",
   heroFeature1Description: "Нова людина готова до роботи швидше",
 
   heroFeature2Title: "Ментори в фокусі",
-  heroFeature2Description: "Менше рутини - більше цінних задач",
+  heroFeature2Description: "Менше рутини — більше цінних задач",
 
   heroFeature3Title: "Кращі результати",
-  heroFeature3Description: "Впевнені співробітники - кращі результати бізнесу",
+  heroFeature3Description: "Впевнені співробітники — кращі результати бізнесу",
 
-  heroFeature4Title: "Досвід що надихає",
-  heroFeature4Description: "Підтримка, зворотний зв'язок і мотивація 24/7",
-
+  heroFeature4Title: "Досвід, що надихає",
+  heroFeature4Description: "Підтримка, зворотний зв’язок і мотивація 24/7",
   nav: {
     problem: "Проблема",
     how: "Як це працює",
     impact: "Результат",
     pilot: "Пілот",
   },
+
+  capabilitiesBadge: "Можливості",
+
+  capabilitiesTitle1: "Від хаосу до структури.",
+  capabilitiesTitle2: "Онбординг, що дає результат.",
+
+  capabilitiesDescription1:
+    "Замість залежності від одного менеджера ви отримуєте зрозумілу масштабовану систему. Замість розрізненої інформації — єдине середовище для",
+
+  capabilitiesHighlight1: "швидкого входження в роботу",
+
+  capabilitiesDescription2: "та",
+
+  capabilitiesHighlight2: "постійного розвитку.",
+
+  capability1Title: "Єдина система замість залежності від менеджера",
+
+  capability1Description:
+    "Онбординг більше не залежить від стилю конкретного менеджера. Кожен новий співробітник отримує чіткий шлях, перевірені матеріали та зрозумілі кроки з першого дня.",
+
+  capability2Title: "Вся інформація в одному місці",
+
+  capability2Description:
+    "Не потрібно шукати інформацію в чатах, ставити одні й ті самі запитання або здогадуватися. Усе структуровано, актуально та доступно 24/7.",
+
+  capability3Title: "Training Arena — безпечна практика",
+
+  capability3Description:
+    "AI моделює реальні сценарії та бізнес-ситуації. Співробітник виконує завдання, а AI перевіряє, виправляє та допомагає покращити результат.",
+
+  capability4Title: "Ментори зосереджені на розвитку, а не на повторенні",
+
+  capability4Description:
+    "Система бере на себе рутинний онбординг, тому ментори можуть зосередитися на розвитку, фідбеку та складних завданнях.",
+
+  capabilitiesResultTitle: "Тест завершено",
+
+  capabilitiesResult1: "Знання компанії",
+  capabilitiesResult2: "Огляд продукту",
+  capabilitiesResult3: "Ключові процеси",
+  capabilitiesResult4: "Інструменти та системи",
+  capabilitiesResult5: "Безпека та compliance",
+
+  capabilitiesResultValue: "Результат: 100%",
+
+  capabilitiesBottomTitle: "Сильний онбординг —",
+  capabilitiesBottomHighlight: "сильні команди.",
+
+  capabilitiesBottomDescription:
+    "Системний підхід до онбордингу економить час, зменшує витрати та формує команду, яка розвивається разом із бізнесом.",
 
   problem: {
     label: "Проблема",

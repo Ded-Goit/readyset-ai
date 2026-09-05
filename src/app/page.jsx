@@ -7,6 +7,7 @@ import HowItWorks from "@/components/how/HowItWorks";
 import ImpactSection from "@/components/impact/ImpactSection";
 import PilotSection from "@/components/pilot/PilotSection";
 import SocialsSection from "@/components/socials/SocialsSection";
+import Capabilities from "@/components/capabilities/Capabilities";
 
 export default function HomePage() {
   return (
@@ -16,12 +17,14 @@ export default function HomePage() {
       <Header />
 
       <main>
-         <Hero />
-         <ProblemSection />
-         <HowItWorks />
-         <ImpactSection />
-         <PilotSection />
-         <SocialsSection />
+        <Hero />
+        <Capabilities />
+
+        <ProblemSection />
+        <HowItWorks />
+        <ImpactSection />
+        <PilotSection />
+        <SocialsSection />
       </main>
 
       <Footer />
