@@ -1,4 +1,9 @@
 @import "../styles/variables.css";
+@import "../styles/ui.css";
+
+/* ========================================
+   RESET
+======================================== */
 
 *,
 *::before,
@@ -8,33 +13,84 @@
   padding: 0;
 }
 
+/* ========================================
+   HTML
+======================================== */
+
 html {
   scroll-behavior: smooth;
 }
 
+/* ========================================
+   BODY
+======================================== */
+
 body {
   background: var(--bg-primary);
   color: var(--text);
+
   overflow-x: hidden;
 
-  font-family: var(--font-sora);
+  font-family: var(--font-body);
 }
+
+/* ========================================
+   ELEMENTS
+======================================== */
 
 a {
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
 }
 
-button {
+button,
+input,
+textarea,
+select {
   font: inherit;
 }
 
-img {
-  max-width: 100%;
-  display: block;
+button {
+  cursor: pointer;
 }
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* ========================================
+   MAIN
+======================================== */
 
 main {
   position: relative;
-  z-index: 1;
+  z-index: var(--z-content);
+}
+
+/* ========================================
+   ACCESSIBILITY
+======================================== */
+
+:focus-visible {
+  outline: 2px solid var(--orange);
+  outline-offset: 3px;
+}
+
+/* ========================================
+   REDUCED MOTION
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

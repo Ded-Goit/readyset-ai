@@ -1,128 +1,127 @@
-.section {
-  padding: 100px 20px;
-}
-
-.container {
-  max-width: var(--container);
-  margin: 0 auto;
-}
-
-.label {
-  display: inline-block;
-  margin-bottom: 20px;
-  color: var(--orange);
-  font-size: 12px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-.title {
-  max-width: 900px;
-  margin-bottom: 24px;
-  font-size: clamp(
-    2.25rem,
-    5vw,
-    3.5rem
-  );
-  line-height: 1.1;
-  font-weight: 800;
-  letter-spacing: -1px;
-}
-
-.title span {
-  color: var(--orange);
-}
-
-.subtitle {
-  max-width: 650px;
-  margin-bottom: 64px;
-  color: var(--text-muted);
-  font-size: 1.05rem;
-  line-height: 1.8;
-}
-
-/* GRID */
+/* ========================================
+   GRID
+======================================== */
 
 .grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 16px;
+
   padding: 20px;
-  border-radius: 28px;
-  background: var(--bg-elevated);
+
   border: 1px solid var(--border);
+  border-radius: var(--radius-3xl);
+
+  background: var(--bg-elevated);
 }
 
-/* CARD */
+/* ========================================
+   CARD
+======================================== */
 
 .card {
   position: relative;
+
   display: flex;
   flex-direction: column;
+
   height: 100%;
   padding: 40px;
-  border-radius: 20px;
+
+  overflow: hidden;
+
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+
   background: var(--bg-secondary);
-  border: 1px solid rgba(240, 160, 48, 0.12);
-  box-shadow:
-    0 8px 24px rgba(0, 0, 0, 0.25);
+
+  box-shadow: var(--shadow-card);
 
   transition:
-    transform 0.3s ease,
-    border-color 0.3s ease,
-    box-shadow 0.3s ease;
+    transform var(--transition-base),
+    border-color var(--transition-base),
+    box-shadow var(--transition-base);
 }
+
+/* ========================================
+   CARD OVERLAY
+======================================== */
 
 .card::before {
   content: "";
+
   position: absolute;
   inset: 0;
+
   border-radius: inherit;
-  background:
-    linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.03) 0%,
-      transparent 35%
-    );
+
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.03) 0%,
+    transparent 35%
+  );
 
   pointer-events: none;
 }
 
+/* ========================================
+   CARD HOVER
+======================================== */
+
 .card:hover {
   transform: translateY(-6px);
-  border-color: rgba(240, 160, 48, 0.3);
-  box-shadow:
-    0 24px 60px rgba(0, 0, 0, 0.45),
-    0 0 30px rgba(240, 160, 48, 0.12),
-    0 0 60px rgba(240, 160, 48, 0.05);
+
+  border-color: var(--border-hi);
+
+  box-shadow: var(--shadow-card-hover), var(--shadow-orange);
 }
+
+/* ========================================
+   NUMBER
+======================================== */
 
 .number {
   margin-bottom: 18px;
+
   color: var(--orange);
+
   font-size: 11px;
   font-weight: 700;
+
   letter-spacing: 1.5px;
   text-transform: uppercase;
 }
 
+/* ========================================
+   CARD TITLE
+======================================== */
+
 .cardTitle {
   margin-bottom: 14px;
+
   color: var(--text);
+
   font-size: 20px;
   font-weight: 700;
   line-height: 1.35;
 }
 
+/* ========================================
+   CARD DESCRIPTION
+======================================== */
+
 .cardDescription {
   flex: 1;
+
   color: var(--text-muted);
+
   font-size: 15px;
   line-height: 1.8;
 }
 
-/* TABLET */
+/* ========================================
+   TABLET
+======================================== */
 
 @media (min-width: 768px) {
   .grid {
@@ -130,7 +129,9 @@
   }
 }
 
-/* DESKTOP */
+/* ========================================
+   DESKTOP
+======================================== */
 
 @media (min-width: 1200px) {
   .card {

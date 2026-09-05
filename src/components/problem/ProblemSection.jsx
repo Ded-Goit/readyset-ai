@@ -11,35 +11,26 @@ export default function ProblemSection() {
 
   // Check if the translation data is still loading or the structure is different
   if (!t || !t.problem) {
-    return null; 
+    return null;
   }
 
   return (
-    <section id="problem" className={styles.section}>
-      <div className={styles.container}>
-        <span className={styles.label}>
-          {t.problem.label}
-        </span>
+    <section id="problem" className="section">
+      <div className="container">
+        <span className="sectionLabel">{t.problem.label}</span>
 
-        <h2 className={styles.title}>
-  {t.problem.titleStart}{" "}
-  <span>{t.problem.highlight}</span>{" "}
-  {t.problem.titleEnd}
-</h2>
+        <h2 className="sectionTitle">
+          {t.problem.titleStart} <span>{t.problem.highlight}</span>{" "}
+          {t.problem.titleEnd}
+        </h2>
 
-        <p className={styles.subtitle}>
-          {t.problem.subtitle}
-        </p>
+        <p className="sectionSubtitle">{t.problem.subtitle}</p>
 
         <div className={styles.grid}>
-          
           {t.problem.cards.map((card, index) => (
-          <FadeIn
-           key={card.id}
-           delay={index * 0.1}
-           >
-           <ProblemCard {...card} />
-          </FadeIn>
+            <FadeIn key={card.id} delay={index * 0.1}>
+              <ProblemCard {...card} />
+            </FadeIn>
           ))}
         </div>
       </div>

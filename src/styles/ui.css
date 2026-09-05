@@ -1,0 +1,326 @@
+/* ========================================
+   SECTIONS
+======================================== */
+
+.section {
+  width: 100%;
+  padding: var(--section-padding) 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container);
+  margin: 0 auto;
+}
+
+.container-wide {
+  width: 100%;
+  max-width: var(--container-wide);
+  margin: 0 auto;
+}
+
+/* ========================================
+   SECTION HEADER
+======================================== */
+
+.sectionLabel {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  color: var(--orange);
+
+  font-size: var(--text-xs);
+  font-weight: 700;
+
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.sectionTitle {
+  margin: 0 0 24px;
+
+  color: var(--text);
+
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
+  line-height: 1.1;
+
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.sectionTitle span {
+  color: var(--orange);
+}
+
+.sectionSubtitle {
+  max-width: 700px;
+  margin: 0 0 64px;
+
+  color: var(--text-muted);
+
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.sectionSubtitle span {
+  color: var(--orange);
+}
+
+/* ========================================
+   CARD
+======================================== */
+
+.uiCard {
+  position: relative;
+
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+
+  box-shadow: var(--shadow-card);
+
+  transition:
+    transform var(--transition-base),
+    border-color var(--transition-base),
+    box-shadow var(--transition-base);
+}
+
+/* ========================================
+   CARD OVERLAY
+======================================== */
+
+.uiCardGlow::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  border-radius: inherit;
+
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.03) 0%,
+    transparent 35%
+  );
+
+  pointer-events: none;
+}
+
+/* ========================================
+   CARD HOVER
+======================================== */
+
+.uiCardHover:hover {
+  transform: translateY(-6px);
+
+  border-color: var(--border-hi);
+
+  box-shadow: var(--shadow-card-hover), var(--shadow-orange);
+}
+
+/* ========================================
+   ORANGE CARD
+======================================== */
+
+.uiCardOrange {
+  position: relative;
+
+  background: linear-gradient(
+    180deg,
+    var(--orange-08) 0%,
+    var(--orange-03, rgba(255, 140, 0, 0.03)) 25%,
+    var(--bg-secondary) 100%
+  );
+
+  border: 1px solid var(--orange-20);
+  border-radius: var(--radius-xl);
+
+  box-shadow: 0 12px 40px rgba(255, 140, 0, 0.08);
+
+  transition:
+    transform var(--transition-base),
+    border-color var(--transition-base),
+    box-shadow var(--transition-base);
+}
+
+.uiCardOrange:hover {
+  transform: translateY(-6px);
+
+  border-color: var(--orange-40);
+
+  box-shadow:
+    var(--shadow-card-hover),
+    0 0 40px var(--orange-15);
+}
+
+/* ========================================
+   PILL
+======================================== */
+
+.uiPill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: var(--radius-pill);
+}
+
+/* ========================================
+   ORANGE BADGE
+======================================== */
+
+.uiBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: fit-content;
+
+  padding: 9px 18px;
+
+  border: 1px solid var(--orange-45);
+  border-radius: var(--radius-sm);
+
+  background: var(--orange-05);
+
+  color: var(--orange);
+
+  font-size: var(--text-sm);
+  font-weight: 600;
+
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+/* ========================================
+   BUTTON
+======================================== */
+
+.uiButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 52px;
+
+  padding: 0 28px;
+
+  border: 0;
+  border-radius: var(--radius-pill);
+
+  background: var(--orange);
+
+  color: #000;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  cursor: pointer;
+
+  transition:
+    transform var(--transition-base),
+    background var(--transition-base),
+    box-shadow var(--transition-base);
+}
+
+.uiButton:hover {
+  transform: translateY(-2px);
+
+  background: var(--orange-light);
+
+  box-shadow: 0 12px 30px var(--orange-30);
+}
+
+.uiButton:active {
+  transform: translateY(0);
+}
+
+/* ========================================
+   OUTLINE BUTTON
+======================================== */
+
+.uiButtonOutline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 52px;
+
+  padding: 0 28px;
+
+  border: 1px solid var(--orange-40);
+  border-radius: var(--radius-pill);
+
+  background: transparent;
+
+  color: var(--orange);
+
+  font-size: 15px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  cursor: pointer;
+
+  transition:
+    transform var(--transition-base),
+    background var(--transition-base),
+    border-color var(--transition-base);
+}
+
+.uiButtonOutline:hover {
+  transform: translateY(-2px);
+
+  background: var(--orange-08);
+  border-color: var(--orange);
+}
+
+/* ========================================
+   ICON BOX
+======================================== */
+
+.uiIconBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--orange);
+
+  background: var(--orange-05);
+  border: 1px solid var(--orange-20);
+
+  border-radius: var(--radius-md);
+}
+
+/* ========================================
+   DIVIDER
+======================================== */
+
+.uiDivider {
+  width: 100%;
+  height: 1px;
+
+  background: var(--border);
+}
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 767px) {
+  .section {
+    padding: var(--section-padding-mobile) 20px;
+  }
+
+  .sectionSubtitle {
+    margin-bottom: 40px;
+  }
+
+  .uiButton,
+  .uiButtonOutline {
+    min-height: 50px;
+    padding: 0 24px;
+  }
+}

@@ -1,29 +1,162 @@
 :root {
-  /* Brand */
-  --orange: #ff8c00;
-  --orange-dk: #cc5500;
-  --orange-lt: #ffaa55;
+  /* ========================================
+     BRAND
+  ======================================== */
 
-  /* Surfaces */
+  --orange: #ff8c00;
+  --orange-dark: #cc5500;
+  --orange-light: #ffaa55;
+
+  /* Orange opacity variants */
+  --orange-03: rgba(255, 140, 0, 0.03);
+  --orange-05: rgba(255, 140, 0, 0.05);
+  --orange-08: rgba(255, 140, 0, 0.08);
+  --orange-10: rgba(255, 140, 0, 0.1);
+  --orange-12: rgba(255, 140, 0, 0.12);
+  --orange-15: rgba(255, 140, 0, 0.15);
+  --orange-18: rgba(255, 140, 0, 0.18);
+  --orange-20: rgba(255, 140, 0, 0.2);
+  --orange-22: rgba(255, 140, 0, 0.22);
+  --orange-28: rgba(255, 140, 0, 0.28);
+  --orange-30: rgba(255, 140, 0, 0.3);
+  --orange-40: rgba(255, 140, 0, 0.4);
+  --orange-45: rgba(255, 140, 0, 0.45);
+  --orange-65: rgba(255, 140, 0, 0.65);
+
+  /* ========================================
+     BACKGROUNDS
+  ======================================== */
+
   --bg-primary: #0f0a04;
   --bg-secondary: #1a1208;
   --bg-elevated: #221808;
+  --bg-black: #000000;
 
-  /* Borders */
+  /* Transparent surfaces */
+  --surface-white-01: rgba(255, 255, 255, 0.01);
+  --surface-white-015: rgba(255, 255, 255, 0.015);
+  --surface-white-02: rgba(255, 255, 255, 0.02);
+  --surface-white-03: rgba(255, 255, 255, 0.03);
+  --surface-white-05: rgba(255, 255, 255, 0.05);
+  --surface-black-18: rgba(0, 0, 0, 0.18);
+  --surface-black-25: rgba(0, 0, 0, 0.25);
+  --surface-black-45: rgba(0, 0, 0, 0.45);
+  --surface-black-50: rgba(0, 0, 0, 0.5);
+  --surface-black-75: rgba(0, 0, 0, 0.75);
+
+  /* ========================================
+     BORDERS
+  ======================================== */
+
   --border: rgba(255, 140, 0, 0.15);
   --border-hi: rgba(255, 140, 0, 0.4);
 
-  /* Typography */
+  /* ========================================
+     TYPOGRAPHY
+  ======================================== */
+
   --text: #ffffff;
+  --text-primary: #f5f5f5;
   --text-secondary: rgba(255, 255, 255, 0.7);
   --text-muted: rgba(255, 255, 255, 0.5);
   --text-dim: rgba(255, 255, 255, 0.25);
 
-  /* Status */
+  /* Additional text colors already used in components */
+  --text-soft: #b7b7b7;
+  --text-gray: #8f8f8f;
+  --text-light-gray: #dedede;
+  --text-dark-gray: #aaa;
+  --text-heading: #eeeeee;
+
+  /* ========================================
+     STATUS
+  ======================================== */
+
   --success: #22c55e;
+  --success-light: #4ade80;
   --warning: #f59e0b;
   --danger: #ef4444;
 
-  /* Layout */
+  /* ========================================
+     LAYOUT
+  ======================================== */
+
   --container: 1400px;
+  --container-wide: 1450px;
+
+  /* ========================================
+     SPACING
+  ======================================== */
+
+  --section-padding: 100px;
+  --section-padding-mobile: 60px;
+
+  /* ========================================
+     BORDER RADIUS
+  ======================================== */
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-2xl: 24px;
+  --radius-3xl: 28px;
+  --radius-4xl: 32px;
+  --radius-pill: 999px;
+
+  /* ========================================
+     SHADOWS
+  ======================================== */
+
+  --shadow-card: 0 8px 24px rgba(0, 0, 0, 0.25);
+
+  --shadow-card-hover: 0 24px 60px rgba(0, 0, 0, 0.45);
+
+  --shadow-large: 0 30px 100px rgba(0, 0, 0, 0.5);
+
+  --shadow-orange: 0 0 30px rgba(255, 140, 0, 0.08);
+
+  --shadow-orange-large: 0 0 60px rgba(255, 140, 0, 0.05);
+
+  /* ========================================
+     GLOW
+  ======================================== */
+
+  --glow-orange-sm: 0 0 20px rgba(255, 140, 0, 0.08);
+
+  --glow-orange: 0 0 30px rgba(255, 140, 0, 0.08);
+
+  --glow-orange-lg: 0 0 80px rgba(255, 140, 0, 0.08);
+
+  /* ========================================
+     TRANSITIONS
+  ======================================== */
+
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.3s ease;
+  --transition-slow: 0.5s ease;
+
+  /* ========================================
+     TYPOGRAPHY SCALE
+  ======================================== */
+
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-md: 15px;
+  --text-lg: 18px;
+  --text-xl: 20px;
+
+  /* ========================================
+     FONT
+  ======================================== */
+
+  --font-body: var(--font-sora);
+
+  /* ========================================
+     Z-INDEX
+  ======================================== */
+
+  --z-content: 1;
+  --z-floating: 4;
+  --z-header: 1000;
 }
