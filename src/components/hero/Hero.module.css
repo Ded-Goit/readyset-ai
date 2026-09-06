@@ -1,127 +1,101 @@
+/* ========================================
+   HERO
+======================================== */
+
 .hero {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  padding: 100px 20px 55px;
+  padding: 95px 18px 45px;
   overflow: hidden;
-
   background:
-    radial-gradient(
-      circle at 75% 35%,
-      rgba(240, 160, 48, 0.06),
-      transparent 32%
-    ),
+    radial-gradient(circle at 75% 35%, var(--orange-glow), transparent 32%),
     #000;
-
   color: var(--text);
 }
 
-/* =========================================
+/* ========================================
    MAIN
-========================================= */
+======================================== */
 
 .heroMain {
   position: relative;
   z-index: 2;
-
   width: 100%;
-  max-width: 1420px;
-  min-height: 650px;
-
+  max-width: var(--container);
   margin: 0 auto;
-
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  gap: 2px;
+  flex-direction: column;
+  gap: 35px;
 }
 
-/* =========================================
+/* ========================================
    CONTENT
-========================================= */
+======================================== */
 
 .content {
   position: relative;
   z-index: 3;
-
-  flex: 0 0 46%;
-  max-width: 650px;
-
+  width: 100%;
+  max-width: none;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  text-align: center;
 }
 
-/* =========================================
+/* ========================================
    BADGE
-========================================= */
+======================================== */
 
 .badge {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
-  min-height: 48px;
-
-  padding: 0 22px;
-
-  margin-bottom: 34px;
-
-  border: 1px solid rgba(240, 160, 48, 0.45);
-  border-radius: 10px;
-
-  background: rgba(240, 160, 48, 0.025);
-
+  min-height: 40px;
+  padding: 0 14px;
+  margin-bottom: 12px;
+  border: 1px solid var(--border-badge);
+  border-radius: var(--radius-badge);
+  background: var(--orange-subtle);
   color: var(--orange);
-
-  font-size: 14px;
+  font-size: 9px;
   font-weight: 600;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.6px;
   text-transform: uppercase;
-
   box-shadow:
-    inset 0 0 25px rgba(240, 160, 48, 0.025),
-    0 0 20px rgba(240, 160, 48, 0.02);
+    inset 0 0 25px var(--orange-subtle),
+    0 0 20px var(--orange-subtle);
 }
 
-/* =========================================
+/* ========================================
    TITLE
-========================================= */
+======================================== */
 
 .title {
-  max-width: 680px;
-
-  margin: 0 0 30px;
-
-  font-size: clamp(2.7rem, 4.6vw, 4.65rem);
+  max-width: 100%;
+  margin: 0 0 22px;
+  color: var(--text-primary);
+  font-size: clamp(1rem, 10.5vw, 1.65rem);
   line-height: 1.08;
-
   font-weight: 800;
-
-  letter-spacing: -2.8px;
-
-  color: #f5f5f5;
+  letter-spacing: -1.6px;
 }
 
 .titleOrange {
   color: var(--orange);
 }
 
-/* =========================================
+/* ========================================
    DESCRIPTION
-========================================= */
+======================================== */
 
 .subtitle {
-  max-width: 600px;
-
+  max-width: 100%;
   margin: 0;
-
-  color: #a8a8a8;
-
-  font-size: 18px;
-  line-height: 1.75;
-
+  color: var(--text-secondary);
+  font-size: 14px;
+  line-height: 1.65;
   font-weight: 400;
 }
 
@@ -129,18 +103,15 @@
   color: var(--orange);
 }
 
-/* =========================================
+/* ========================================
    VISUAL
-========================================= */
+======================================== */
 
 .visual {
   position: relative;
-
-  flex: 1;
+  width: 100%;
   min-width: 0;
-
-  min-height: 650px;
-
+  min-height: 470px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -148,132 +119,107 @@
 
 .imageWrapper {
   position: relative;
-
-  width: min(100%, 780px);
-
+  width: 100%;
+  max-width: 620px;
   display: flex;
   align-items: center;
   justify-content: center;
-
   overflow: visible;
 }
 
 .image {
   position: relative;
   z-index: 1;
-
   width: 100%;
   height: auto;
-
   display: block;
-
   object-fit: contain;
-
   filter: drop-shadow(0 20px 50px rgba(0, 0, 0, 0.5))
-    drop-shadow(0 0 40px rgba(240, 160, 48, 0.04));
+    drop-shadow(0 0 40px var(--orange-subtle));
 }
 
-/* =========================================
+/* ========================================
    FLOATING CARDS
-========================================= */
+======================================== */
 
 .floatingCard {
   position: absolute;
-
   z-index: 4;
-
-  border: 1px solid rgba(240, 160, 48, 0.45);
-
+  border: 1px solid var(--orange-border-strong);
+  border-radius: var(--radius-md);
   background: linear-gradient(
     145deg,
     rgba(12, 10, 7, 0.96),
     rgba(4, 4, 3, 0.94)
   );
-
   box-shadow:
     0 15px 40px rgba(0, 0, 0, 0.45),
-    inset 0 0 20px rgba(240, 160, 48, 0.025);
-
+    inset 0 0 20px var(--orange-subtle);
   backdrop-filter: blur(12px);
-
-  color: #f2f2f2;
+  color: var(--text-light-gray);
 }
 
-/* =========================================
-   PROGRESS
-========================================= */
+/* ========================================
+   PROGRESS CARD
+======================================== */
 
 .progressCard {
-  top: 10%;
-  left: 5%;
-
-  min-width: 175px;
-
-  padding: 16px;
-
-  border-radius: 12px;
-
+  top: 1%;
+  left: 0;
+  min-width: 145px;
+  padding: 8px;
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 6px;
+  transform: scale(0.75);
+  transform-origin: left top;
 }
 
 .progressIcon {
-  width: 42px;
+  width: 36px;
   height: 42px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
+  flex-shrink: 0;
   color: var(--orange);
 }
 
 .cardLabel {
   margin-bottom: 2px;
-
-  color: #b7b7b7;
-
+  color: var(--text-light-gray);
   font-size: 11px;
 }
 
 .progressValue {
   color: var(--orange);
-
   font-size: 27px;
   line-height: 1;
-
   font-weight: 700;
 }
 
 .progressChange {
-  margin-top: 5px;
-
+  margin-top: 2px;
+  color: var(--text-light-gray);
   font-size: 10px;
-
-  color: #dedede;
 }
 
-/* =========================================
-   PLAN
-========================================= */
+/* ========================================
+   PLAN CARD
+======================================== */
 
 .planCard {
   top: 0;
-  right: 3%;
-
-  width: 225px;
-
-  padding: 17px;
-
-  border-radius: 12px;
+  right: 30%;
+  width: 165px;
+  padding: 4px;
+  transform: scale(0.75);
+  transform-origin: right top;
 }
 
 .planTitle {
-  margin-bottom: 15px;
-
-  color: #e5e5e5;
-
+  margin-bottom: 2px;
+  color: var(--text-soft);
   font-size: 14px;
   font-weight: 600;
 }
@@ -281,33 +227,25 @@
 .planList {
   display: flex;
   flex-direction: column;
-  gap: 10px;
 }
 
 .planItem {
   display: grid;
   grid-template-columns: 14px 1fr 17px;
-
   align-items: center;
-
-  gap: 7px;
-
-  color: #bcbcbc;
-
+  gap: 4px;
+  color: var(--text-dark-gray);
   font-size: 11px;
 }
 
 .checkIcon {
-  width: 13px;
-  height: 13px;
-
+  width: 10px;
+  height: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-
   border: 1px solid var(--orange);
-  border-radius: 3px;
-
+  border-radius: var(--radius-sm);
   color: var(--orange);
 }
 
@@ -315,30 +253,25 @@
   color: var(--orange);
 }
 
-/* =========================================
-   NEXT STEP
-========================================= */
+/* ========================================
+   NEXT STEP CARD
+======================================== */
 
 .nextStepCard {
-  bottom: 8%;
-  left: 15%;
-
-  width: 180px;
-
-  padding: 13px 15px;
-
-  border-radius: 11px;
+  bottom: 1%;
+  left: 14%;
+  width: 155px;
+  padding: 8px;
+  transform: scale(0.75);
+  transform-origin: left bottom;
 }
 
 .nextStepHeader {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  margin-bottom: 12px;
-
-  color: #ddd;
-
+  margin-bottom: 4px;
+  color: var(--text-light-gray);
   font-size: 12px;
   font-weight: 600;
 }
@@ -350,85 +283,70 @@
 .nextStepItems {
   display: flex;
   flex-direction: column;
-  gap: 7px;
-
-  color: #b5b5b5;
-
+  gap: 2px;
+  color: var(--text-dark-gray);
   font-size: 11px;
 }
 
-/* =========================================
-   GROWTH
-========================================= */
+/* ========================================
+   GROWTH CARD
+======================================== */
 
 .growthCard {
-  right: 2%;
-  bottom: 9%;
-
-  min-width: 175px;
-
-  padding: 14px;
-
-  border-radius: 11px;
-
+  right: 4%;
+  bottom: 5%;
+  min-width: 150px;
+  padding: 8px;
   display: flex;
   align-items: center;
-  gap: 13px;
-
+  gap: 8px;
+  transform: scale(0.75);
+  transform-origin: right bottom;
   color: var(--orange);
 }
 
 .growthCard div {
-  color: #dedede;
-
+  color: var(--text-light-gray);
   font-size: 12px;
   line-height: 1.45;
 }
 
 .growthCard span {
   display: block;
-
-  color: #aaa;
-
+  color: var(--text-dark-gray);
   font-size: 11px;
 }
 
-/* =========================================
+.progressCard,
+.planCard,
+.nextStepCard,
+.growthCard {
+  transform: scale(0.52);
+}
+/* ========================================
    FEATURES
-========================================= */
+======================================== */
 
 .features {
   position: relative;
   z-index: 3;
-
   width: 100%;
-  max-width: 1420px;
-
-  margin: 10px auto 0;
-
-  padding-top: 35px;
-
-  border-top: 1px solid rgba(255, 255, 255, 0.07);
-
+  max-width: var(--container);
+  border-top: 1px solid var(--border-light);
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-
-  gap: 35px;
+  grid-template-columns: 1fr;
+  gap: 2px;
 }
 
 .featureCard {
   min-width: 0;
-
   display: flex;
   align-items: flex-start;
-
-  gap: 18px;
-
-  padding: 10px 5px;
-
+  gap: 8px;
+  padding: 12px 2px;
   transition:
-    transform 0.3s ease,
-    opacity 0.3s ease;
+    transform var(--transition-normal),
+    opacity var(--transition-normal);
 }
 
 .featureCard:hover {
@@ -436,16 +354,18 @@
 }
 
 .featureIcon {
-  flex: 0 0 48px;
-
-  width: 48px;
-  height: 48px;
-
+  flex: 0 0 45px;
+  width: 45px;
+  height: 45px;
   display: flex;
   align-items: center;
   justify-content: center;
-
   color: var(--orange);
+}
+
+.featureIcon svg {
+  width: 34px;
+  height: 34px;
 }
 
 .featureContent {
@@ -454,51 +374,70 @@
 
 .featureContent h3 {
   margin: 0 0 8px;
-
-  color: #eeeeee;
-
-  font-size: 16px;
+  color: var(--text-heading);
+  font-size: 14px;
   line-height: 1.25;
-
   font-weight: 700;
 }
 
 .featureContent p {
   margin: 0;
-
-  color: #8f8f8f;
-
-  font-size: 13px;
+  color: var(--text-gray);
+  font-size: 12px;
   line-height: 1.6;
 }
 
-/* =========================================
+/* ========================================
    TABLET
-========================================= */
+======================================== */
 
-@media (max-width: 1199px) {
+@media (min-width: 768px) {
   .hero {
     padding: 100px 28px 55px;
   }
 
   .heroMain {
-    gap: 25px;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    min-height: 580px;
   }
 
   .content {
-    flex-basis: 48%;
+    flex: 0 0 48%;
+    max-width: 650px;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .badge {
+    min-height: 48px;
+    padding: 0 20px;
+    margin-bottom: 12px;
+    font-size: 12px;
   }
 
   .title {
+    max-width: 680px;
+    margin-bottom: 12px;
     font-size: clamp(2.5rem, 5vw, 4rem);
+    letter-spacing: -2px;
   }
 
   .subtitle {
+    max-width: 600px;
     font-size: 16px;
+    line-height: 1.7;
   }
 
   .visual {
+    flex: 1;
     min-height: 580px;
+    margin-top: 0;
+  }
+
+  .imageWrapper {
+    max-width: 680px;
   }
 
   .progressCard {
@@ -508,7 +447,7 @@
   }
 
   .planCard {
-    right: 0;
+    right: 35%;
     transform: scale(0.9);
     transform-origin: right top;
   }
@@ -520,228 +459,137 @@
   }
 
   .growthCard {
-    right: 0;
+    right: 7%;
     transform: scale(0.9);
     transform-origin: right bottom;
   }
 
   .features {
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+  }
+
+  .featureCard {
+    gap: 18px;
+    padding: 10px 5px;
+  }
+
+  .featureIcon {
+    flex-basis: 48px;
+    width: 48px;
+    height: 48px;
+  }
+
+  .featureIcon svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .featureContent h3 {
+    font-size: 15px;
+  }
+
+  .featureContent p {
+    font-size: 13px;
+  }
+
+  .nextStepCard,
+  .growthCard {
+    transform: scale(0.62);
+  }
+  .progressCard,
+  .planCard {
+    transform: scale(0.52);
   }
 }
 
-/* =========================================
-   MOBILE / TABLET
-========================================= */
+/* ========================================
+   DESKTOP
+======================================== */
 
-@media (max-width: 767px) {
+@media (min-width: 1024px) {
   .hero {
-    min-height: auto;
-
-    padding: 95px 18px 45px;
-
-    overflow: hidden;
+    padding: 100px 32px 55px;
   }
 
   .heroMain {
-    min-height: auto;
-
-    flex-direction: column;
-
-    gap: 35px;
+    max-width: var(--container);
+    gap: 12px;
+    min-height: 650px;
+    margin: 0px auto;
   }
 
   .content {
-    width: 100%;
-    max-width: none;
-
-    align-items: center;
-
-    text-align: center;
-  }
-
-  .badge {
-    min-height: 40px;
-
-    padding: 0 14px;
-
-    margin-bottom: 24px;
-
-    font-size: 9px;
-
-    letter-spacing: 0.6px;
+    flex-basis: 46%;
   }
 
   .title {
-    max-width: 100%;
-
-    margin-bottom: 22px;
-
-    font-size: clamp(2.2rem, 10vw, 3.3rem);
-
-    line-height: 1.08;
-
-    letter-spacing: -1.6px;
+    font-size: clamp(2.7rem, 4.6vw, 4.65rem);
+    letter-spacing: -2.8px;
   }
 
   .subtitle {
-    max-width: 100%;
-
-    font-size: 14px;
-    line-height: 1.65;
+    font-size: 18px;
+    line-height: 1.75;
   }
 
   .visual {
-    width: 100%;
-    min-height: 470px;
-
-    margin-top: 5px;
+    min-height: 650px;
   }
 
   .imageWrapper {
-    width: 100%;
-    max-width: 620px;
+    width: min(100%, 780px);
   }
 
   .progressCard {
-    top: 8%;
-    left: 0;
-    min-width: 145px;
-    padding: 11px;
-    transform: scale(0.75);
-    transform-origin: left top;
+    top: 1%;
+    left: 5%;
+    min-width: 175px;
+    padding: 16px;
+    transform: none;
   }
 
   .planCard {
     top: 0;
-    right: 0;
-    width: 185px;
-    padding: 13px;
-    transform: scale(0.75);
-    transform-origin: right top;
+    right: 33%;
+    width: 225px;
+    padding: 17px;
+    transform: none;
   }
 
   .nextStepCard {
-    bottom: 4%;
-    left: 0;
-    width: 155px;
-    padding: 11px;
-    transform: scale(0.75);
-    transform-origin: left bottom;
+    left: 5%;
+    width: 180px;
+    padding: 13px 15px;
+    transform: none;
   }
 
   .growthCard {
-    right: 0;
-    bottom: 5%;
-    min-width: 150px;
-    padding: 11px;
-    transform: scale(0.75);
-    transform-origin: right bottom;
+    right: 2%;
+    min-width: 175px;
+    padding: 14px;
+    transform: none;
   }
 
   .features {
-    grid-template-columns: 1fr;
-    gap: 5px;
-    margin-top: 20px;
-    padding-top: 25px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+    max-width: var(--container);
+    margin: 0px auto;
   }
-
-  .featureCard {
-    padding: 14px 5px;
-    gap: 15px;
-  }
-
-  .featureIcon {
-    flex-basis: 45px;
-    width: 45px;
-    height: 45px;
-  }
-
-  .featureIcon svg {
-    width: 34px;
-    height: 34px;
-  }
-
-  .featureContent h3 {
-    font-size: 14px;
-  }
-
-  .featureContent p {
-    font-size: 12px;
-  }
-}
-
-/* =========================================
-   SMALL MOBILE
-========================================= */
-
-@media (max-width: 420px) {
-  .hero {
-    padding-left: 14px;
-    padding-right: 14px;
-  }
-
-  .title {
-    font-size: clamp(2rem, 10.5vw, 2.65rem);
-  }
-
-  .subtitle {
-    font-size: 13px;
-  }
-
-  .visual {
-    min-height: 390px;
-  }
-
-  .progressCard {
-    transform: scale(0.62);
-  }
-
-  .planCard {
-    transform: scale(0.62);
-  }
-
-  .nextStepCard {
-    transform: scale(0.62);
-  }
-
-  .growthCard {
-    transform: scale(0.62);
-  }
-
-  .features {
-    margin-top: 10px;
-  }
-}
-
-/* =========================================
-   VERY SMALL SCREENS
-========================================= */
-
-@media (max-width: 350px) {
-  .badge {
-    font-size: 8px;
-  }
-
-  .title {
-    font-size: 1.9rem;
-  }
-
-  .visual {
-    min-height: 350px;
-  }
-
-  .progressCard,
-  .planCard,
   .nextStepCard,
   .growthCard {
-    transform: scale(0.55);
+    transform: scale(0.72);
+  }
+  .progressCard,
+  .planCard {
+    transform: scale(0.67);
   }
 }
 
-/* =========================================
+/* ========================================
    REDUCED MOTION
-========================================= */
+======================================== */
 
 @media (prefers-reduced-motion: reduce) {
   .featureCard {

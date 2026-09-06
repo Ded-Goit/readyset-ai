@@ -61,11 +61,10 @@
 
   --border: rgba(255, 140, 0, 0.15);
   --border-hi: rgba(255, 140, 0, 0.4);
-
+  --border-badge: rgba(240, 160, 48, 0.45);
   /* ========================================
      TYPOGRAPHY
   ======================================== */
-
   --text: #ffffff;
   --text-primary: #f5f5f5;
   --text-secondary: rgba(255, 255, 255, 0.7);
@@ -94,7 +93,7 @@
 
   --container: 1400px;
   --container-content: 1120px;
-  --container-wide: 1450px;
+  --container-wide: 1440px;
 
   /* ========================================
      SPACING
@@ -108,7 +107,7 @@
   ======================================== */
 
   --radius-sm: 8px;
-  --radius-mdd: 10px;
+  --radius-badge: 10px;
   --radius-md: 12px;
   --radius-lg: 16px;
   --radius-xl: 20px;
@@ -140,8 +139,8 @@
   ======================================== */
 
   --transition-fast: 0.2s ease;
-  --transition-base: 0.3s ease;
   --transition-normal: 0.3s ease;
+  --transition-base: 0.4s ease;
   --transition-slow: 0.5s ease;
 
   /* ========================================
@@ -173,4 +172,15 @@
   --cta-primary: #6d5efc;
   --cta-primary-hover: #5c4cf5;
   --shadow-cta: 0 12px 30px rgba(109, 94, 252, 0.35);
+  /*------------------------------------------------------------------------------------------*/
+
+  --orange-glow: rgba(255, 140, 0, 0.12);
+
+  --border-badge: rgba(255, 140, 0, 0.45);
+
+  --orange-subtle: rgba(255, 140, 0, 0.06);
+
+  --orange-border-strong: rgba(255, 140, 0, 0.65);
+
+  --border-light: rgba(255, 255, 255, 0.07);
 }
