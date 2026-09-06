@@ -28,9 +28,7 @@ html {
 body {
   background: var(--bg-primary);
   color: var(--text);
-
   overflow-x: hidden;
-
   font-family: var(--font-body);
 }
 

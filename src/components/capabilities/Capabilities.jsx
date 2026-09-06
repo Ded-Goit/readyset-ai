@@ -49,8 +49,8 @@ export default function Capabilities() {
   ];
 
   return (
-    <section className={styles.capabilities}>
-      <div className={styles.container}>
+    <section className="section">
+      <div className="container">
         <div className={styles.left}>
           <FadeUp delay={0}>
             <div className={styles.badge}>{t.capabilitiesBadge}</div>

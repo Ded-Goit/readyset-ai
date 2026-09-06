@@ -1,22 +1,24 @@
+/* ========================================
+   CAPABILITIES
+======================================== */
+
 .capabilities {
   width: 100%;
-  padding: 80px 20px;
-  background: var(--background);
 }
 
-.container {
-  width: 100%;
-  max-width: 1450px;
-  margin: 0 auto;
+/* ========================================
+   LAYOUT
+======================================== */
 
+.container {
   display: grid;
   grid-template-columns: 0.95fr 1.05fr;
   gap: 18px;
 }
 
-/* =========================
+/* ========================================
    LEFT SIDE
-========================= */
+======================================== */
 
 .left {
   min-width: 0;
@@ -24,6 +26,10 @@
   display: flex;
   flex-direction: column;
 }
+
+/* ========================================
+   BADGE
+======================================== */
 
 .badge {
   width: fit-content;
@@ -35,10 +41,10 @@
   padding: 9px 22px;
   margin-bottom: 24px;
 
-  border: 1px solid rgba(240, 160, 48, 0.45);
-  border-radius: 8px;
+  border: 1px solid var(--border-hi);
+  border-radius: var(--radius-sm);
 
-  background: rgba(240, 160, 48, 0.04);
+  background: var(--orange-soft);
 
   color: var(--orange);
 
@@ -49,31 +55,18 @@
   letter-spacing: 0.8px;
 }
 
-.title {
-  max-width: 700px;
-
-  margin: 0 0 22px;
-
-  color: var(--text);
-
-  font-size: clamp(2.8rem, 4.5vw, 4.4rem);
-  line-height: 1.02;
-  letter-spacing: -2px;
-  font-weight: 800;
-}
-
-.title span {
-  color: var(--orange);
-}
+/* ========================================
+   DESCRIPTION
+======================================== */
 
 .description {
   max-width: 650px;
-
   margin: 0;
 
   color: var(--text-muted);
 
   font-size: clamp(1rem, 1.4vw, 1.15rem);
+
   line-height: 1.65;
 }
 
@@ -82,9 +75,9 @@
   font-weight: 600;
 }
 
-/* =========================
-   IMAGE
-========================= */
+/* ========================================
+   IMAGE / VISUAL
+======================================== */
 
 .visual {
   position: relative;
@@ -94,17 +87,12 @@
 
   overflow: hidden;
 
-  border-radius: 20px;
+  border: 1px solid var(--border-hi);
+  border-radius: var(--radius-xl);
 
   background:
-    radial-gradient(
-      circle at 50% 50%,
-      rgba(240, 160, 48, 0.13),
-      transparent 65%
-    ),
+    radial-gradient(circle at 50% 50%, var(--orange-glow), transparent 65%),
     rgba(0, 0, 0, 0.18);
-
-  border: 1px solid rgba(240, 160, 48, 0.22);
 }
 
 .image {
@@ -116,9 +104,9 @@
   object-fit: cover;
 }
 
-/* =========================
+/* ========================================
    RESULT CARD
-========================= */
+======================================== */
 
 .resultCard {
   position: absolute;
@@ -127,19 +115,18 @@
   bottom: 7%;
 
   width: 245px;
-
   padding: 18px;
 
-  background: rgba(20, 12, 3, 0.78);
+  border: 1px solid var(--orange-border-strong);
+  border-radius: var(--radius-sm);
 
-  border: 1px solid rgba(240, 160, 48, 0.65);
-  border-radius: 8px;
+  background: var(--glass-dark);
 
   backdrop-filter: blur(8px);
 
   box-shadow:
-    0 0 25px rgba(240, 160, 48, 0.08),
-    inset 0 0 20px rgba(240, 160, 48, 0.03);
+    var(--shadow-orange-soft),
+    inset 0 0 20px var(--orange-soft);
 
   color: var(--text);
 
@@ -174,23 +161,27 @@
   font-weight: 700;
 }
 
-/* =========================
+/* ========================================
    CARDS GRID
-========================= */
+======================================== */
 
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+
   gap: 18px;
 
   min-width: 0;
 }
 
+/* ========================================
+   CAPABILITY CARD
+======================================== */
+
 .card {
   position: relative;
 
   min-height: 330px;
-
   padding: 32px 38px;
 
   overflow: hidden;
@@ -198,22 +189,17 @@
   display: flex;
   flex-direction: column;
 
-  border-radius: 15px;
-
-  border: 1px solid rgba(240, 160, 48, 0.28);
+  border: 1px solid var(--border-hi);
+  border-radius: var(--radius-lg);
 
   background:
-    radial-gradient(
-      circle at 50% 0%,
-      rgba(240, 160, 48, 0.07),
-      transparent 55%
-    ),
-    rgba(255, 255, 255, 0.015);
+    radial-gradient(circle at 50% 0%, var(--orange-soft), transparent 55%),
+    var(--surface-transparent);
 
   transition:
-    transform 0.3s ease,
-    border-color 0.3s ease,
-    background 0.3s ease;
+    transform var(--transition-base),
+    border-color var(--transition-base),
+    background var(--transition-base);
 }
 
 .card:hover {
@@ -222,9 +208,13 @@
   border-color: var(--orange);
 
   background:
-    radial-gradient(circle at 50% 0%, rgba(240, 160, 48, 0.1), transparent 60%),
-    rgba(255, 255, 255, 0.02);
+    radial-gradient(circle at 50% 0%, var(--orange-glow), transparent 60%),
+    var(--surface-hover);
 }
+
+/* ========================================
+   CARD TOP
+======================================== */
 
 .cardTop {
   display: flex;
@@ -233,6 +223,10 @@
 
   margin-bottom: 14px;
 }
+
+/* ========================================
+   ICON
+======================================== */
 
 .icon {
   width: 68px;
@@ -245,14 +239,21 @@
   color: var(--orange);
 }
 
+/* ========================================
+   NUMBER
+======================================== */
+
 .number {
   color: var(--text);
 
   font-size: 30px;
   font-weight: 400;
-
   line-height: 1;
 }
+
+/* ========================================
+   CARD TITLE
+======================================== */
 
 .card h3 {
   max-width: 330px;
@@ -262,9 +263,14 @@
   color: var(--orange);
 
   font-size: clamp(1.25rem, 1.8vw, 1.55rem);
+
   line-height: 1.25;
   font-weight: 700;
 }
+
+/* ========================================
+   CARD DESCRIPTION
+======================================== */
 
 .card p {
   max-width: 380px;
@@ -277,18 +283,17 @@
   line-height: 1.55;
 }
 
-/* =========================
+/* ========================================
    CORNER PLUS
-========================= */
+======================================== */
 
 .corner {
   position: absolute;
 
-  color: rgba(240, 160, 48, 0.65);
+  color: var(--orange-border-strong);
 
   font-size: 18px;
   font-weight: 300;
-
   line-height: 1;
 }
 
@@ -302,9 +307,9 @@
   bottom: 20px;
 }
 
-/* =========================
+/* ========================================
    BOTTOM CARD
-========================= */
+======================================== */
 
 .bottomCard {
   grid-column: 1 / -1;
@@ -318,17 +323,17 @@
 
   padding: 18px 24px;
 
-  border: 1px solid rgba(240, 160, 48, 0.28);
-  border-radius: 15px;
+  border: 1px solid var(--border-hi);
+  border-radius: var(--radius-lg);
 
   background:
-    radial-gradient(
-      circle at 15% 50%,
-      rgba(240, 160, 48, 0.07),
-      transparent 35%
-    ),
-    rgba(255, 255, 255, 0.015);
+    radial-gradient(circle at 15% 50%, var(--orange-soft), transparent 35%),
+    var(--surface-transparent);
 }
+
+/* ========================================
+   BOTTOM ICON
+======================================== */
 
 .bottomIcon {
   flex: 0 0 110px;
@@ -340,13 +345,17 @@
   align-items: center;
   justify-content: center;
 
-  border: 1px solid rgba(240, 160, 48, 0.45);
-  border-radius: 10px;
+  border: 1px solid var(--border-hi);
+  border-radius: var(--radius-sm);
+
+  background: var(--orange-soft);
 
   color: var(--orange);
-
-  background: rgba(240, 160, 48, 0.035);
 }
+
+/* ========================================
+   BOTTOM CARD CONTENT
+======================================== */
 
 .bottomCard h3 {
   margin: 0 0 6px;
@@ -354,6 +363,7 @@
   color: var(--text);
 
   font-size: clamp(1.3rem, 2vw, 1.7rem);
+
   line-height: 1.2;
   font-weight: 700;
 }
@@ -373,52 +383,39 @@
   line-height: 1.5;
 }
 
-/* =========================
+/* ========================================
    TABLET
-========================= */
+======================================== */
 
 @media (max-width: 1099px) {
-  .capabilities {
-    padding: 70px 32px;
-  }
-
   .container {
     grid-template-columns: 1fr;
   }
 
   .left {
     display: grid;
+
     grid-template-columns: 1fr 1fr;
+
     column-gap: 30px;
   }
 
   .badge,
-  .title,
-  .description {
-    grid-column: 1 / -1;
-  }
-
+  .description,
   .visual {
-    grid-column: 1 / -1;
-  }
-
-  .grid {
     grid-column: 1 / -1;
   }
 }
 
-/* =========================
+/* ========================================
    MOBILE
-========================= */
+======================================== */
 
 @media (max-width: 767px) {
-  .capabilities {
-    padding: 60px 20px;
-  }
-
   .container {
     display: flex;
     flex-direction: column;
+
     gap: 14px;
   }
 
@@ -430,13 +427,6 @@
     margin-bottom: 18px;
   }
 
-  .title {
-    margin-bottom: 18px;
-
-    font-size: clamp(2.4rem, 12vw, 3.5rem);
-    letter-spacing: -1.5px;
-  }
-
   .description {
     font-size: 0.95rem;
   }
@@ -444,7 +434,7 @@
   .visual {
     margin-top: 24px;
 
-    border-radius: 16px;
+    border-radius: var(--radius-lg);
   }
 
   .resultCard {
@@ -452,7 +442,6 @@
     bottom: 6%;
 
     width: 190px;
-
     padding: 12px;
   }
 
@@ -469,7 +458,6 @@
   }
 
   .grid {
-    display: grid;
     grid-template-columns: 1fr;
     gap: 12px;
   }
@@ -509,7 +497,6 @@
 
   .bottomIcon {
     flex: 0 0 70px;
-
     width: 70px;
     height: 70px;
   }

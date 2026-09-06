@@ -7,6 +7,10 @@
   margin: 0 auto;
 }
 
+/* ========================================
+   HEADER
+======================================== */
+
 .label {
   display: inline-block;
 
@@ -18,21 +22,15 @@
   font-weight: 700;
 
   text-transform: uppercase;
-
   letter-spacing: 2px;
 }
 
 .title {
   margin-bottom: 24px;
 
-  font-size: clamp(
-    2.25rem,
-    5vw,
-    3.5rem
-  );
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
 
   line-height: 1.1;
-
   font-weight: 800;
 
   letter-spacing: -1px;
@@ -50,18 +48,19 @@
   color: var(--text-muted);
 
   font-size: 1.05rem;
-
   line-height: 1.8;
 }
 
-/* Metrics */
+/* ========================================
+   METRICS
+======================================== */
 
 .metrics {
   display: grid;
 
-  gap: 24px;
-
   grid-template-columns: 1fr;
+
+  gap: 24px;
 }
 
 .metric {
@@ -69,49 +68,55 @@
 
   padding: 36px;
 
-  border-radius: 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
 
   background: var(--bg-secondary);
 
-  border: 1px solid var(--border);
-
-  box-shadow:
-    0 8px 24px rgba(0, 0, 0, 0.25);
+  box-shadow: var(--shadow-card);
 
   transition:
-    transform 0.3s ease,
-    border-color 0.3s ease,
-    box-shadow 0.3s ease;
+    transform var(--transition-normal),
+    border-color var(--transition-normal),
+    box-shadow var(--transition-normal);
 }
+
+/* ========================================
+   METRIC INNER GLOW
+======================================== */
 
 .metric::before {
   content: "";
 
   position: absolute;
-
   inset: 0;
 
   border-radius: inherit;
 
-  background:
-    linear-gradient(
-      180deg,
-      rgba(255,255,255,0.03) 0%,
-      transparent 35%
-    );
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.03) 0%,
+    transparent 35%
+  );
 
   pointer-events: none;
 }
+
+/* ========================================
+   METRIC HOVER
+======================================== */
 
 .metric:hover {
   transform: translateY(-6px);
 
   border-color: var(--border-hi);
 
-  box-shadow:
-    0 24px 60px rgba(0,0,0,.45),
-    0 0 30px rgba(240,160,48,.08);
+  box-shadow: var(--shadow-card-hover);
 }
+
+/* ========================================
+   METRIC VALUE
+======================================== */
 
 .metricValue {
   display: block;
@@ -120,11 +125,7 @@
 
   color: var(--orange);
 
-  font-size: clamp(
-    3rem,
-    6vw,
-    4rem
-  );
+  font-size: clamp(3rem, 6vw, 4rem);
 
   font-weight: 900;
 
@@ -135,7 +136,6 @@
   margin-bottom: 14px;
 
   font-size: 20px;
-
   font-weight: 700;
 }
 
@@ -145,23 +145,23 @@
   line-height: 1.8;
 }
 
-/* Quote */
+/* ========================================
+   QUOTE
+======================================== */
 
 .quote {
   margin-top: 48px;
 
   padding: 36px;
 
-  border-radius: 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
 
   background: var(--bg-secondary);
 
-  border: 1px solid var(--border);
-
   text-align: center;
 
-  box-shadow:
-    0 8px 24px rgba(0,0,0,.2);
+  box-shadow: var(--shadow-card);
 }
 
 .quote p {
@@ -178,28 +178,27 @@
   color: var(--text-muted);
 }
 
-/* ROI */
+/* ========================================
+   ROI
+======================================== */
 
 .roi {
   margin-top: 48px;
 
   padding: 48px;
 
+  border: 1px solid var(--orange-border-strong);
+  border-radius: var(--radius-2xl);
+
+  background: linear-gradient(
+    180deg,
+    var(--orange-subtle),
+    var(--bg-secondary)
+  );
+
   text-align: center;
 
-  border-radius: 24px;
-
-  background:
-    linear-gradient(
-      180deg,
-      rgba(240,160,48,.06),
-      var(--bg-secondary)
-    );
-
-  border: 1px solid rgba(240,160,48,.2);
-
-  box-shadow:
-    0 12px 40px rgba(240,160,48,.08);
+  box-shadow: var(--shadow-orange);
 }
 
 .roi strong {
@@ -209,11 +208,7 @@
 
   color: var(--orange);
 
-  font-size: clamp(
-    1.8rem,
-    4vw,
-    2.6rem
-  );
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
 
   font-weight: 900;
 }
@@ -226,13 +221,17 @@
   color: var(--orange);
 
   font-size: 1.4rem;
-
   font-weight: 800;
 }
+
+/* ========================================
+   ACTION
+======================================== */
 
 .actions {
   display: flex;
   justify-content: center;
+
   margin-top: 48px;
 }
 
@@ -240,32 +239,56 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 16px 36px;
-  border-radius: 999px;
 
-  background: #6d5efc;
+  padding: 16px 36px;
+
+  border: none;
+  border-radius: var(--radius-full);
+
+  background: var(--cta-primary);
+
   color: #fff;
-  text-decoration: none;
 
   font-size: 16px;
   font-weight: 600;
+
   line-height: 1;
 
+  text-decoration: none;
+
+  cursor: pointer;
+
   transition:
-    background .25s ease,
-    transform .25s ease,
-    box-shadow .25s ease;
+    background var(--transition-fast),
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast);
 }
 
 .button:hover {
-  background: #5c4cf5;
+  background: var(--cta-primary-hover);
+
   transform: translateY(-2px);
-  box-shadow: 0 12px 30px rgba(109, 94, 252, .35);
+
+  box-shadow: var(--shadow-cta);
 }
 
 .button:active {
   transform: translateY(0);
 }
+
+/* ========================================
+   TABLET / DESKTOP
+======================================== */
+
+@media (min-width: 768px) {
+  .metrics {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ========================================
+   MOBILE
+======================================== */
 
 @media (max-width: 768px) {
   .actions {
@@ -275,13 +298,7 @@
   .button {
     width: 100%;
     max-width: 340px;
-    padding: 15px 24px;
-  }
-}
-/* Desktop */
 
-@media (min-width: 768px) {
-  .metrics {
-    grid-template-columns: repeat(3, 1fr);
+    padding: 15px 24px;
   }
 }
