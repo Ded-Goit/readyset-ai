@@ -49,8 +49,8 @@ export default function Capabilities() {
   ];
 
   return (
-    <section className="section">
-      <div className="container">
+    <section className={styles.capabilities}>
+      <div className={styles.container}>
         <div className={styles.left}>
           <FadeUp delay={0}>
             <div className={styles.badge}>{t.capabilitiesBadge}</div>
@@ -137,24 +137,23 @@ export default function Capabilities() {
             );
           })}
         </div>
-
-        <FadeUp delay={0.2}>
-          <div className={styles.bottomCard}>
-            <div className={styles.bottomIcon}>
-              <Rocket size={54} strokeWidth={1.5} />
-            </div>
-
-            <div>
-              <h3>
-                {t.capabilitiesBottomTitle}{" "}
-                <span>{t.capabilitiesBottomHighlight}</span>
-              </h3>
-
-              <p>{t.capabilitiesBottomDescription}</p>
-            </div>
-          </div>
-        </FadeUp>
       </div>
+      <FadeUp delay={0.2}>
+        <div className={styles.bottomCard}>
+          <div className={styles.bottomIcon}>
+            <Rocket size={54} strokeWidth={1.5} />
+          </div>
+
+          <div>
+            <h3>
+              {t.capabilitiesBottomTitle}{" "}
+              <span>{t.capabilitiesBottomHighlight}</span>
+            </h3>
+
+            <p>{t.capabilitiesBottomDescription}</p>
+          </div>
+        </div>
+      </FadeUp>
     </section>
   );
 }

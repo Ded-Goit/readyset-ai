@@ -577,6 +577,12 @@
     max-width: var(--container);
     margin: 0px auto;
   }
+
+  .featureIcon {
+    flex: 0 0 25px;
+    width: 55px;
+    height: 55px;
+  }
   .nextStepCard,
   .growthCard {
     transform: scale(0.72);

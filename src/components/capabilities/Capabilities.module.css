@@ -4,16 +4,17 @@
 
 .capabilities {
   width: 100%;
+  padding: 24px;
 }
 
 /* ========================================
-   LAYOUT
+   CONTAINER
 ======================================== */
 
 .container {
-  display: grid;
-  grid-template-columns: 0.95fr 1.05fr;
-  gap: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 
 /* ========================================
@@ -22,7 +23,6 @@
 
 .left {
   min-width: 0;
-
   display: flex;
   flex-direction: column;
 }
@@ -33,26 +33,28 @@
 
 .badge {
   width: fit-content;
-
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
-  padding: 9px 22px;
-  margin-bottom: 24px;
-
+  padding: 8px 16px;
+  margin-bottom: 18px;
   border: 1px solid var(--border-hi);
   border-radius: var(--radius-sm);
-
   background: var(--orange-soft);
-
   color: var(--orange);
-
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
-
+  line-height: 1;
   text-transform: uppercase;
-  letter-spacing: 0.8px;
+  letter-spacing: 0.7px;
+}
+
+/* ========================================
+   TITLE
+======================================== */
+
+.title {
+  margin: 0 0 18px;
 }
 
 /* ========================================
@@ -62,11 +64,8 @@
 .description {
   max-width: 650px;
   margin: 0;
-
   color: var(--text-muted);
-
-  font-size: clamp(1rem, 1.4vw, 1.15rem);
-
+  font-size: 0.95rem;
   line-height: 1.65;
 }
 
@@ -81,26 +80,20 @@
 
 .visual {
   position: relative;
-
   width: 100%;
-  margin-top: 30px;
-
+  margin-top: 24px;
   overflow: hidden;
-
   border: 1px solid var(--border-hi);
-  border-radius: var(--radius-xl);
-
+  border-radius: var(--radius-lg);
   background:
     radial-gradient(circle at 50% 50%, var(--orange-glow), transparent 65%),
     rgba(0, 0, 0, 0.18);
 }
 
 .image {
+  display: block;
   width: 100%;
   height: auto;
-
-  display: block;
-
   object-fit: cover;
 }
 
@@ -110,55 +103,49 @@
 
 .resultCard {
   position: absolute;
-
-  left: 14%;
-  bottom: 7%;
-
-  width: 245px;
-  padding: 18px;
-
+  left: 13%;
+  bottom: 8%;
+  width: min(190px, 52%);
+  height: 80px;
+  padding: 2px;
   border: 1px solid var(--orange-border-strong);
   border-radius: var(--radius-sm);
-
   background: var(--glass-dark);
-
   backdrop-filter: blur(8px);
-
   box-shadow:
     var(--shadow-orange-soft),
     inset 0 0 20px var(--orange-soft);
-
   color: var(--text);
-
-  transform: rotate(-3deg);
+  transform: perspective(1000px) rotateX(-24deg) rotateY(-35deg) rotateZ(-5deg);
+  outline: 1px solid var(--orange-border-strong); /* Друга рамка такого ж кольору */
+  outline-offset: -4px; /* Відступ всередину на 4 пікселі (для відступу назовні зробіть просто 4px) */
+  pointer-events: none; /* Гарантує, що аутлайн не заважатиме клікам, якщо вони будуть */
 }
 
 .resultTitle {
-  margin-bottom: 9px;
-
+  margin-bottom: 4px;
+  padding-left: 30px;
   color: var(--orange);
-
-  font-size: 13px;
+  font-size: 11px;
   font-weight: 700;
+  line-height: 0.8;
 }
 
 .resultCard ol {
   margin: 0;
-  padding-left: 18px;
-
+  padding-left: 30px;
   color: var(--text-muted);
-
-  font-size: 10px;
-  line-height: 1.55;
+  font-size: 8px;
+  line-height: 1;
 }
 
 .resultValue {
-  margin-top: 8px;
-
+  margin-top: 4px;
+  padding-left: 30px;
   color: var(--orange);
-
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 700;
+  line-height: 1.2;
 }
 
 /* ========================================
@@ -167,9 +154,9 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
 
-  gap: 18px;
+  gap: 12px;
 
   min-width: 0;
 }
@@ -181,8 +168,10 @@
 .card {
   position: relative;
 
-  min-height: 330px;
-  padding: 32px 38px;
+  min-width: 0;
+  min-height: 0;
+
+  padding: 25px;
 
   overflow: hidden;
 
@@ -229,8 +218,8 @@
 ======================================== */
 
 .icon {
-  width: 68px;
-  height: 68px;
+  width: 58px;
+  height: 58px;
 
   display: flex;
   align-items: center;
@@ -246,7 +235,7 @@
 .number {
   color: var(--text);
 
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 400;
   line-height: 1;
 }
@@ -262,8 +251,7 @@
 
   color: var(--orange);
 
-  font-size: clamp(1.25rem, 1.8vw, 1.55rem);
-
+  font-size: 1.3rem;
   line-height: 1.25;
   font-weight: 700;
 }
@@ -279,7 +267,7 @@
 
   color: var(--text-muted);
 
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.55;
 }
 
@@ -312,16 +300,14 @@
 ======================================== */
 
 .bottomCard {
-  grid-column: 1 / -1;
-
-  min-height: 125px;
+  min-width: 0;
 
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 
-  gap: 38px;
+  gap: 18px;
 
-  padding: 18px 24px;
+  padding: 20px;
 
   border: 1px solid var(--border-hi);
   border-radius: var(--radius-lg);
@@ -336,10 +322,10 @@
 ======================================== */
 
 .bottomIcon {
-  flex: 0 0 110px;
+  flex: 0 0 70px;
 
-  width: 110px;
-  height: 95px;
+  width: 70px;
+  height: 70px;
 
   display: flex;
   align-items: center;
@@ -349,12 +335,16 @@
   border-radius: var(--radius-sm);
 
   background: var(--orange-soft);
-
   color: var(--orange);
 }
 
+.bottomIcon svg {
+  width: 38px;
+  height: 38px;
+}
+
 /* ========================================
-   BOTTOM CARD CONTENT
+   BOTTOM CONTENT
 ======================================== */
 
 .bottomCard h3 {
@@ -362,8 +352,7 @@
 
   color: var(--text);
 
-  font-size: clamp(1.3rem, 2vw, 1.7rem);
-
+  font-size: 1.2rem;
   line-height: 1.2;
   font-weight: 700;
 }
@@ -379,138 +368,244 @@
 
   color: var(--text-muted);
 
-  font-size: 15px;
+  font-size: 13px;
   line-height: 1.5;
 }
 
 /* ========================================
-   TABLET
+   TABLET  
 ======================================== */
 
-@media (max-width: 1099px) {
+@media (min-width: 768px) {
   .container {
-    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns:
+      minmax(0, 0.95fr)
+      minmax(0, 1.05fr);
+    gap: 8px;
   }
+
+  /* -------------------------------
+     LEFT
+  ------------------------------- */
 
   .left {
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    column-gap: 30px;
+    grid-column: 1;
+    grid-row: 1;
+    min-width: 0;
   }
 
-  .badge,
-  .description,
+  .badge {
+    padding: 9px 20px;
+    margin-bottom: 20px;
+    font-size: 13px;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
   .visual {
-    grid-column: 1 / -1;
+    margin-top: 28px;
+    border-radius: var(--radius-xl);
+  }
+
+  /* -------------------------------
+     RESULT CARD
+  ------------------------------- */
+
+  .resultCard {
+    left: 11%;
+    bottom: 7%;
+    width: 160px;
+    outline-offset: 4px;
+  }
+
+  .resultTitle {
+    font-size: 12px;
+  }
+
+  .resultCard ol {
+    font-size: 9px;
+  }
+
+  .resultValue {
+    font-size: 11px;
+  }
+
+  /* -------------------------------
+     RIGHT CARDS
+  ------------------------------- */
+
+  .grid {
+    grid-column: 2;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    min-width: 0;
+  }
+
+  .card {
+    height: 264px;
+    padding: 8px;
+  }
+
+  .icon {
+    width: 46px;
+    height: 46px;
+  }
+
+  .number {
+    font-size: 24px;
+  }
+
+  .card h3 {
+    font-size: 0.8rem;
+  }
+
+  .card p {
+    font-size: 12px;
+  }
+
+  /* -------------------------------
+     BOTTOM
+  ------------------------------- */
+
+  .bottomCard {
+    width: 100%;
+    margin-top: 16px;
+    padding: 20px 24px;
+  }
+
+  .bottomIcon {
+    flex: 0 0 90px;
+    width: 90px;
+    height: 85px;
+  }
+
+  .bottomIcon svg {
+    width: 46px;
+    height: 46px;
+  }
+
+  .bottomCard h3 {
+    font-size: 1.4rem;
+  }
+
+  .bottomCard p {
+    font-size: 14px;
   }
 }
 
 /* ========================================
-   MOBILE
+   DESKTOP
+   1100px+
 ======================================== */
 
-@media (max-width: 767px) {
+@media (min-width: 1100px) {
   .container {
-    display: flex;
-    flex-direction: column;
-
-    gap: 14px;
+    grid-template-columns:
+      minmax(0, 0.95fr)
+      minmax(0, 1.05fr);
+    gap: 24px;
   }
 
-  .left {
-    display: flex;
-  }
+  /* LEFT */
 
   .badge {
-    margin-bottom: 18px;
+    padding: 9px 22px;
+    margin-bottom: 24px;
+    font-size: 14px;
+    letter-spacing: 0.8px;
   }
 
   .description {
-    font-size: 0.95rem;
+    font-size: clamp(1rem, 1.4vw, 1.15rem);
   }
 
   .visual {
-    margin-top: 24px;
-
-    border-radius: var(--radius-lg);
+    margin-top: 30px;
   }
 
-  .resultCard {
-    left: 7%;
-    bottom: 6%;
+  /* RESULT */
 
-    width: 190px;
-    padding: 12px;
+  .resultCard {
+    left: 26%;
+    bottom: 9%;
+    width: 216px;
+    height: 140px;
+    padding-left: 36px;
   }
 
   .resultTitle {
-    font-size: 11px;
+    margin-top: 12px;
+    margin-bottom: 9px;
+    font-size: 16px;
   }
 
   .resultCard ol {
-    font-size: 8px;
-  }
-
-  .resultValue {
-    font-size: 10px;
-  }
-
-  .grid {
-    grid-template-columns: 1fr;
-    gap: 12px;
-  }
-
-  .card {
-    min-height: 260px;
-
-    padding: 25px;
-  }
-
-  .icon {
-    width: 58px;
-    height: 58px;
-  }
-
-  .number {
-    font-size: 25px;
-  }
-
-  .card h3 {
-    font-size: 1.3rem;
-  }
-
-  .card p {
+    padding-left: 18px;
     font-size: 14px;
   }
 
-  .bottomCard {
-    min-height: auto;
+  .resultValue {
+    margin-top: 8px;
+    font-size: 16px;
+  }
 
-    align-items: flex-start;
+  /* RIGHT CARDS */
 
+  .grid {
     gap: 18px;
+  }
 
-    padding: 20px;
+  .card {
+    min-height: 330px;
+    padding: 32px 38px;
+  }
+
+  .icon {
+    width: 68px;
+    height: 68px;
+  }
+
+  .number {
+    font-size: 30px;
+  }
+
+  .card h3 {
+    font-size: clamp(1.25rem, 1.8vw, 1.55rem);
+  }
+
+  .card p {
+    font-size: 16px;
+  }
+
+  /* BOTTOM */
+
+  .bottomCard {
+    min-height: 125px;
+    gap: 38px;
+    padding: 18px 24px;
   }
 
   .bottomIcon {
-    flex: 0 0 70px;
-    width: 70px;
-    height: 70px;
+    flex: 0 0 110px;
+    width: 110px;
+    height: 95px;
   }
 
   .bottomIcon svg {
-    width: 38px;
-    height: 38px;
+    width: 54px;
+    height: 54px;
   }
 
   .bottomCard h3 {
-    font-size: 1.2rem;
+    font-size: clamp(1.3rem, 2vw, 1.7rem);
   }
 
   .bottomCard p {
-    font-size: 13px;
+    font-size: 15px;
   }
 }
