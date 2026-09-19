@@ -1,14 +1,14 @@
 export const en = {
-  heroBadge: "AI ONBOARDING FOR ANY TEAM",
+  heroBadge: "AI-POWERED EMPLOYEE ONBOARDING",
 
   heroTitle1: "Accelerate",
-  heroTitle2: "the preparation of",
-  heroTitleHighlight: "new employees",
-  heroTitle3: "without taking mentors away from their core work.",
+  heroTitle2: "employee onboarding and prepare",
+  heroTitleHighlight: "new hires",
+  heroTitle3: "faster with AI.",
 
   heroDescription:
-    "Our AI assistant makes onboarding simple for both the business and the newcomer — bringing",
-  heroDescription2: "joy from day one.",
+    "Our AI assistant automates onboarding, helps new employees access the knowledge they need, ",
+  heroDescription2: "and prepares them for independent work from day one.",
 
   // Floating cards
   heroProgressTitle: "Newcomer progress",
@@ -29,17 +29,18 @@ export const en = {
   heroGrowthDescription: "from day one",
 
   // Bottom features
-  heroFeature1Title: "Faster start",
+  heroFeature1Title: "Faster onboarding",
   heroFeature1Description: "New employees become ready to work faster",
 
   heroFeature2Title: "Mentors stay focused",
-  heroFeature2Description: "Less routine — more valuable work",
+  heroFeature2Description: "Less routine, more time for employee development",
 
-  heroFeature3Title: "Better results",
-  heroFeature3Description: "Confident employees — better business results",
+  heroFeature3Title: "Better onboarding results",
+  heroFeature3Description:
+    "Better-prepared employees — better business results",
 
-  heroFeature4Title: "An experience that inspires",
-  heroFeature4Description: "Support, feedback and motivation 24/7",
+  heroFeature4Title: "AI support from day one",
+  heroFeature4Description: "Support, feedback and AI guidance 24/7",
 
   nav: {
     problem: "The Problem",
@@ -62,25 +63,25 @@ export const en = {
 
   capabilitiesHighlight2: "continuous development.",
 
-  capability1Title: "A unified system instead of manager dependency",
+  capability1Title: "One AI onboarding system instead of relying on a manager",
 
   capability1Description:
-    "Onboarding no longer depends on a manager’s style. Every new hire gets a clear path, validated materials, and understandable steps from day one.",
+    "Onboarding no longer depends on one manager's individual approach. Every new employee gets a clear learning path, trusted materials and structured steps from day one.",
 
-  capability2Title: "All information in one place",
+  capability2Title: "All company knowledge in one place",
 
   capability2Description:
-    "No need to search through chats, ask the same questions repeatedly, or guess. Everything is structured, up to date, and available 24/7.",
+    "No more searching through chats or asking the same questions repeatedly. Company knowledge is structured, up to date and available 24/7.",
 
-  capability3Title: "Training Arena — risk-free practice",
+  capability3Title: "AI Role-Play — safe practice",
 
   capability3Description:
-    "AI simulates real scenarios and business situations. The trainee practices completing tasks, while AI reviews, corrects, and improves the work.",
+    "AI simulates real-world scenarios and business situations. Employees practice their skills while AI evaluates performance, identifies mistakes and provides feedback.",
 
   capability4Title: "Mentors focus on development, not repetition",
 
   capability4Description:
-    "The system takes care of onboarding routine, so mentors can focus on growth, feedback, and complex tasks.",
+    "The system takes care of routine onboarding so mentors can focus on employee development, feedback and more complex tasks.",
 
   capabilitiesResultTitle: "Test completed",
 

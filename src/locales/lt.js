@@ -1,14 +1,14 @@
 export const lt = {
-  heroBadge: "DI ĮVEDIMAS Į DARBĄ BET KOKIAI KOMANDAI",
+  heroBadge: "DI PAGRĮSTAS DARBUOTOJŲ ONBOARDING",
 
-  heroTitle1: "Paspartiname",
-  heroTitle2: "naujų darbuotojų",
-  heroTitleHighlight: "paruošimą",
-  heroTitle3: "neatitraukiant mentorių nuo pagrindinio darbo.",
+  heroTitle1: "Paspartinkite",
+  heroTitle2: "darbuotojų onboardingą ir greičiau paruoškite",
+  heroTitleHighlight: "naujus darbuotojus",
+  heroTitle3: "darbui su DI.",
 
   heroDescription:
-    "Mūsų DI asistentas supaprastina įvedimą į darbą tiek verslui, tiek naujokui — ir suteikia",
-  heroDescription2: "džiaugsmo nuo pirmos dienos.",
+    "Mūsų DI asistentas automatizuoja onboardingą, padeda naujiems darbuotojams greitai rasti reikiamas žinias ir pasiruošti ",
+  heroDescription2: "savarankiškam darbui nuo pirmos dienos.",
 
   // Floating cards
   heroProgressTitle: "Naujoko pažanga",
@@ -29,18 +29,19 @@ export const lt = {
   heroGrowthDescription: "nuo pirmos dienos",
 
   // Bottom features
-  heroFeature1Title: "Greitesnė pradžia",
-  heroFeature1Description: "Naujas darbuotojas greičiau pasiruošia darbui",
+  heroFeature1Title: "Greitesnis onboardingas",
+  heroFeature1Description: "Nauji darbuotojai greičiau pasiruošia darbui",
 
-  heroFeature2Title: "Mentoriai išlaiko dėmesį",
-  heroFeature2Description: "Mažiau rutinos — daugiau vertingų užduočių",
+  heroFeature2Title: "Mentoriai gali susitelkti į svarbiausius darbus",
+  heroFeature2Description: "Mažiau rutinos — daugiau laiko darbuotojų ugdymui",
 
-  heroFeature3Title: "Geresni rezultatai",
+  heroFeature3Title: "Geresni onboarding rezultatai",
   heroFeature3Description:
-    "Pasitikintys darbuotojai — geresni verslo rezultatai",
+    "Geriau pasiruošę darbuotojai — geresni verslo rezultatai",
 
-  heroFeature4Title: "Įkvepianti patirtis",
-  heroFeature4Description: "Palaikymas, grįžtamasis ryšys ir motyvacija 24/7",
+  heroFeature4Title: "DI pagalba nuo pirmos dienos",
+  heroFeature4Description:
+    "Pagalba, grįžtamasis ryšys ir DI rekomendacijos 24/7",
 
   nav: {
     problem: "Problema",
@@ -63,26 +64,26 @@ export const lt = {
 
   capabilitiesHighlight2: "nuolatiniam tobulėjimui.",
 
-  capability1Title: "Vieninga sistema vietoje priklausomybės nuo vadovo",
+  capability1Title:
+    "Viena DI onboarding sistema vietoje priklausomybės nuo mentoriaus",
 
   capability1Description:
-    "Įvedimas į darbą nebepriklauso nuo konkretaus vadovo stiliaus. Kiekvienas naujas darbuotojas nuo pirmos dienos gauna aiškų kelią, patikrintą medžiagą ir suprantamus veiksmus.",
+    "Onboarding procesas nebepriklauso nuo vieno vadovo. Kiekvienas naujas darbuotojas gauna aiškų mokymosi kelią, patikrintą medžiagą ir struktūruotus veiksmus nuo pirmos dienos.",
 
-  capability2Title: "Visa informacija vienoje vietoje",
+  capability2Title: " Visos įmonės žinios vienoje vietoje",
 
   capability2Description:
-    "Nereikia ieškoti informacijos pokalbiuose, kartoti tų pačių klausimų ar spėlioti. Viskas struktūruota, atnaujinta ir pasiekiama 24/7.",
+    "Nebereikia ieškoti informacijos pokalbiuose ar kartoti tų pačių klausimų. Įmonės žinios yra struktūruotos, atnaujintos ir pasiekiamos 24/7.",
 
-  capability3Title: "Training Arena — praktika be rizikos",
+  capability3Title: "AI Role-Play — saugi praktika",
 
   capability3Description:
-    "DI imituoja realius scenarijus ir verslo situacijas. Darbuotojas praktikuoja užduočių atlikimą, o DI vertina, taiso ir padeda gerinti rezultatą.",
+    "DI imituoja realias situacijas ir verslo scenarijus. Darbuotojai gali praktikuotis, o DI vertina jų rezultatus, nustato klaidas ir pateikia grįžtamąjį ryšį.",
 
-  capability4Title:
-    "Mentoriai sutelkia dėmesį į tobulėjimą, o ne į pasikartojančias užduotis",
+  capability4Title: "Mentoriai susitelkia į darbuotojų tobulėjimą",
 
   capability4Description:
-    "Sistema pasirūpina įvedimo į darbą rutina, todėl mentoriai gali sutelkti dėmesį į augimą, grįžtamąjį ryšį ir sudėtingas užduotis.",
+    "Sistema perima pasikartojančias onboarding užduotis, todėl mentoriai gali daugiau dėmesio skirti darbuotojų tobulėjimui, grįžtamajam ryšiui ir sudėtingoms užduotims.",
 
   capabilitiesResultTitle: "Testas baigtas",
 

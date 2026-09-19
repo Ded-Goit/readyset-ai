@@ -1,14 +1,14 @@
 export const fr = {
-  heroBadge: "ONBOARDING IA POUR TOUTE ÉQUIPE",
+  heroBadge: "ONBOARDING DES EMPLOYÉS AVEC L'IA",
 
   heroTitle1: "Accélérez",
-  heroTitle2: "la préparation des",
-  heroTitleHighlight: "nouveaux collaborateurs",
-  heroTitle3: "sans détourner les mentors de leur travail principal.",
+  heroTitle2: " l'onboarding et préparez",
+  heroTitleHighlight: "vos nouveaux employés",
+  heroTitle3: "plus rapidement grâce à l'IA.",
 
   heroDescription:
-    "Notre assistant IA simplifie l’intégration pour l’entreprise comme pour le nouvel arrivant — et apporte",
-  heroDescription2: "de la satisfaction dès le premier jour.",
+    "Notre assistant IA automatise l'onboarding, aide les nouveaux employés à accéder aux connaissances dont ils ont besoin et les prépare à travailler ",
+  heroDescription2: "de manière autonome dès le premier jour.",
 
   // Floating cards
   heroProgressTitle: "Progression du nouvel arrivant",
@@ -29,19 +29,20 @@ export const fr = {
   heroGrowthDescription: "dès le premier jour",
 
   // Bottom features
-  heroFeature1Title: "Démarrage plus rapide",
+  heroFeature1Title: "Un onboarding plus rapide",
   heroFeature1Description:
-    "Les nouveaux collaborateurs sont opérationnels plus rapidement",
+    "Les nouveaux employés deviennent opérationnels plus rapidement",
 
   heroFeature2Title: "Les mentors restent concentrés",
-  heroFeature2Description: "Moins de routine — plus de tâches à forte valeur",
+  heroFeature2Description:
+    "Moins de tâches répétitives, plus de temps pour accompagner les employés",
 
-  heroFeature3Title: "De meilleurs résultats",
+  heroFeature3Title: "De meilleurs résultats d'onboarding",
   heroFeature3Description:
-    "Des collaborateurs confiants — de meilleurs résultats pour l’entreprise",
+    "Des employés mieux préparés — de meilleurs résultats pour l'entreprise",
 
-  heroFeature4Title: "Une expérience inspirante",
-  heroFeature4Description: "Accompagnement, feedback et motivation 24/7",
+  heroFeature4Title: "Un accompagnement IA dès le premier jour",
+  heroFeature4Description: "Support, feedback et conseils IA 24h/24 et 7j/7",
 
   nav: {
     problem: "Le problème",
@@ -64,26 +65,26 @@ export const fr = {
 
   capabilitiesHighlight2: "un développement continu.",
 
-  capability1Title: "Un système unifié au lieu d’une dépendance au manager",
+  capability1Title:
+    "Une plateforme d'onboarding IA au lieu de dépendre d'un mentor",
 
   capability1Description:
-    "L’onboarding ne dépend plus du style de chaque manager. Chaque nouvelle recrue bénéficie dès le premier jour d’un parcours clair, de contenus validés et d’étapes faciles à comprendre.",
+    "L'onboarding ne dépend plus d'un seul manager. Chaque nouvel employé bénéficie d'un parcours clair, de ressources vérifiées et d'étapes structurées dès le premier jour.",
 
-  capability2Title: "Toutes les informations au même endroit",
+  capability2Title: "Toutes les connaissances de l'entreprise au même endroit",
 
   capability2Description:
-    "Plus besoin de chercher dans les conversations, de poser les mêmes questions encore et encore ou de deviner. Tout est structuré, à jour et disponible 24h/24 et 7j/7.",
+    "Plus besoin de chercher des informations dans les chats ou de poser les mêmes questions. Les connaissances de l'entreprise sont structurées, à jour et accessibles 24h/24 et 7j/7.",
 
-  capability3Title: "Training Arena — une pratique sans risque",
+  capability3Title: "AI Role-Play — une pratique sans risque",
 
   capability3Description:
-    "L’IA simule des scénarios réels et des situations professionnelles. Le collaborateur s’entraîne à réaliser les tâches tandis que l’IA analyse, corrige et améliore son travail.",
+    "L'IA simule des situations réelles et des scénarios professionnels. Les employés s'entraînent pendant que l'IA évalue leurs performances, identifie les erreurs et fournit un feedback personnalisé.",
 
-  capability4Title:
-    "Les mentors se concentrent sur le développement, pas sur les répétitions",
+  capability4Title: "Les mentors se concentrent sur le développement",
 
   capability4Description:
-    "Le système prend en charge les tâches répétitives de l’onboarding, afin que les mentors puissent se concentrer sur la progression, le feedback et les tâches complexes.",
+    "Le système prend en charge les tâches répétitives de l'onboarding afin que les mentors puissent se concentrer sur le développement, le feedback et les situations complexes.",
 
   capabilitiesResultTitle: "Test terminé",
 
