@@ -43,7 +43,7 @@ export const en = {
   heroFeature4Description: "Support, feedback and AI guidance 24/7",
 
   nav: {
-    problem: "The Problem",
+    problem: "Capabilities",
     how: "How It Works",
     impact: "Results",
     pilot: "Pilot",

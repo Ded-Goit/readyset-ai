@@ -45,7 +45,7 @@ export const fr = {
   heroFeature4Description: "Support, feedback et conseils IA 24h/24 et 7j/7",
 
   nav: {
-    problem: "Le problème",
+    problem: "Fonctionnalités",
     how: "Comment ça marche",
     impact: "Résultats",
     pilot: "Pilote",
