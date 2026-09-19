@@ -39,29 +39,18 @@ export default function Header() {
         <div className={styles.actions}>
           <LanguageSwitcher />
 
-          <a
-            href="#pilot"
-            className={styles.cta}
-          >
-            {t.pilotButton}
+          <a href="#pilot" className={styles.cta}>
+            {t.nav.pilot}
           </a>
 
           <button
             type="button"
             className={styles.burger}
-            onClick={() => setIsOpen(prev => !prev)}
-            aria-label={
-              isOpen
-                ? "Close menu"
-                : "Open menu"
-            }
+            onClick={() => setIsOpen((prev) => !prev)}
+            aria-label={isOpen ? "Close menu" : "Open menu"}
             aria-expanded={isOpen}
           >
-            {isOpen ? (
-              <X size={20} />
-            ) : (
-              <Menu size={20} />
-            )}
+            {isOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
         </div>
       </div>
@@ -86,31 +75,19 @@ export default function Header() {
               duration: 0.25,
             }}
           >
-            <a
-              href="#problem"
-              onClick={closeMenu}
-            >
+            <a href="#problem" onClick={closeMenu}>
               {t.nav.problem}
             </a>
 
-            <a
-              href="#how"
-              onClick={closeMenu}
-            >
+            <a href="#how" onClick={closeMenu}>
               {t.nav.how}
             </a>
 
-            <a
-              href="#impact"
-              onClick={closeMenu}
-            >
+            <a href="#impact" onClick={closeMenu}>
               {t.nav.impact}
             </a>
 
-            <a
-              href="#pilot"
-              onClick={closeMenu}
-            >
+            <a href="#pilot" onClick={closeMenu}>
               {t.nav.pilot}
             </a>
           </motion.div>
