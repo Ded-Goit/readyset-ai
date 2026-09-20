@@ -154,7 +154,7 @@ const structuredData = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${sora.variable} ${mono.variable}`}>
       <head>
         <Script id="google-tag-manager" strategy="beforeInteractive">
           {`
