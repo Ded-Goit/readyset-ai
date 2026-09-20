@@ -14,13 +14,13 @@ export default function HowItWorks() {
   return (
     <section id="how" className="section">
       <div className="container">
-        <span className="label">{t.how.label}</span>
+        <span className="sectionLabel">{t.how.label}</span>
 
-        <h2 className="title">
+        <h2 className="sectionTitle">
           {t.how.titleStart} <span>{t.how.highlight}</span>
         </h2>
 
-        <p className="subtitle">{t.how.subtitle}</p>
+        <p className="sectionSubtitle">{t.how.subtitle}</p>
 
         <div className={styles.steps}>
           {t.how.steps.map((step, index) => (

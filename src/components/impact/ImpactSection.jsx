@@ -12,7 +12,7 @@ export default function ImpactSection() {
     <section id="impact" className="section">
       <div className="container">
         <FadeIn>
-          <span className="label">{t.impact.label}</span>
+          <span className="sectionLabel">{t.impact.label}</span>
         </FadeIn>
 
         <FadeIn delay={0.1}>
