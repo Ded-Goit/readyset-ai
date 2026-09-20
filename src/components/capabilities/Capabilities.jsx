@@ -51,7 +51,7 @@ export default function Capabilities() {
       <div className={styles.container}>
         <div className={styles.left}>
           <FadeUp>
-            <div className={styles.badge}>{t.capabilitiesBadge} </div>{" "}
+            <div className={styles.badge}>{t.capabilitiesBadge} </div>
           </FadeUp>
           <FadeUp delay={0.1}>
             <h2 className="sectionTitle">
@@ -62,10 +62,10 @@ export default function Capabilities() {
           </FadeUp>
           <FadeUp delay={0.2}>
             <p className={styles.description}>
-              {t.capabilitiesDescription1}{" "}
-              <span>{t.capabilitiesHighlight1}</span>{" "}
-              {t.capabilitiesDescription2}{" "}
-              <span>{t.capabilitiesHighlight2}</span>.
+              {t.capabilitiesDescription1}
+              <span>{t.capabilitiesHighlight1}</span>
+              {t.capabilitiesDescription2}
+              <span>{t.capabilitiesHighlight2}</span>
             </p>
           </FadeUp>
           <FadeUp delay={0.3}>

@@ -12,14 +12,10 @@ export default function CapabilityCard({
 }) {
   return (
     <FadeUp delay={delay}>
-      {" "}
       <article className={styles.card}>
-        {" "}
         <div className={styles.cardTop}>
-          {" "}
           <div className={styles.icon}>
-            {" "}
-            <Icon size={58} strokeWidth={1.5} />{" "}
+            <Icon size={58} strokeWidth={1.5} />
           </div>
           <span className={styles.number}>{id}</span>
         </div>
