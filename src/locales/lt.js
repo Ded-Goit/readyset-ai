@@ -44,7 +44,8 @@ export const lt = {
     "Pagalba, grįžtamasis ryšys ir DI rekomendacijos 24/7",
 
   nav: {
-    problem: "Galimybės",
+    сapabilities: "Galimybės",
+    problem: "Problema ",
     how: "Kaip tai veikia",
     impact: "Rezultatai",
     pilot: "Bandomasis projektas",

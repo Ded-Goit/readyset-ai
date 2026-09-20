@@ -10,16 +10,14 @@ import {
 } from "lucide-react";
 
 import styles from "./Capabilities.module.css";
-
 import { useTranslation } from "@/hooks/useTranslation";
 import FadeUp from "@/components/shared/FadeUp";
+import CapabilityCard from "./CapabilityCard/CapabilityCard";
 
 export default function Capabilities() {
   const t = useTranslation();
 
-  if (!t) {
-    return null;
-  }
+  if (!t) return null;
 
   const capabilities = [
     {
@@ -49,21 +47,19 @@ export default function Capabilities() {
   ];
 
   return (
-    <section className={styles.capabilities}>
+    <section id="cap" className={styles.capabilities}>
       <div className={styles.container}>
         <div className={styles.left}>
-          <FadeUp delay={0}>
-            <div className={styles.badge}>{t.capabilitiesBadge}</div>
+          <FadeUp>
+            <div className={styles.badge}>{t.capabilitiesBadge} </div>{" "}
           </FadeUp>
-
           <FadeUp delay={0.1}>
-            <h2 className={styles.title}>
+            <h2 className="sectionTitle">
               {t.capabilitiesTitle1}
               <br />
               <span>{t.capabilitiesTitle2}</span>
             </h2>
           </FadeUp>
-
           <FadeUp delay={0.2}>
             <p className={styles.description}>
               {t.capabilitiesDescription1}{" "}
@@ -72,7 +68,6 @@ export default function Capabilities() {
               <span>{t.capabilitiesHighlight2}</span>.
             </p>
           </FadeUp>
-
           <FadeUp delay={0.3}>
             <div className={styles.visual}>
               <Image
@@ -82,7 +77,7 @@ export default function Capabilities() {
                 height={620}
                 priority
                 className={styles.image}
-                sizes="(max-width: 767px) 100vw, (max-width: 1099px) 48vw, 760px"
+                sizes="(max-width: 767px) 100vw, 48vw"
               />
 
               <div className={styles.resultCard}>
@@ -105,37 +100,14 @@ export default function Capabilities() {
             </div>
           </FadeUp>
         </div>
-
         <div className={styles.grid}>
-          {capabilities.map((item, index) => {
-            const Icon = item.icon;
-
-            return (
-              <FadeUp key={item.id} delay={0.1 + index * 0.1}>
-                <article className={styles.card}>
-                  <div className={styles.cardTop}>
-                    <div className={styles.icon}>
-                      <Icon size={58} strokeWidth={1.5} />
-                    </div>
-
-                    <span className={styles.number}>{item.id}</span>
-                  </div>
-
-                  <h3>{item.title}</h3>
-
-                  <p>{item.description}</p>
-
-                  <span className={`${styles.corner} ${styles.topRight}`}>
-                    +
-                  </span>
-
-                  <span className={`${styles.corner} ${styles.bottomRight}`}>
-                    +
-                  </span>
-                </article>
-              </FadeUp>
-            );
-          })}
+          {capabilities.map((capability, index) => (
+            <CapabilityCard
+              key={capability.id}
+              {...capability}
+              delay={0.1 + index * 0.1}
+            />
+          ))}
         </div>
       </div>
       <FadeUp delay={0.2}>

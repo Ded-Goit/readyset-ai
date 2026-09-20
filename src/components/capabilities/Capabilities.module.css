@@ -1,25 +1,21 @@
-/* ========================================
-   CAPABILITIES
-======================================== */
+/* =====CAPABILITIES====== */
 
 .capabilities {
   width: 100%;
   padding: 24px;
+  box-sizing: border-box;
 }
 
-/* ========================================
-   CONTAINER
-======================================== */
-
 .container {
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 14px;
 }
 
-/* ========================================
-   LEFT SIDE
-======================================== */
+/* =====LEFT===== */
 
 .left {
   min-width: 0;
@@ -27,9 +23,7 @@
   flex-direction: column;
 }
 
-/* ========================================
-   BADGE
-======================================== */
+/* =====BADGE===== */
 
 .badge {
   width: fit-content;
@@ -37,36 +31,27 @@
   align-items: center;
   justify-content: center;
   padding: 8px 16px;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
   border: 1px solid var(--border-hi);
   border-radius: var(--radius-sm);
   background: var(--orange-soft);
   color: var(--orange);
+
   font-size: 12px;
   font-weight: 600;
   line-height: 1;
-  text-transform: uppercase;
   letter-spacing: 0.7px;
+  text-transform: uppercase;
 }
 
-/* ========================================
-   TITLE
-======================================== */
-
-.title {
-  margin: 0 0 18px;
-}
-
-/* ========================================
-   DESCRIPTION
-======================================== */
+/* =====DESCRIPTION===== */
 
 .description {
   max-width: 650px;
   margin: 0;
   color: var(--text-muted);
   font-size: 0.95rem;
-  line-height: 1.65;
+  line-height: 1.55;
 }
 
 .description span {
@@ -74,14 +59,12 @@
   font-weight: 600;
 }
 
-/* ========================================
-   IMAGE / VISUAL
-======================================== */
+/* =====VISUAL===== */
 
 .visual {
   position: relative;
   width: 100%;
-  margin-top: 24px;
+  margin-top: 20px;
   overflow: hidden;
   border: 1px solid var(--border-hi);
   border-radius: var(--radius-lg);
@@ -97,9 +80,7 @@
   object-fit: cover;
 }
 
-/* ========================================
-   RESULT CARD
-======================================== */
+/* =====RESULT CARD====== */
 
 .resultCard {
   position: absolute;
@@ -109,6 +90,8 @@
   height: 80px;
   padding: 2px;
   border: 1px solid var(--orange-border-strong);
+  outline: 1px solid var(--orange-border-strong);
+  outline-offset: -4px;
   border-radius: var(--radius-sm);
   background: var(--glass-dark);
   backdrop-filter: blur(8px);
@@ -117,9 +100,7 @@
     inset 0 0 20px var(--orange-soft);
   color: var(--text);
   transform: perspective(1000px) rotateX(-24deg) rotateY(-35deg) rotateZ(-5deg);
-  outline: 1px solid var(--orange-border-strong); /* Друга рамка такого ж кольору */
-  outline-offset: -4px; /* Відступ всередину на 4 пікселі (для відступу назовні зробіть просто 4px) */
-  pointer-events: none; /* Гарантує, що аутлайн не заважатиме клікам, якщо вони будуть */
+  pointer-events: none;
 }
 
 .resultTitle {
@@ -148,192 +129,42 @@
   line-height: 1.2;
 }
 
-/* ========================================
-   CARDS GRID
-======================================== */
+/* =====CARDS GRID===== */
 
 .grid {
   display: grid;
   grid-template-columns: 1fr;
-
   gap: 12px;
-
   min-width: 0;
 }
 
-/* ========================================
-   CAPABILITY CARD
-======================================== */
-
-.card {
-  position: relative;
-
-  min-width: 0;
-  min-height: 0;
-
-  padding: 25px;
-
-  overflow: hidden;
-
-  display: flex;
-  flex-direction: column;
-
-  border: 1px solid var(--border-hi);
-  border-radius: var(--radius-lg);
-
-  background:
-    radial-gradient(circle at 50% 0%, var(--orange-soft), transparent 55%),
-    var(--surface-transparent);
-
-  transition:
-    transform var(--transition-base),
-    border-color var(--transition-base),
-    background var(--transition-base);
-}
-
-.card:hover {
-  transform: translateY(-4px);
-
-  border-color: var(--orange);
-
-  background:
-    radial-gradient(circle at 50% 0%, var(--orange-glow), transparent 60%),
-    var(--surface-hover);
-}
-
-/* ========================================
-   CARD TOP
-======================================== */
-
-.cardTop {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-
-  margin-bottom: 14px;
-}
-
-/* ========================================
-   ICON
-======================================== */
-
-.icon {
-  width: 58px;
-  height: 58px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  color: var(--orange);
-}
-
-/* ========================================
-   NUMBER
-======================================== */
-
-.number {
-  color: var(--text);
-
-  font-size: 25px;
-  font-weight: 400;
-  line-height: 1;
-}
-
-/* ========================================
-   CARD TITLE
-======================================== */
-
-.card h3 {
-  max-width: 330px;
-
-  margin: 0 0 14px;
-
-  color: var(--orange);
-
-  font-size: 1.3rem;
-  line-height: 1.25;
-  font-weight: 700;
-}
-
-/* ========================================
-   CARD DESCRIPTION
-======================================== */
-
-.card p {
-  max-width: 380px;
-
-  margin: 0;
-
-  color: var(--text-muted);
-
-  font-size: 14px;
-  line-height: 1.55;
-}
-
-/* ========================================
-   CORNER PLUS
-======================================== */
-
-.corner {
-  position: absolute;
-
-  color: var(--orange-border-strong);
-
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 1;
-}
-
-.topRight {
-  top: 22px;
-  right: 22px;
-}
-
-.bottomRight {
-  right: 22px;
-  bottom: 20px;
-}
-
-/* ========================================
-   BOTTOM CARD
-======================================== */
+/* =====BOTTOM CARD===== */
 
 .bottomCard {
-  min-width: 0;
-
+  width: calc(100% - 48px);
+  max-width: 1500px;
+  margin: 14px auto 0;
   display: flex;
-  align-items: flex-start;
-
+  align-items: center;
   gap: 18px;
-
-  padding: 20px;
-
+  padding: 18px 20px;
+  box-sizing: border-box;
   border: 1px solid var(--border-hi);
   border-radius: var(--radius-lg);
-
   background:
     radial-gradient(circle at 15% 50%, var(--orange-soft), transparent 35%),
     var(--surface-transparent);
 }
 
-/* ========================================
-   BOTTOM ICON
-======================================== */
-
 .bottomIcon {
   flex: 0 0 70px;
-
   width: 70px;
   height: 70px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   border: 1px solid var(--border-hi);
   border-radius: var(--radius-sm);
-
   background: var(--orange-soft);
   color: var(--orange);
 }
@@ -343,18 +174,12 @@
   height: 38px;
 }
 
-/* ========================================
-   BOTTOM CONTENT
-======================================== */
-
 .bottomCard h3 {
-  margin: 0 0 6px;
-
+  margin: 0 0 5px;
   color: var(--text);
-
   font-size: 1.2rem;
-  line-height: 1.2;
   font-weight: 700;
+  line-height: 1.2;
 }
 
 .bottomCard h3 span {
@@ -363,249 +188,138 @@
 
 .bottomCard p {
   max-width: 650px;
-
   margin: 0;
-
   color: var(--text-muted);
-
   font-size: 13px;
-  line-height: 1.5;
+  line-height: 1.45;
 }
 
-/* ========================================
-   TABLET  
-======================================== */
+/* =====TABLET 768px+===== */
 
 @media (min-width: 768px) {
   .container {
-    display: grid;
     grid-template-columns:
       minmax(0, 0.95fr)
       minmax(0, 1.05fr);
-    gap: 8px;
+    gap: 14px;
+    align-items: stretch;
   }
-
-  /* -------------------------------
-     LEFT
-  ------------------------------- */
 
   .left {
     grid-column: 1;
-    grid-row: 1;
-    min-width: 0;
   }
-
-  .badge {
-    padding: 9px 20px;
-    margin-bottom: 20px;
-    font-size: 13px;
-  }
-
-  .description {
-    font-size: 1rem;
-  }
-
-  .visual {
-    margin-top: 28px;
-    border-radius: var(--radius-xl);
-  }
-
-  /* -------------------------------
-     RESULT CARD
-  ------------------------------- */
-
-  .resultCard {
-    left: 11%;
-    bottom: 7%;
-    width: 160px;
-    outline-offset: 4px;
-  }
-
-  .resultTitle {
-    font-size: 12px;
-  }
-
-  .resultCard ol {
-    font-size: 9px;
-  }
-
-  .resultValue {
-    font-size: 11px;
-  }
-
-  /* -------------------------------
-     RIGHT CARDS
-  ------------------------------- */
 
   .grid {
     grid-column: 2;
-    grid-row: 1;
-    display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 8px;
-    min-width: 0;
+    gap: 12px;
   }
-
-  .card {
-    height: 264px;
-    padding: 8px;
-  }
-
-  .icon {
-    width: 46px;
-    height: 46px;
-  }
-
-  .number {
-    font-size: 24px;
-  }
-
-  .card h3 {
-    font-size: 0.8rem;
-  }
-
-  .card p {
-    font-size: 12px;
-  }
-
-  /* -------------------------------
-     BOTTOM
-  ------------------------------- */
 
   .bottomCard {
-    width: 100%;
-    margin-top: 16px;
-    padding: 20px 24px;
+    width: calc(100% - 48px);
+    margin-top: 0;
+    padding: 18px 20px;
   }
 
   .bottomIcon {
-    flex: 0 0 90px;
-    width: 90px;
-    height: 85px;
+    flex-basis: 78px;
+    width: 78px;
+    height: 72px;
   }
 
   .bottomIcon svg {
-    width: 46px;
-    height: 46px;
+    width: 42px;
+    height: 42px;
   }
 
   .bottomCard h3 {
-    font-size: 1.4rem;
-  }
-
-  .bottomCard p {
-    font-size: 14px;
+    font-size: 1.25rem;
   }
 }
 
-/* ========================================
-   DESKTOP
-   1100px+
-======================================== */
+/* =====DESKTOP 1100px+===== */
 
 @media (min-width: 1100px) {
-  .container {
-    grid-template-columns:
-      minmax(0, 0.95fr)
-      minmax(0, 1.05fr);
-    gap: 24px;
+  .capabilities {
+    padding: 28px 32px;
   }
 
-  /* LEFT */
+  .container {
+    grid-template-columns:
+      minmax(0, 0.92fr)
+      minmax(0, 1.08fr);
+    gap: 20px;
+  }
 
   .badge {
-    padding: 9px 22px;
-    margin-bottom: 24px;
-    font-size: 14px;
-    letter-spacing: 0.8px;
+    padding: 8px 20px;
+    margin-bottom: 14px;
+    font-size: 13px;
+  }
+
+  .title {
+    margin-bottom: 12px;
   }
 
   .description {
-    font-size: clamp(1rem, 1.4vw, 1.15rem);
+    font-size: clamp(0.95rem, 1.15vw, 1.1rem);
+    line-height: 1.5;
   }
 
   .visual {
-    margin-top: 30px;
+    margin-top: 20px;
+    border-radius: var(--radius-xl);
   }
 
-  /* RESULT */
-
   .resultCard {
-    left: 26%;
-    bottom: 9%;
-    width: 216px;
-    height: 140px;
-    padding-left: 36px;
+    left: 25%;
+    width: 200px;
+    height: 125px;
+    padding-left: 30px;
   }
 
   .resultTitle {
-    margin-top: 12px;
-    margin-bottom: 9px;
-    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 7px;
+    font-size: 14px;
   }
 
   .resultCard ol {
     padding-left: 18px;
-    font-size: 14px;
+    font-size: 12px;
+    line-height: 1.05;
   }
 
   .resultValue {
-    margin-top: 8px;
-    font-size: 16px;
+    margin-top: 7px;
+    font-size: 14px;
   }
-
-  /* RIGHT CARDS */
 
   .grid {
-    gap: 18px;
+    gap: 14px;
   }
-
-  .card {
-    min-height: 330px;
-    padding: 32px 38px;
-  }
-
-  .icon {
-    width: 68px;
-    height: 68px;
-  }
-
-  .number {
-    font-size: 30px;
-  }
-
-  .card h3 {
-    font-size: clamp(1.25rem, 1.8vw, 1.55rem);
-  }
-
-  .card p {
-    font-size: 16px;
-  }
-
-  /* BOTTOM */
 
   .bottomCard {
-    min-height: 125px;
-    gap: 38px;
-    padding: 18px 24px;
+    gap: 28px;
+    padding: 16px 22px;
   }
 
   .bottomIcon {
-    flex: 0 0 110px;
-    width: 110px;
-    height: 95px;
+    flex-basis: 92px;
+    width: 92px;
+    height: 82px;
   }
 
   .bottomIcon svg {
-    width: 54px;
-    height: 54px;
+    width: 48px;
+    height: 48px;
   }
 
   .bottomCard h3 {
-    font-size: clamp(1.3rem, 2vw, 1.7rem);
+    font-size: clamp(1.2rem, 1.7vw, 1.55rem);
   }
 
   .bottomCard p {
-    font-size: 15px;
+    font-size: 14px;
   }
 }

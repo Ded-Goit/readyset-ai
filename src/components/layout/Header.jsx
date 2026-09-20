@@ -30,6 +30,7 @@ export default function Header() {
         <Logo />
 
         <nav className={styles.nav}>
+          <a href="#cap">{t.nav.сapabilities}</a>
           <a href="#problem">{t.nav.problem}</a>
           <a href="#how">{t.nav.how}</a>
           <a href="#impact">{t.nav.impact}</a>
@@ -75,6 +76,10 @@ export default function Header() {
               duration: 0.25,
             }}
           >
+            <a href="#cap" onClick={closeMenu}>
+              {t.nav.сapabilities}
+            </a>
+
             <a href="#problem" onClick={closeMenu}>
               {t.nav.problem}
             </a>

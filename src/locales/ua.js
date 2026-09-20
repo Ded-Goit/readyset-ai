@@ -43,7 +43,8 @@ export const ua = {
   heroFeature4Title: "AI-підтримка з першого дня",
   heroFeature4Description: "Підтримка, зворотний зв'язок і AI-підказки 24/7",
   nav: {
-    problem: "Можливості",
+    сapabilities: "Можливості",
+    problem: "Проблема",
     how: "Як це працює",
     impact: "Результат",
     pilot: "Пілот",
